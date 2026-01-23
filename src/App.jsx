@@ -192,9 +192,9 @@ const EmergencyCard = ({ title, phone, description, isPrimary = false }) => (
       : 'bg-gradient-to-br from-[#5B7B6A] to-[#3D5A4A] text-white shadow-lg shadow-[#5B7B6A]/30'
   }`}>
     <h4 className="font-display font-bold text-xl mb-2">{title}</h4>
-    <a href={`tel:${phone.replace(/\s/g, '')}`} className="text-3xl font-bold flex items-center gap-3 mb-3 hover:opacity-90 transition-opacity">
-      <Phone className="w-6 h-6" />
-      {phone}
+    <a href={`tel:${phone.replace(/\s/g, '')}`} className="text-4xl font-bold flex items-center gap-3 mb-3 hover:opacity-90 transition-opacity text-white drop-shadow-lg">
+      <Phone className="w-7 h-7" />
+      <span className="tracking-wide">{phone}</span>
     </a>
     <p className={`text-sm ${isPrimary ? 'text-white/80' : 'text-white/80'}`}>{description}</p>
   </div>
