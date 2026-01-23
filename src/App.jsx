@@ -21,18 +21,18 @@ const Section = ({ title, icon: Icon, children, defaultOpen = false, accentColor
   };
 
   return (
-    <div className="mb-5 card overflow-hidden">
+    <div className="mb-4 md:mb-5 card overflow-hidden">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full px-6 py-5 flex items-center justify-between hover:bg-[#FAF8F5] transition-all duration-300 group"
+        className="w-full px-4 py-4 md:px-6 md:py-5 flex items-center justify-between hover:bg-[#FAF8F5] transition-all duration-300 group"
       >
-        <div className="flex items-center gap-4">
-          <div className={`w-10 h-10 rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-105 ${accentColors[accentColor]}`}>
-            <Icon className="w-5 h-5" />
+        <div className="flex items-center gap-3 md:gap-4">
+          <div className={`w-9 h-9 md:w-10 md:h-10 rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-105 ${accentColors[accentColor]}`}>
+            <Icon className="w-4 h-4 md:w-5 md:h-5" />
           </div>
-          <span className="font-display text-lg font-semibold text-[#2D3436]">{title}</span>
+          <span className="font-display text-base md:text-lg font-semibold text-[#2D3436]">{title}</span>
         </div>
-        <div className={`w-8 h-8 rounded-full flex items-center justify-center bg-[#F5F1EB] transition-all duration-300 ${isOpen ? 'rotate-180' : ''}`}>
+        <div className={`w-7 h-7 md:w-8 md:h-8 rounded-full flex items-center justify-center bg-[#F5F1EB] transition-all duration-300 flex-shrink-0 ml-2 ${isOpen ? 'rotate-180' : ''}`}>
           <ChevronDown className="w-4 h-4 text-[#4A5568]" />
         </div>
       </button>
@@ -41,7 +41,7 @@ const Section = ({ title, icon: Icon, children, defaultOpen = false, accentColor
         onTransitionEnd={handleTransitionEnd}
       >
         {shouldRender && (
-          <div className="px-6 pb-6 pt-2 animate-fade-in">
+          <div className="px-4 pb-5 pt-2 md:px-6 md:pb-6 animate-fade-in">
             {children}
           </div>
         )}
@@ -63,15 +63,15 @@ const PromptCard = ({ title, prompt, description }) => {
 
   return (
     <div
-      className="bg-gradient-to-br from-[#FAF8F5] to-[#F5F1EB] rounded-2xl p-5 mb-4 border border-[#E8E4DE] transition-all duration-300 hover:shadow-lg hover:shadow-[#5B7B6A]/5"
+      className="bg-gradient-to-br from-[#FAF8F5] to-[#F5F1EB] rounded-xl md:rounded-2xl p-4 md:p-5 mb-4 border border-[#E8E4DE] transition-all duration-300 hover:shadow-lg hover:shadow-[#5B7B6A]/5"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="flex justify-between items-start mb-3">
-        <h4 className="font-display font-semibold text-[#2D3436] text-lg">{title}</h4>
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 mb-3">
+        <h4 className="font-display font-semibold text-[#2D3436] text-base md:text-lg">{title}</h4>
         <button
           onClick={copyToClipboard}
-          className={`flex items-center gap-2 text-sm px-4 py-2 rounded-xl font-medium transition-all duration-300 ${
+          className={`flex items-center justify-center gap-2 text-sm px-4 py-2 rounded-xl font-medium transition-all duration-300 w-full sm:w-auto flex-shrink-0 ${
             copied
               ? 'bg-[#5B7B6A] text-white'
               : 'bg-white text-[#5B7B6A] border border-[#5B7B6A]/20 hover:bg-[#5B7B6A] hover:text-white hover:border-transparent'
@@ -81,8 +81,8 @@ const PromptCard = ({ title, prompt, description }) => {
           {copied ? 'Zkopírováno!' : 'Kopírovat'}
         </button>
       </div>
-      {description && <p className="text-[#4A5568] mb-4 leading-relaxed">{description}</p>}
-      <div className="code-block p-5 text-sm whitespace-pre-wrap leading-relaxed">
+      {description && <p className="text-[#4A5568] mb-4 leading-relaxed text-sm md:text-base">{description}</p>}
+      <div className="code-block p-3 md:p-5 text-xs md:text-sm whitespace-pre-wrap leading-relaxed overflow-x-auto">
         {prompt}
       </div>
     </div>
@@ -103,10 +103,10 @@ const WarningBox = ({ children, type = 'warning' }) => {
   };
 
   return (
-    <div className={`${styles[type].container} p-5 mb-6`}>
-      <div className="flex gap-4">
-        <AlertTriangle className={`w-6 h-6 ${styles[type].icon} flex-shrink-0 mt-0.5`} />
-        <div className="text-[#2D3436] leading-relaxed">{children}</div>
+    <div className={`${styles[type].container} p-4 md:p-5 mb-5 md:mb-6`}>
+      <div className="flex gap-3 md:gap-4">
+        <AlertTriangle className={`w-5 h-5 md:w-6 md:h-6 ${styles[type].icon} flex-shrink-0 mt-0.5`} />
+        <div className="text-[#2D3436] leading-relaxed text-sm md:text-base">{children}</div>
       </div>
     </div>
   );
@@ -115,31 +115,31 @@ const WarningBox = ({ children, type = 'warning' }) => {
 // Feature card for the intro section
 const FeatureCard = ({ icon: Icon, title, description, delay = 0 }) => (
   <div
-    className="flex items-start gap-4 p-4 rounded-xl bg-white/60 border border-[#E8E4DE]/50 hover:bg-white hover:shadow-md transition-all duration-300 opacity-0 animate-fade-in-up"
+    className="flex items-start gap-3 md:gap-4 p-3 md:p-4 rounded-xl bg-white/60 border border-[#E8E4DE]/50 hover:bg-white hover:shadow-md transition-all duration-300 opacity-0 animate-fade-in-up"
     style={{ animationDelay: `${delay}ms`, animationFillMode: 'forwards' }}
   >
-    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#5B7B6A] to-[#3D5A4A] flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#5B7B6A]/20">
-      <Icon className="w-6 h-6 text-white" />
+    <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gradient-to-br from-[#5B7B6A] to-[#3D5A4A] flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#5B7B6A]/20">
+      <Icon className="w-5 h-5 md:w-6 md:h-6 text-white" />
     </div>
-    <div>
-      <h4 className="font-display font-semibold text-[#2D3436] mb-1">{title}</h4>
-      <p className="text-[#4A5568] text-sm leading-relaxed">{description}</p>
+    <div className="min-w-0">
+      <h4 className="font-display font-semibold text-[#2D3436] mb-1 text-sm md:text-base">{title}</h4>
+      <p className="text-[#4A5568] text-xs md:text-sm leading-relaxed">{description}</p>
     </div>
   </div>
 );
 
 // Step indicator for instructions
 const StepIndicator = ({ number, title, description, isLast = false }) => (
-  <div className="flex gap-5">
+  <div className="flex gap-3 md:gap-5">
     <div className="flex flex-col items-center">
-      <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#C9A962] to-[#9A7B3C] text-white flex items-center justify-center font-display font-bold text-lg shadow-lg shadow-[#C9A962]/30">
+      <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-gradient-to-br from-[#C9A962] to-[#9A7B3C] text-white flex items-center justify-center font-display font-bold text-base md:text-lg shadow-lg shadow-[#C9A962]/30">
         {number}
       </div>
-      {!isLast && <div className="w-0.5 h-full min-h-[40px] bg-gradient-to-b from-[#C9A962] to-transparent mt-2" />}
+      {!isLast && <div className="w-0.5 h-full min-h-[32px] md:min-h-[40px] bg-gradient-to-b from-[#C9A962] to-transparent mt-2" />}
     </div>
-    <div className="pb-6">
-      <p className="font-display font-semibold text-[#2D3436] text-lg">{title}</p>
-      <p className="text-[#4A5568] mt-1 leading-relaxed">{description}</p>
+    <div className="pb-4 md:pb-6 min-w-0">
+      <p className="font-display font-semibold text-[#2D3436] text-base md:text-lg">{title}</p>
+      <p className="text-[#4A5568] mt-1 leading-relaxed text-sm md:text-base">{description}</p>
     </div>
   </div>
 );
@@ -159,9 +159,9 @@ const SafetyCard = ({ title, description, type = 'danger' }) => {
   };
 
   return (
-    <div className={`${styles[type]} rounded-r-xl p-5 transition-all duration-300 hover:shadow-md`}>
-      <h4 className={`font-display font-bold ${textStyles[type].title} text-lg mb-2`}>{title}</h4>
-      <p className={`${textStyles[type].desc} text-sm leading-relaxed`}>{description}</p>
+    <div className={`${styles[type]} rounded-r-xl p-4 md:p-5 transition-all duration-300 hover:shadow-md`}>
+      <h4 className={`font-display font-bold ${textStyles[type].title} text-base md:text-lg mb-1 md:mb-2`}>{title}</h4>
+      <p className={`${textStyles[type].desc} text-xs md:text-sm leading-relaxed`}>{description}</p>
     </div>
   );
 };
@@ -173,30 +173,30 @@ const ResourceLink = ({ href, title, description }) => (
       href={href}
       target="_blank"
       rel="noreferrer"
-      className="block p-4 rounded-xl bg-white border border-[#E8E4DE] hover:border-[#5B7B6A]/30 hover:shadow-lg hover:shadow-[#5B7B6A]/5 transition-all duration-300"
+      className="block p-3 md:p-4 rounded-xl bg-white border border-[#E8E4DE] hover:border-[#5B7B6A]/30 hover:shadow-lg hover:shadow-[#5B7B6A]/5 transition-all duration-300"
     >
-      <div className="flex items-center justify-between">
-        <span className="font-display font-semibold text-[#5B7B6A] group-hover:text-[#3D5A4A] transition-colors">{title}</span>
-        <ExternalLink className="w-4 h-4 text-[#5B7B6A] opacity-50 group-hover:opacity-100 transition-opacity" />
+      <div className="flex items-start justify-between gap-2">
+        <span className="font-display font-semibold text-[#5B7B6A] group-hover:text-[#3D5A4A] transition-colors text-sm md:text-base">{title}</span>
+        <ExternalLink className="w-4 h-4 text-[#5B7B6A] opacity-50 group-hover:opacity-100 transition-opacity flex-shrink-0 mt-0.5" />
       </div>
-      <p className="text-sm text-[#4A5568] mt-1">{description}</p>
+      <p className="text-xs md:text-sm text-[#4A5568] mt-1">{description}</p>
     </a>
   </li>
 );
 
 // Emergency contact card
 const EmergencyCard = ({ title, phone, description, isPrimary = false }) => (
-  <div className={`rounded-2xl p-6 transition-all duration-300 hover:shadow-xl ${
+  <div className={`rounded-xl md:rounded-2xl p-4 md:p-6 transition-all duration-300 hover:shadow-xl ${
     isPrimary
       ? 'bg-gradient-to-br from-[#B85C5C] to-[#8B4444] text-white shadow-lg shadow-[#B85C5C]/30'
       : 'bg-gradient-to-br from-[#5B7B6A] to-[#3D5A4A] text-white shadow-lg shadow-[#5B7B6A]/30'
   }`}>
-    <h4 className="font-display font-bold text-xl mb-2">{title}</h4>
-    <a href={`tel:${phone.replace(/\s/g, '')}`} className="text-4xl font-bold flex items-center gap-3 mb-3 hover:opacity-90 transition-opacity text-white drop-shadow-lg">
-      <Phone className="w-7 h-7" />
+    <h4 className="font-display font-bold text-lg md:text-xl mb-2">{title}</h4>
+    <a href={`tel:${phone.replace(/\s/g, '')}`} className="text-2xl md:text-4xl font-bold flex items-center gap-2 md:gap-3 mb-2 md:mb-3 hover:opacity-90 transition-opacity text-white drop-shadow-lg">
+      <Phone className="w-5 h-5 md:w-7 md:h-7 flex-shrink-0" />
       <span className="tracking-wide">{phone}</span>
     </a>
-    <p className={`text-sm ${isPrimary ? 'text-white/80' : 'text-white/80'}`}>{description}</p>
+    <p className={`text-xs md:text-sm ${isPrimary ? 'text-white/80' : 'text-white/80'}`}>{description}</p>
   </div>
 );
 
@@ -230,19 +230,19 @@ export default function App() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
+        <div className="relative z-10 max-w-4xl mx-auto px-4 md:px-6 py-12 md:py-24 text-center">
           <div className={`transition-all duration-700 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
             {/* Decorative badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white/90 text-sm font-medium mb-8">
-              <Sparkles className="w-4 h-4" />
+            <div className="inline-flex items-center gap-2 px-3 md:px-4 py-1.5 md:py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white/90 text-xs md:text-sm font-medium mb-6 md:mb-8">
+              <Sparkles className="w-3 h-3 md:w-4 md:h-4" />
               Praktický průvodce pro rodiče
             </div>
 
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+            <h1 className="font-display text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6 leading-tight px-2">
               AI v křesťanské rodině
             </h1>
 
-            <p className="text-xl md:text-2xl text-white/80 max-w-2xl mx-auto leading-relaxed font-light">
+            <p className="text-base md:text-xl lg:text-2xl text-white/80 max-w-2xl mx-auto leading-relaxed font-light px-2">
               Moudrý průvodce digitální dobou pro rodiče, kteří chtějí vést své děti ke Kristu
             </p>
           </div>
@@ -258,13 +258,13 @@ export default function App() {
 
       {/* Navigation */}
       <nav className="glass sticky top-0 z-50 border-b border-[#E8E4DE]/50 shadow-sm">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="flex overflow-x-auto py-3 gap-2 hide-scrollbar">
+        <div className="max-w-4xl mx-auto px-2 md:px-4">
+          <div className="flex overflow-x-auto py-2 md:py-3 gap-1 md:gap-2 hide-scrollbar">
             {tabs.map((tab, index) => (
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`flex items-center gap-2.5 px-5 py-2.5 rounded-xl whitespace-nowrap transition-all duration-300 font-medium ${
+                className={`flex items-center gap-1.5 md:gap-2.5 px-3 md:px-5 py-2 md:py-2.5 rounded-lg md:rounded-xl whitespace-nowrap transition-all duration-300 font-medium text-sm md:text-base ${
                   activeTab === tab.id
                     ? 'tab-active'
                     : 'tab-inactive'
@@ -272,7 +272,8 @@ export default function App() {
                 style={{ animationDelay: `${index * 50}ms` }}
               >
                 <tab.icon className="w-4 h-4" />
-                <span>{tab.label}</span>
+                <span className="hidden sm:inline">{tab.label}</span>
+                <span className="sm:hidden">{tab.label.split(' ')[0]}</span>
               </button>
             ))}
           </div>
@@ -280,24 +281,24 @@ export default function App() {
       </nav>
 
       {/* Content */}
-      <main className="max-w-4xl mx-auto px-4 py-10 md:py-12">
+      <main className="max-w-4xl mx-auto px-3 md:px-4 py-6 md:py-12">
 
         {/* ÚVOD */}
         {activeTab === 'uvod' && (
           <div className="page-transition">
             {/* Welcome card */}
-            <div className="card p-8 md:p-10 mb-8">
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-[#2D3436] mb-6">
+            <div className="card p-5 md:p-10 mb-6 md:mb-8">
+              <h2 className="font-display text-2xl md:text-4xl font-bold text-[#2D3436] mb-4 md:mb-6">
                 Vítejte!
               </h2>
-              <p className="text-[#4A5568] text-lg leading-relaxed mb-4">
+              <p className="text-[#4A5568] text-base md:text-lg leading-relaxed mb-3 md:mb-4">
                 AI už mluví s našimi dětmi. Otázka není, jestli to dovolíme – ale jak u toho budeme přítomni jako rodiče.
               </p>
-              <p className="text-[#4A5568] text-lg leading-relaxed mb-8">
+              <p className="text-[#4A5568] text-base md:text-lg leading-relaxed mb-6 md:mb-8">
                 Tato stránka je praktickým doplňkem k semináři. Najdete zde:
               </p>
 
-              <div className="grid gap-4 sm:grid-cols-2">
+              <div className="grid gap-3 md:gap-4 sm:grid-cols-2">
                 <FeatureCard
                   icon={MessageCircle}
                   title="Rodinného AI Průvodce"
@@ -326,24 +327,24 @@ export default function App() {
             </div>
 
             {/* Quote card */}
-            <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#5B7B6A] via-[#4A6B5A] to-[#3D5A4A] p-8 md:p-10 text-white shadow-xl shadow-[#5B7B6A]/20">
+            <div className="relative overflow-hidden rounded-xl md:rounded-2xl bg-gradient-to-br from-[#5B7B6A] via-[#4A6B5A] to-[#3D5A4A] p-5 md:p-10 text-white shadow-xl shadow-[#5B7B6A]/20">
               {/* Decorative elements */}
-              <div className="absolute top-0 right-0 w-64 h-64 bg-[#C9A962] rounded-full blur-3xl opacity-20 transform translate-x-1/2 -translate-y-1/2" />
+              <div className="absolute top-0 right-0 w-48 md:w-64 h-48 md:h-64 bg-[#C9A962] rounded-full blur-3xl opacity-20 transform translate-x-1/2 -translate-y-1/2" />
 
               <div className="relative z-10">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center">
-                    <Sparkles className="w-5 h-5" />
+                <div className="flex items-center gap-2 md:gap-3 mb-4 md:mb-6">
+                  <div className="w-8 h-8 md:w-10 md:h-10 rounded-lg md:rounded-xl bg-white/20 flex items-center justify-center">
+                    <Sparkles className="w-4 h-4 md:w-5 md:h-5" />
                   </div>
-                  <h3 className="font-display text-2xl font-bold">Klíčové poselství</h3>
+                  <h3 className="font-display text-xl md:text-2xl font-bold">Klíčové poselství</h3>
                 </div>
 
-                <p className="text-white/90 text-lg leading-relaxed mb-6">
+                <p className="text-white/90 text-base md:text-lg leading-relaxed mb-4 md:mb-6">
                   AI není nepřítel víry ani spása pro rodiče. Je to nástroj – jako kladivo.
                   Můžeš s ním postavit dům nebo si ublížit. Záleží na tom, kdo ho drží a jak.
                 </p>
 
-                <blockquote className="border-l-4 border-[#C9A962] pl-5 italic text-white/80">
+                <blockquote className="border-l-4 border-[#C9A962] pl-4 md:pl-5 italic text-white/80 text-sm md:text-base">
                   "Cokoli děláte, dělejte z celého srdce, jako Pánu, a ne lidem."
                   <footer className="mt-2 not-italic font-medium text-[#C9A962]">— Koloským 3:23</footer>
                 </blockquote>
@@ -355,15 +356,15 @@ export default function App() {
         {/* AI PRŮVODCE */}
         {activeTab === 'pruvodce' && (
           <div className="page-transition">
-            <div className="card p-8 md:p-10 mb-8">
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-[#2D3436] mb-6">
+            <div className="card p-5 md:p-10 mb-6 md:mb-8">
+              <h2 className="font-display text-2xl md:text-4xl font-bold text-[#2D3436] mb-4 md:mb-6">
                 Rodinný AI Průvodce
               </h2>
-              <p className="text-[#4A5568] text-lg leading-relaxed mb-6">
+              <p className="text-[#4A5568] text-base md:text-lg leading-relaxed mb-4 md:mb-6">
                 Vytvořili jsme pro vás speciálního AI pomocníka – "Rodinného AI Průvodce".
                 Je to jako mít po ruce moudrého křesťanského přítele, který vám pomůže s:
               </p>
-              <ul className="space-y-3 text-[#4A5568] text-lg custom-list mb-6">
+              <ul className="space-y-2 md:space-y-3 text-[#4A5568] text-sm md:text-lg custom-list mb-4 md:mb-6">
                 <li>Těžkými rozhovory s dětmi (smrt, rozvod, šikana...)</li>
                 <li>Nastavením hranic pro telefony a sociální sítě</li>
                 <li>Pomocí s domácími úkoly (učí myslet, ne podvádět)</li>
@@ -436,11 +437,11 @@ export default function App() {
         {/* SUPERPROMPTY */}
         {activeTab === 'prompty' && (
           <div className="page-transition">
-            <div className="card p-8 md:p-10 mb-8">
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-[#2D3436] mb-4">
+            <div className="card p-5 md:p-10 mb-6 md:mb-8">
+              <h2 className="font-display text-2xl md:text-4xl font-bold text-[#2D3436] mb-3 md:mb-4">
                 Superprompty pro rodiče
               </h2>
-              <p className="text-[#4A5568] text-lg leading-relaxed">
+              <p className="text-[#4A5568] text-base md:text-lg leading-relaxed">
                 Připravené otázky, které můžete použít s jakýmkoli AI (Claude, ChatGPT, Gemini...).
                 Stačí upravit věk a situaci.
               </p>
@@ -597,18 +598,18 @@ Požadavky:
         {/* BEZPEČNOST */}
         {activeTab === 'bezpeci' && (
           <div className="page-transition">
-            <div className="card p-8 md:p-10 mb-8">
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-[#2D3436] mb-4">
+            <div className="card p-5 md:p-10 mb-6 md:mb-8">
+              <h2 className="font-display text-2xl md:text-4xl font-bold text-[#2D3436] mb-3 md:mb-4">
                 Co je bezpečné a co ne
               </h2>
-              <p className="text-[#4A5568] text-lg leading-relaxed">
+              <p className="text-[#4A5568] text-base md:text-lg leading-relaxed">
                 Ne všechna AI je stejná. Některé nástroje jsou užitečné, jiné jsou pro děti nebezpečné.
               </p>
             </div>
 
             <WarningBox type="warning">
-              <p className="font-semibold text-lg mb-2">AI "přátelé" a companioni nejsou bezpečné pro děti pod 18 let.</p>
-              <p>Character.AI, Replika, Nomi a podobné aplikace jsou navrženy k vytváření emocionální závislosti.
+              <p className="font-semibold text-base md:text-lg mb-2">AI "přátelé" a companioni nejsou bezpečné pro děti pod 18 let.</p>
+              <p className="text-sm md:text-base">Character.AI, Replika, Nomi a podobné aplikace jsou navrženy k vytváření emocionální závislosti.
               Výzkumy ukazují, že správně reagují na krizové situace jen ve 22% případů.</p>
             </WarningBox>
 
@@ -668,8 +669,8 @@ Požadavky:
             </Section>
 
             <Section title="Varovné signály" icon={AlertTriangle} accentColor="terracotta">
-              <p className="text-[#4A5568] mb-5 text-lg">Pozorujte své dítě. Znepokojivé může být, když:</p>
-              <ul className="space-y-3">
+              <p className="text-[#4A5568] mb-4 md:mb-5 text-base md:text-lg">Pozorujte své dítě. Znepokojivé může být, když:</p>
+              <ul className="space-y-2 md:space-y-3">
                 {[
                   'Tráví hodiny chatováním s AI a skrývá to',
                   'Mluví o AI "příteli" jako o reálné osobě',
@@ -677,9 +678,9 @@ Požadavky:
                   'Je rozrušené, když nemůže používat AI',
                   'Mění se jeho/její nálada nebo chování',
                 ].map((item, index) => (
-                  <li key={index} className="flex items-start gap-3 p-3 rounded-xl bg-[#F5E8E8]/50">
-                    <span className="w-2 h-2 rounded-full bg-[#B85C5C] mt-2 flex-shrink-0" />
-                    <span className="text-[#2D3436]">{item}</span>
+                  <li key={index} className="flex items-start gap-2 md:gap-3 p-2.5 md:p-3 rounded-lg md:rounded-xl bg-[#F5E8E8]/50">
+                    <span className="w-2 h-2 rounded-full bg-[#B85C5C] mt-1.5 md:mt-2 flex-shrink-0" />
+                    <span className="text-[#2D3436] text-sm md:text-base">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -690,17 +691,17 @@ Požadavky:
         {/* ZDROJE */}
         {activeTab === 'zdroje' && (
           <div className="page-transition">
-            <div className="card p-8 md:p-10 mb-8">
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-[#2D3436] mb-4">
+            <div className="card p-5 md:p-10 mb-6 md:mb-8">
+              <h2 className="font-display text-2xl md:text-4xl font-bold text-[#2D3436] mb-3 md:mb-4">
                 Další zdroje
               </h2>
-              <p className="text-[#4A5568] text-lg leading-relaxed">
+              <p className="text-[#4A5568] text-base md:text-lg leading-relaxed">
                 Kam dál pro více informací a podpory.
               </p>
             </div>
 
             <Section title="Krizové linky" icon={Phone} defaultOpen={true} accentColor="terracotta">
-              <div className="grid gap-4 sm:grid-cols-2">
+              <div className="grid gap-3 md:gap-4 sm:grid-cols-2">
                 <EmergencyCard
                   title="Linka bezpečí"
                   phone="116 111"
@@ -736,32 +737,32 @@ Požadavky:
             </Section>
 
             <Section title="Knihy a podcasty" icon={BookOpen} accentColor="gold">
-              <ul className="space-y-4">
-                <li className="p-4 rounded-xl bg-[#FAF8F5] border border-[#E8E4DE]">
-                  <span className="font-display font-semibold text-[#2D3436] text-lg">Raising Christian Kids Podcast</span>
-                  <p className="text-[#4A5568] mt-1">Epizoda: "Faith-centered Parenting in the Age of AI"</p>
+              <ul className="space-y-3 md:space-y-4">
+                <li className="p-3 md:p-4 rounded-lg md:rounded-xl bg-[#FAF8F5] border border-[#E8E4DE]">
+                  <span className="font-display font-semibold text-[#2D3436] text-base md:text-lg">Raising Christian Kids Podcast</span>
+                  <p className="text-[#4A5568] mt-1 text-sm md:text-base">Epizoda: "Faith-centered Parenting in the Age of AI"</p>
                 </li>
-                <li className="p-4 rounded-xl bg-[#FAF8F5] border border-[#E8E4DE]">
-                  <span className="font-display font-semibold text-[#2D3436] text-lg">Courageous Parenting</span>
-                  <p className="text-[#4A5568] mt-1">Epizoda: "Christian Perspectives on AI"</p>
+                <li className="p-3 md:p-4 rounded-lg md:rounded-xl bg-[#FAF8F5] border border-[#E8E4DE]">
+                  <span className="font-display font-semibold text-[#2D3436] text-base md:text-lg">Courageous Parenting</span>
+                  <p className="text-[#4A5568] mt-1 text-sm md:text-base">Epizoda: "Christian Perspectives on AI"</p>
                 </li>
               </ul>
             </Section>
 
             <Section title="Nástroje pro rodičovskou kontrolu" icon={Shield} accentColor="sage">
-              <ul className="space-y-4">
+              <ul className="space-y-3 md:space-y-4">
                 {[
                   { name: 'Bark', desc: 'Monitorování obsahu a alertů bez špehování' },
                   { name: 'Circle', desc: 'Správa screen time a filtrování obsahu' },
                   { name: 'Google Family Link / Apple Screen Time', desc: 'Vestavěné nástroje v telefonech' },
                 ].map((tool, index) => (
-                  <li key={index} className="flex items-start gap-4 p-4 rounded-xl bg-[#FAF8F5] border border-[#E8E4DE]">
-                    <div className="w-10 h-10 rounded-xl bg-[#5B7B6A]/10 flex items-center justify-center flex-shrink-0">
-                      <Shield className="w-5 h-5 text-[#5B7B6A]" />
+                  <li key={index} className="flex items-start gap-3 md:gap-4 p-3 md:p-4 rounded-lg md:rounded-xl bg-[#FAF8F5] border border-[#E8E4DE]">
+                    <div className="w-9 h-9 md:w-10 md:h-10 rounded-lg md:rounded-xl bg-[#5B7B6A]/10 flex items-center justify-center flex-shrink-0">
+                      <Shield className="w-4 h-4 md:w-5 md:h-5 text-[#5B7B6A]" />
                     </div>
-                    <div>
-                      <span className="font-display font-semibold text-[#2D3436] text-lg">{tool.name}</span>
-                      <p className="text-[#4A5568] mt-1">{tool.desc}</p>
+                    <div className="min-w-0">
+                      <span className="font-display font-semibold text-[#2D3436] text-sm md:text-lg">{tool.name}</span>
+                      <p className="text-[#4A5568] mt-1 text-xs md:text-base">{tool.desc}</p>
                     </div>
                   </li>
                 ))}
@@ -773,14 +774,14 @@ Požadavky:
 
       {/* Footer */}
       <footer className="border-t border-[#E8E4DE] bg-white/50">
-        <div className="max-w-4xl mx-auto px-4 py-12 text-center">
-          <div className="inline-flex items-center gap-2 text-[#C9A962] mb-4">
-            <div className="w-8 h-0.5 bg-gradient-to-r from-transparent to-[#C9A962]" />
-            <Heart className="w-5 h-5 fill-current" />
-            <div className="w-8 h-0.5 bg-gradient-to-l from-transparent to-[#C9A962]" />
+        <div className="max-w-4xl mx-auto px-4 py-8 md:py-12 text-center">
+          <div className="inline-flex items-center gap-2 text-[#C9A962] mb-3 md:mb-4">
+            <div className="w-6 md:w-8 h-0.5 bg-gradient-to-r from-transparent to-[#C9A962]" />
+            <Heart className="w-4 h-4 md:w-5 md:h-5 fill-current" />
+            <div className="w-6 md:w-8 h-0.5 bg-gradient-to-l from-transparent to-[#C9A962]" />
           </div>
-          <p className="text-[#4A5568] mb-2">Vytvořeno pro seminář "AI v křesťanské rodině"</p>
-          <p className="text-[#7A9B8A] font-medium">2026 • S láskou pro rodiče, kteří chtějí vést své děti moudře ke Kristu</p>
+          <p className="text-[#4A5568] mb-2 text-sm md:text-base">Vytvořeno pro seminář "AI v křesťanské rodině"</p>
+          <p className="text-[#7A9B8A] font-medium text-sm md:text-base">2026 • S láskou pro rodiče, kteří chtějí vést své děti moudře ke Kristu</p>
         </div>
       </footer>
     </div>
