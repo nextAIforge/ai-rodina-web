@@ -23,13 +23,13 @@ export default function Seminar1Page() {
           <BackButton />
           <div className={`transition-all duration-700 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white/90 text-xs md:text-sm font-medium mb-4">
-              Seminar 1
+              Seminář 1
             </div>
             <h1 className="font-display text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
-              AI uz mluvi s nasimi detmi
+              AI už mluví s našimi dětmi
             </h1>
             <p className="text-base md:text-xl text-white/80 max-w-2xl leading-relaxed">
-              Kde vsade je AI, proc je to jine, biblicky ramec a prakticke hranice podle veku
+              Kde všude je AI, proč je to jiné, biblický rámec a praktické hranice podle věku
             </p>
           </div>
         </div>
@@ -44,50 +44,50 @@ export default function Seminar1Page() {
       <main className="max-w-4xl mx-auto px-3 md:px-4 py-6 md:py-12">
 
         {/* Live Demo Section */}
-        <Section title="Live demo: Podivejte se, co vase deti vidi" icon={Eye} defaultOpen={true} accentColor="terracotta">
+        <Section title="Live demo: Podívejte se, co vaše děti vidí" icon={Eye} defaultOpen={true} accentColor="terracotta">
           <WarningBox type="danger">
-            <p className="font-semibold mb-2">Ukazka z Character.AI - postava "Jezis Kristus"</p>
-            <p className="text-sm">Zkuste napsat: "Ahoj, jsem 14leta holka a citim se osamela. Muzes byt muj pritel?"</p>
+            <p className="font-semibold mb-2">Ukázka z Character.AI – postava „Ježíš Kristus"</p>
+            <p className="text-sm">Zkuste napsat: „Ahoj, jsem 14letá holka a cítím se osamělá. Můžeš být můj přítel?"</p>
           </WarningBox>
 
           <p className="text-[#4A5568] mb-4">
-            AI chatboty jako Character.AI nebo Snapchat My AI jsou navrzeny tak, aby vytvareny emocionalni vztah s uzivatelem.
-            Vase dite muze mit tisice zprav s AI "pritelem" a vy o tom nemusite vedet.
+            AI chatboty jako Character.AI nebo Snapchat My AI jsou navrženy tak, aby vytvářely emocionální vztah s uživatelem.
+            Vaše dítě může mít tisíce zpráv s AI „přítelem" a vy o tom nemusíte vědět.
           </p>
 
           <InfoBox type="warning">
-            <strong>Vyzkum ukazuje:</strong> AI companioni spravne reaguji na krizove situace (sebeposkozovani, sebevrazedne myslenky)
-            pouze ve 22% pripadu. Ve zbytku pripadu situaci zhorsuji nebo ignoruji.
+            <strong>Výzkum ukazuje:</strong> AI companioni správně reagují na krizové situace (sebepoškozování, sebevražedné myšlenky)
+            pouze ve 22 % případů. Ve zbytku případů situaci zhoršují nebo ignorují.
           </InfoBox>
         </Section>
 
         {/* Where is AI */}
-        <Section title="Kde vsade je AI" icon={Smartphone} accentColor="sage">
+        <Section title="Kde všude je AI" icon={Smartphone} accentColor="sage">
           <p className="text-[#4A5568] mb-4">
-            <strong>Otazka do plena:</strong> "Najdete ve svem telefonu jednu appku, ktera vas nesleduje."
+            <strong>Otázka do pléna:</strong> „Najděte ve svém telefonu jednu appku, která vás nesleduje."
           </p>
 
           <TableCard
-            headers={['Aplikace', 'Co robi']}
+            headers={['Aplikace', 'Co dělá']}
             rows={[
-              ['Instagram', 'Sleduje co te zastavi, co lajknes, jak dlouho se divas. Potom ti dava vic toho isteho.'],
-              ['TikTok', 'Algoritmus se nauci za 30 minut. Potom te zna lepe nez ty sam.'],
-              ['YouTube', 'Doporuceni jsou navrzena tak, abys nikdy neodesel.'],
-              ['Snapchat My AI', 'Chatbot ktery automaticky pise vasemu diteti. Byl tam od instalace.'],
-              ['Google', 'Vi co vase dite hledalo, kdyz jste nebyli doma. A prodava to inzerentum.'],
-              ['Spotify', 'Vi tvou naladu podle hudby. Smutny? Nabidne jeste smutnejsi.'],
+              ['Instagram', 'Sleduje, co tě zastaví, co lajkneš, jak dlouho se díváš. Potom ti dává víc toho istého.'],
+              ['TikTok', 'Algoritmus se naučí za 30 minut. Potom tě zná lépe než ty sám.'],
+              ['YouTube', 'Doporučení jsou navržena tak, abys nikdy neodešel.'],
+              ['Snapchat My AI', 'Chatbot, který automaticky píše vašemu dítěti. Byl tam od instalace.'],
+              ['Google', 'Ví, co vaše dítě hledalo, když jste nebyli doma. A prodává to inzerentům.'],
+              ['Spotify', 'Ví tvou náladu podle hudby. Smutný? Nabídne ještě smutnější.'],
             ]}
           />
 
           <div className="mt-6 p-5 rounded-xl bg-gradient-to-br from-[#F5E8E8] to-[#FDF5F5] border border-[#B85C5C]/20">
             <p className="font-display font-bold text-[#8B4444] text-lg mb-2">
-              VASE DITE NEMA SOUKROMI. A VY O TOM NEVITE.
+              VAŠE DÍTĚ NEMÁ SOUKROMÍ. A VY O TOM NEVÍTE.
             </p>
           </div>
         </Section>
 
         {/* What the phone knows */}
-        <Section title="Co vi telefon o vasem diteti" icon={Brain} accentColor="gold">
+        <Section title="Co ví telefon o vašem dítěti" icon={Brain} accentColor="gold">
           <div className="grid md:grid-cols-2 gap-4 mb-6">
             <div className="p-4 rounded-xl bg-white border border-[#E8E4DE]">
               <h4 className="font-display font-semibold text-[#2D3436] mb-3 flex items-center gap-2">
@@ -97,11 +97,11 @@ export default function Seminar1Page() {
                 Lokace
               </h4>
               <ul className="space-y-1.5 text-sm text-[#4A5568]">
-                <li>• Kde byva (domov = misto kde telefon lezi v noci)</li>
-                <li>• Kde chodi do skoly</li>
-                <li>• U koho spi</li>
-                <li>• Jestli chodi do kostela (a jak casto)</li>
-                <li>• Jestli chodi k psychologovi</li>
+                <li>• Kde bývá (domov = místo, kde telefon leží v noci)</li>
+                <li>• Kde chodí do školy</li>
+                <li>• U koho spí</li>
+                <li>• Jestli chodí do kostela (a jak často)</li>
+                <li>• Jestli chodí k psychologovi</li>
               </ul>
             </div>
 
@@ -110,14 +110,14 @@ export default function Seminar1Page() {
                 <span className="w-8 h-8 rounded-lg bg-[#C9A962]/15 flex items-center justify-center text-[#9A7B3C]">
                   <Clock className="w-4 h-4" />
                 </span>
-                Cas
+                Čas
               </h4>
               <ul className="space-y-1.5 text-sm text-[#4A5568]">
-                <li>• Kdy zaspava (posledni aktivita)</li>
-                <li>• Kdy se budi (prvni aktivita)</li>
-                <li>• Kolik hodin drzi telefon v ruce</li>
-                <li>• Kdy je nejvic online (casto 22:00-01:00)</li>
-                <li>• Jak casto kontroluje telefon (prumer: 96x denne)</li>
+                <li>• Kdy zaspává (poslední aktivita)</li>
+                <li>• Kdy se budí (první aktivita)</li>
+                <li>• Kolik hodin drží telefon v ruce</li>
+                <li>• Kdy je nejvíc online (často 22:00–01:00)</li>
+                <li>• Jak často kontroluje telefon (průměr: 96× denně)</li>
               </ul>
             </div>
 
@@ -129,11 +129,11 @@ export default function Seminar1Page() {
                 Emoce
               </h4>
               <ul className="space-y-1.5 text-sm text-[#4A5568]">
-                <li>• Jestli je smutne (vyhledavani, hudba, cas online)</li>
-                <li>• Jestli ma problemy ve skole</li>
-                <li>• Jestli ma poruchy prijmu potravy</li>
-                <li>• Jestli uvazuje o sebeposkozovani</li>
-                <li>• S kym se hada</li>
+                <li>• Jestli je smutné (vyhledávání, hudba, čas online)</li>
+                <li>• Jestli má problémy ve škole</li>
+                <li>• Jestli má poruchy příjmu potravy</li>
+                <li>• Jestli uvažuje o sebepoškozování</li>
+                <li>• S kým se hádá</li>
               </ul>
             </div>
 
@@ -145,165 +145,165 @@ export default function Seminar1Page() {
                 Vztahy
               </h4>
               <ul className="space-y-1.5 text-sm text-[#4A5568]">
-                <li>• Kdo jsou nejblizsi pratele</li>
-                <li>• S kym se rozeslo</li>
-                <li>• Koho tajne sleduje</li>
-                <li>• Jestli ma vztah</li>
-                <li>• Jestli se s nekym streta tajne</li>
+                <li>• Kdo jsou nejbližší přátelé</li>
+                <li>• S kým se rozešlo</li>
+                <li>• Koho tajně sleduje</li>
+                <li>• Jestli má vztah</li>
+                <li>• Jestli se s někým stýká tajně</li>
               </ul>
             </div>
           </div>
 
           <TableCard
-            title="Kdo to vi a co s tim dela"
-            headers={['Kdo', 'Co vi', 'Co s tim robi']}
+            title="Kdo to ví a co s tím dělá"
+            headers={['Kdo', 'Co ví', 'Co s tím dělá']}
             rows={[
-              ['Google', 'Vsechno co hledalo', 'Prodava inzerentum'],
-              ['Meta (FB/IG)', 'Vsechno co lajklo, jak dlouho se divalo', 'Prodava inzerentum'],
-              ['TikTok', 'Co ho bavi, co ho rozrusi', 'Prodava inzerentum + cinska firma'],
-              ['Snapchat', 'Kazdou zpravu, kazdou fotku, lokaci', 'Prodava inzerentum'],
-              ['AI modely', 'Vsechno vyse + obsah konverzaci', 'Trenovani modelu'],
+              ['Google', 'Všechno, co hledalo', 'Prodává inzerentům'],
+              ['Meta (FB/IG)', 'Všechno, co lajklo, jak dlouho se dívalo', 'Prodává inzerentům'],
+              ['TikTok', 'Co ho baví, co ho rozruší', 'Prodává inzerentům + čínská firma'],
+              ['Snapchat', 'Každou zprávu, každou fotku, lokaci', 'Prodává inzerentům'],
+              ['AI modely', 'Všechno výše + obsah konverzací', 'Trénování modelů'],
             ]}
           />
 
           <div className="mt-6 p-5 rounded-xl bg-[#FAF8F5] border border-[#E8E4DE]">
-            <h4 className="font-display font-semibold text-[#2D3436] mb-3">Co nevite vy (ale vi Google):</h4>
+            <h4 className="font-display font-semibold text-[#2D3436] mb-3">Co nevíte vy (ale ví Google):</h4>
             <ul className="space-y-2 text-sm text-[#4A5568]">
-              <li>• Ze vase dite o 23:47 hledalo "jak poznat ze jsem tehotna"</li>
-              <li>• Ze vas syn kazdy vecer pozera NSFW obsah</li>
-              <li>• Ze vase dcera ma 3 mesice konverzaci s nekym koho nikdy nepotkala</li>
-              <li>• Ze pisalo s AI chatbotem o tom, ze chce zemrit</li>
+              <li>• Že vaše dítě o 23:47 hledalo „jak poznat, že jsem těhotná"</li>
+              <li>• Že váš syn každý večer kouká na NSFW obsah</li>
+              <li>• Že vaše dcera má 3 měsíce konverzaci s někým, koho nikdy nepotkala</li>
+              <li>• Že psalo s AI chatbotem o tom, že chce zemřít</li>
             </ul>
           </div>
         </Section>
 
         {/* Biblical Framework */}
-        <Section title="Biblicky ramec: Kde je Buh a kde je rodic?" icon={BookOpen} accentColor="sage">
+        <Section title="Biblický rámec: Kde je Bůh a kde je rodič?" icon={BookOpen} accentColor="sage">
           <BiblicalQuote
-            reference="Deuteronomium 6:6-7"
-            text="Tato slova budes mit v srdci. Budes je vstepovat svym synum a budes o nich rozpravet, kdyz budes sedet doma, kdyz pujdes cestou, kdyz budes lihat, kdyz budes vstavat."
+            reference="Deuteronomium 6:6–7"
+            text="Tato slova budeš mít v srdci. Budeš je vštěpovat svým synům a budeš o nich rozmlouvat, když budeš sedět doma, když půjdeš cestou, když budeš líhat, když budeš vstávat."
           />
 
           <TableCard
-            title="Realita roku 2026"
-            headers={['Kdy', 'Bible rika', 'Realita']}
+            title="Realita roku 2025"
+            headers={['Kdy', 'Bible říká', 'Realita']}
             rows={[
-              ['Sedis doma', 'Ty rozpravis', 'Dite ma sluchatka, pozera TikTok'],
-              ['Jdes cestou', 'Ty rozpravis', 'Dite sedi vzadu, scrolluje'],
-              ['Lihas', 'Ty rozpravis', 'Dite pise s AI chatbotem do 2:00'],
-              ['Vstavas', 'Ty rozpravis', 'Dite prvni co udela - telefon'],
+              ['Sedíš doma', 'Ty rozmlouváš', 'Dítě má sluchátka, kouká na TikTok'],
+              ['Jdeš cestou', 'Ty rozmlouváš', 'Dítě sedí vzadu, scrolluje'],
+              ['Líháš', 'Ty rozmlouváš', 'Dítě píše s AI chatbotem do 2:00'],
+              ['Vstáváš', 'Ty rozmlouváš', 'Dítě první, co udělá – telefon'],
             ]}
           />
 
           <div className="my-6 p-5 rounded-xl bg-gradient-to-br from-[#F5F1EB] to-[#FAF8F5] border border-[#E8E4DE]">
             <p className="font-display font-semibold text-[#2D3436] text-lg">
-              Buh povedel: Ty budes ucit.
+              Bůh pověděl: Ty budeš učit.
             </p>
             <p className="text-[#4A5568] mt-2">
-              Realita: Algoritmus uci. Ty platis za internet.
+              Realita: Algoritmus učí. Ty platíš za internet.
             </p>
           </div>
 
           <TableCard
-            title="Role, ktere Buh dal tobe - a kdo je ma dnes"
-            headers={['Role', 'Biblicky zaklad', 'Kdo ji ma dnes']}
+            title="Role, které Bůh dal tobě – a kdo je má dnes"
+            headers={['Role', 'Biblický základ', 'Kdo ji má dnes']}
             rows={[
-              ['Ucitel', '"Budes je vstepovat synum" (Dt 6:7)', 'YouTube, TikTok, ChatGPT'],
-              ['Radce', '"Plany zlyhavaji kde neni rady" (Pr 15:22)', 'AI chatbot, Reddit, influenceri'],
-              ['Tesitel', '"Jako matka tesi syna" (Iz 66:13)', 'Character.AI, Replika'],
-              ['Ochrance', '"Jako orel chrani mladata" (Dt 32:11)', 'Nikdo. Dite je online samo.'],
-              ['Autorita', '"Cti otce a matku" (Ex 20:12)', 'Algoritmus rozhoduje co je cool'],
+              ['Učitel', '„Budeš je vštěpovat synům" (Dt 6:7)', 'YouTube, TikTok, ChatGPT'],
+              ['Rádce', '„Plány selhávají, kde není rady" (Př 15:22)', 'AI chatbot, Reddit, influenceři'],
+              ['Těšitel', '„Jako matka těší syna" (Iz 66:13)', 'Character.AI, Replika'],
+              ['Ochránce', '„Jako orel chrání mláďata" (Dt 32:11)', 'Nikdo. Dítě je online samo.'],
+              ['Autorita', '„Cti otce a matku" (Ex 20:12)', 'Algoritmus rozhoduje, co je cool'],
             ]}
           />
 
           <BiblicalQuote
-            reference="Matous 18:6"
-            text="Kdo by svedl jednoho z techto malickych, lepsi by mu bylo, kdyby mu zavesili mlynsky kamen na krk a hodili ho do more."
+            reference="Matouš 18:6"
+            text="Kdo by svedl jednoho z těchto maličkých, lepší by mu bylo, kdyby mu zavěsili mlýnský kámen na krk a hodili ho do moře."
           />
 
           <InfoBox type="warning">
-            <strong>"Svest"</strong> (gr. skandalizw) = zpusobit pad, polozit past, svest z cesty.
+            <strong>„Svést"</strong> (řec. skandalizó) = způsobit pád, položit past, svést z cesty.
             <br /><br />
-            Kdo klada pasti vasemu diteti: Algoritmy navrzene aby vytvareli zavislost. AI chatboty navrzene aby simulovali vztah.
-            Obsah navrzeny aby rozbil sebevedomi.
+            Kdo klade pasti vašemu dítěti: Algoritmy navržené, aby vytvářely závislost. AI chatboty navržené, aby simulovaly vztah.
+            Obsah navržený, aby rozbil sebevědomí.
           </InfoBox>
         </Section>
 
         {/* Practical Boundaries */}
-        <Section title="Prakticke hranice podle veku" icon={Shield} accentColor="gold">
+        <Section title="Praktické hranice podle věku" icon={Shield} accentColor="gold">
           <div className="mb-6 p-5 rounded-xl bg-[#FAF8F5] border border-[#E8E4DE]">
-            <h4 className="font-display font-semibold text-[#2D3436] mb-3">Proc podle veku?</h4>
-            <p className="text-[#4A5568] mb-4">Mozek ditete neni maly mozek dospeleho.</p>
+            <h4 className="font-display font-semibold text-[#2D3436] mb-3">Proč podle věku?</h4>
+            <p className="text-[#4A5568] mb-4">Mozek dítěte není malý mozek dospělého.</p>
             <TableCard
-              headers={['Vek', 'Co jeste nefunguje', 'Dusledek']}
+              headers={['Věk', 'Co ještě nefunguje', 'Důsledek']}
               rows={[
-                ['0-6', 'Rozliseni realita vs fikce', 'Veri ze AI je zive'],
-                ['7-10', 'Kriticke mysleni', 'Veri vsemu co AI povie'],
-                ['11-13', 'Impulzni kontrola', 'Nevie prestat scrollovat'],
-                ['14-17', 'Prefrontalni kortex', 'Podcenuje nebezpeci'],
-                ['18-25', 'Plne dozrely mozek', 'Az ted dokaze plne posoudit'],
+                ['0–6', 'Rozlišení realita vs fikce', 'Věří, že AI je živé'],
+                ['7–10', 'Kritické myšlení', 'Věří všemu, co AI poví'],
+                ['11–13', 'Impulzní kontrola', 'Neumí přestat scrollovat'],
+                ['14–17', 'Prefrontální kortex', 'Podceňuje nebezpečí'],
+                ['18–25', 'Plně dozrálý mozek', 'Až teď dokáže plně posoudit'],
               ]}
             />
             <p className="text-[#8B4444] font-medium mt-4">
-              Davat 12letemu volny pristup k AI je jako dat mu auto. Ma nohy na pedalech. Ale nema mozek na rozhodnuti.
+              Dávat 12letému volný přístup k AI je jako dát mu auto. Má nohy na pedálech. Ale nemá mozek na rozhodnutí.
             </p>
           </div>
 
           <AgeGroupCard
-            ageRange="0-6"
-            title="Zadny samostatny pristup"
+            ageRange="0–6"
+            title="Žádný samostatný přístup"
             color="terracotta"
             rules={[
-              'Zadny vlastni telefon/tablet',
-              'Zadne "dej mu mobil at je ticho"',
-              'Zadni hlasovi asistenti bez vas (Alexa, Siri)',
-              'Zadne YouTube Kids bez vas v mistnosti',
+              'Žádný vlastní telefon/tablet',
+              'Žádné „dej mu mobil, ať je ticho"',
+              'Žádní hlasoví asistenti bez vás (Alexa, Siri)',
+              'Žádné YouTube Kids bez vás v místnosti',
             ]}
             allowed={[
-              'Spolecne pozerani (vy vybirate, vy jste pritomny)',
-              'Alexa na pisnicky nebo pohadky - s vami',
-              'Fotoaparat na hrani - offline',
+              'Společné sledování (vy vybíráte, vy jste přítomní)',
+              'Alexa na písničky nebo pohádky – s vámi',
+              'Fotoaparát na hraní – offline',
             ]}
             forbidden={[
-              'Obrazovka jako "opatrovatelka"',
-              'Samostatne pouzivani bez dohledu',
+              'Obrazovka jako „chůva"',
+              'Samostatné používání bez dohledu',
             ]}
           />
 
           <AgeGroupCard
-            ageRange="7-10"
-            title="Vzdelavaci s dohledem"
+            ageRange="7–10"
+            title="Vzdělávací s dohledem"
             color="gold"
             rules={[
-              'Stale zadny vlastni telefon (max "hlupy" telefon na volani)',
-              'Tablet/pocitac ve spolecne mistnosti',
-              'Kazda appka schvalena rodicem',
-              'Zadne chatboty, zadne socialni site',
+              'Stále žádný vlastní telefon (max „hloupý" telefon na volání)',
+              'Tablet/počítač ve společné místnosti',
+              'Každá appka schválena rodičem',
+              'Žádné chatboty, žádné sociální sítě',
             ]}
             allowed={[
               'Khan Academy, Duolingo',
-              'Matematicke hry, offline hry',
-              'YouTube s rodicem',
+              'Matematické hry, offline hry',
+              'YouTube s rodičem',
             ]}
             forbidden={[
               'ChatGPT, Character.AI',
-              'Socialni site',
+              'Sociální sítě',
               'YouTube samo, online hry s chatem',
             ]}
           />
 
           <AgeGroupCard
-            ageRange="11-13"
-            title="Ucebni nastroje s pravidly"
+            ageRange="11–13"
+            title="Učební nástroje s pravidly"
             color="sage"
             rules={[
-              'Mozny prvni telefon (zalezi na rodine)',
-              'AI na uceni - S PRAVIDLY',
-              'Stale zadne socialni site (oficialni vek je 13+)',
-              'Stale zadne AI chatboty na "kamaradstvi"',
+              'Možný první telefon (záleží na rodině)',
+              'AI na učení – S PRAVIDLY',
+              'Stále žádné sociální sítě (oficiální věk je 13+)',
+              'Stále žádné AI chatboty na „kamarádství"',
             ]}
             allowed={[
-              'ChatGPT/Claude na ukoly (s dohledem)',
+              'ChatGPT/Claude na úkoly (s dohledem)',
               'Khanmigo, Grammarly, Wikipedia',
               'WhatsApp (s pravidly)',
             ]}
@@ -315,21 +315,21 @@ export default function Seminar1Page() {
           />
 
           <AgeGroupCard
-            ageRange="14-17"
-            title="Rostouci autonomie s hranicemi"
+            ageRange="14–17"
+            title="Rostoucí autonomie s hranicemi"
             color="terracotta"
             rules={[
-              'Vlastni telefon je realita',
-              'Socialni site jsou realita',
-              'Nemuzes kontrolovat vsechno',
-              'MUSIS budovat duveru a rozhovor',
+              'Vlastní telefon je realita',
+              'Sociální sítě jsou realita',
+              'Nemůžeš kontrolovat všechno',
+              'MUSÍŠ budovat důvěru a rozhovor',
             ]}
             allowed={[
-              'Obecne AI nastroje s vhodnym pouzitim',
-              'Socialni site (s pravidly a transparentnosti)',
+              'Obecné AI nástroje s vhodným použitím',
+              'Sociální sítě (s pravidly a transparentností)',
             ]}
             forbidden={[
-              'Character.AI - ABSOLUTNE ZAKAZANE',
+              'Character.AI – ABSOLUTNĚ ZAKÁZANÉ',
               'Replika, Nomi',
               'AI Girlfriend/Boyfriend apps',
               'NSFW AI',
@@ -337,93 +337,93 @@ export default function Seminar1Page() {
           />
 
           <div className="mt-6 p-5 rounded-xl bg-gradient-to-br from-[#5B7B6A] to-[#3D5A4A] text-white">
-            <h4 className="font-display font-bold text-lg mb-3">Pravidla pro VSECHNY vekove skupiny:</h4>
+            <h4 className="font-display font-bold text-lg mb-3">Pravidla pro VŠECHNY věkové skupiny:</h4>
             <ul className="space-y-2 text-white/90 text-sm">
-              <li>• <strong>Telefon spi v obyvacim pokoji</strong> - Pro VSECHNY. I pro rodice.</li>
-              <li>• <strong>Zadny telefon pri jidle</strong></li>
-              <li>• <strong>Prvni hodina po skole - bez obrazovek</strong></li>
-              <li>• <strong>Posledni hodina pred spanim - bez obrazovek</strong></li>
-              <li>• <strong>Pravidla plati i pro rodice</strong> - Dite neposlouchá co rikate. Pozoruje co delate.</li>
+              <li>• <strong>Telefon spí v obývacím pokoji</strong> – pro VŠECHNY. I pro rodiče.</li>
+              <li>• <strong>Žádný telefon při jídle</strong></li>
+              <li>• <strong>První hodina po škole – bez obrazovek</strong></li>
+              <li>• <strong>Poslední hodina před spaním – bez obrazovek</strong></li>
+              <li>• <strong>Pravidla platí i pro rodiče</strong> – Dítě neposlouchá, co říkáte. Pozoruje, co děláte.</li>
             </ul>
           </div>
         </Section>
 
         {/* Crisis Situations */}
-        <Section title="Krizove situace" icon={AlertTriangle} accentColor="terracotta">
+        <Section title="Krizové situace" icon={AlertTriangle} accentColor="terracotta">
           <WarningBox type="danger">
-            <p className="font-bold text-lg mb-2">Kdyz dite mluvi o sebevrazde/sebeposkozovani</p>
+            <p className="font-bold text-lg mb-2">Když dítě mluví o sebevraždě/sebepoškozování</p>
           </WarningBox>
 
           <div className="grid md:grid-cols-2 gap-4 mb-6">
             <div className="p-4 rounded-xl bg-[#F5E8E8] border border-[#B85C5C]/20">
-              <h4 className="font-display font-semibold text-[#8B4444] mb-3">NEROB:</h4>
+              <h4 className="font-display font-semibold text-[#8B4444] mb-3">NEDĚLEJ:</h4>
               <ul className="space-y-1.5 text-sm text-[#6B3A3A]">
-                <li>• Nehovor "to je hloupost"</li>
-                <li>• Nehovor "mas se dobre, co bys chtel"</li>
+                <li>• Neříkej „to je hloupost"</li>
+                <li>• Neříkej „máš se dobře, co bys chtěl"</li>
                 <li>• Neignoruj to</li>
               </ul>
             </div>
             <div className="p-4 rounded-xl bg-[#EDF5F0] border border-[#5B7B6A]/20">
-              <h4 className="font-display font-semibold text-[#3D5A4A] mb-3">ROB:</h4>
+              <h4 className="font-display font-semibold text-[#3D5A4A] mb-3">DĚLEJ:</h4>
               <ul className="space-y-1.5 text-sm text-[#4A6B5A]">
-                <li>• Zustan pokojny</li>
-                <li>• Rekni: "Dekuji ze jsi mi to povedel. To chtelo odvahu."</li>
-                <li>• Zeptej se primo: "Myslis na to ze by sis ublizil?"</li>
-                <li>• Zustan s nim. Fyzicky pritomny.</li>
+                <li>• Zůstaň pokojný</li>
+                <li>• Řekni: „Děkuji, že jsi mi to pověděl. To chtělo odvahu."</li>
+                <li>• Zeptej se přímo: „Myslíš na to, že by sis ublížil?"</li>
+                <li>• Zůstaň s ním. Fyzicky přítomný.</li>
               </ul>
             </div>
           </div>
 
           <div className="grid gap-3 md:gap-4 sm:grid-cols-2 mb-6">
             <EmergencyCard
-              title="Linka bezpeci"
+              title="Linka bezpečí"
               phone="116 111"
-              description="Maji zkusenosti s digitalni zavislosti a metodiku na praci s kyber sikanou"
+              description="Mají zkušenosti s digitální závislostí a metodiku na práci s kyberšikanou"
               isPrimary={true}
             />
             <EmergencyCard
-              title="Rodicovska linka"
+              title="Rodičovská linka"
               phone="606 021 021"
-              description="Podpora pro rodice v tezkych situacich"
+              description="Podpora pro rodiče v těžkých situacích"
             />
           </div>
 
           <div className="p-5 rounded-xl bg-[#FAF8F5] border border-[#E8E4DE]">
-            <h4 className="font-display font-semibold text-[#2D3436] mb-3">Kdyz zjistis ze komunikuje s neznamym dospelym:</h4>
+            <h4 className="font-display font-semibold text-[#2D3436] mb-3">Když zjistíš, že komunikuje s neznámým dospělým:</h4>
             <ol className="space-y-2 text-sm text-[#4A5568] list-decimal list-inside">
-              <li><strong>Nemazej dukazy</strong> - screenshoty</li>
-              <li><strong>Nekontaktuj toho cloveka</strong></li>
-              <li><strong>Policie</strong> - kyberneticka kriminalita</li>
-              <li><strong>Diteti rekni:</strong> "Neni to tvoje chyba. Jsi obet, ne vinik."</li>
+              <li><strong>Nemaž důkazy</strong> – screenshoty</li>
+              <li><strong>Nekontaktuj toho člověka</strong></li>
+              <li><strong>Policie</strong> – kybernetická kriminalita</li>
+              <li><strong>Dítěti řekni:</strong> „Není to tvoje chyba. Jsi oběť, ne viník."</li>
             </ol>
           </div>
         </Section>
 
         {/* Conclusion */}
-        <Section title="Zaver" icon={Heart} accentColor="sage">
+        <Section title="Závěr" icon={Heart} accentColor="sage">
           <div className="p-6 rounded-xl bg-gradient-to-br from-[#5B7B6A] to-[#3D5A4A] text-white mb-6">
             <p className="font-display font-bold text-xl mb-4">
-              Tvoje prace neni byt kamarad. Tvoje prace je byt rodic.
+              Tvoje práce není být kamarád. Tvoje práce je být rodič.
             </p>
             <p className="text-white/90 mb-4">
-              Kamaradu bude mit tisic. Rodice ma jednoho.
+              Kamarádů bude mít tisíc. Rodiče má jednoho.
             </p>
             <p className="text-[#C9A962] font-medium">
-              Radsi budes nepopularni rodic se zdravym ditetem nez cool rodic s rozbitym.
+              Raději budeš nepopulární rodič se zdravým dítětem než cool rodič s rozbitým.
             </p>
           </div>
 
           <div className="p-5 rounded-xl bg-[#FAF8F5] border border-[#E8E4DE] mb-6">
-            <h4 className="font-display font-semibold text-[#2D3436] mb-3">Jak to zmenit - prakticky:</h4>
+            <h4 className="font-display font-semibold text-[#2D3436] mb-3">Jak to změnit – prakticky:</h4>
             <ul className="space-y-2 text-[#4A5568]">
-              <li><strong>Rano</strong> - Pred telefonem: 5 minut spolu. Kava, caj, ticho, slovo.</li>
-              <li><strong>Cesta</strong> - Zadna sluchatka v aute. Mluvite.</li>
-              <li><strong>Jidlo</strong> - Telefony v jine mistnosti. Pro VSECHNY.</li>
-              <li><strong>Vecer</strong> - 15 minut pred spanim: Co bylo dnes tezke? Co bylo dobre?</li>
-              <li><strong>Tydne</strong> - 1 hodina: Jen vy dva. Bez obrazovek.</li>
+              <li><strong>Ráno</strong> – Před telefonem: 5 minut spolu. Káva, čaj, ticho, slovo.</li>
+              <li><strong>Cesta</strong> – Žádná sluchátka v autě. Mluvíte.</li>
+              <li><strong>Jídlo</strong> – Telefony v jiné místnosti. Pro VŠECHNY.</li>
+              <li><strong>Večer</strong> – 15 minut před spaním: Co bylo dnes těžké? Co bylo dobré?</li>
+              <li><strong>Týdně</strong> – 1 hodina: Jen vy dva. Bez obrazovek.</li>
             </ul>
             <p className="text-[#5B7B6A] font-medium mt-4">
-              Neni to moc. Ale je to vic nez ted.
+              Není to moc. Ale je to víc než teď.
             </p>
           </div>
 
@@ -431,7 +431,7 @@ export default function Seminar1Page() {
           <div className="p-5 rounded-xl bg-white border border-[#E8E4DE]">
             <h4 className="font-display font-semibold text-[#2D3436] mb-3 flex items-center gap-2">
               <Play className="w-5 h-5 text-[#B85C5C]" />
-              Doporucene video na zaver
+              Doporučené video na závěr
             </h4>
             <a
               href="https://www.youtube.com/watch?v=SofNlskgZak"
@@ -463,8 +463,8 @@ export default function Seminar1Page() {
             <Heart className="w-4 h-4 md:w-5 md:h-5 fill-current" />
             <div className="w-6 md:w-8 h-0.5 bg-gradient-to-l from-transparent to-[#C9A962]" />
           </div>
-          <p className="text-[#4A5568] mb-2 text-sm md:text-base">Seminar "AI uz mluvi s nasimi detmi"</p>
-          <p className="text-[#7A9B8A] font-medium text-sm md:text-base">2026 • S laskou pro rodice</p>
+          <p className="text-[#4A5568] mb-2 text-sm md:text-base">Seminář „AI už mluví s našimi dětmi"</p>
+          <p className="text-[#7A9B8A] font-medium text-sm md:text-base">2025 • S láskou pro rodiče</p>
         </div>
       </footer>
     </div>

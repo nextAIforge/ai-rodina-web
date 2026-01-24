@@ -23,7 +23,7 @@ const PromptCard = ({ title, prompt, description }) => {
           }`}
         >
           {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
-          {copied ? 'Zkopirováno!' : 'Kopírovat'}
+          {copied ? 'Zkopírováno!' : 'Kopírovat'}
         </button>
       </div>
       {description && <p className="text-[#4A5568] mb-4 leading-relaxed text-sm md:text-base">{description}</p>}

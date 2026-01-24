@@ -23,13 +23,13 @@ export default function Seminar2Page() {
           <BackButton />
           <div className={`transition-all duration-700 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white/90 text-xs md:text-sm font-medium mb-4">
-              Seminar 2
+              Seminář 2
             </div>
             <h1 className="font-display text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
-              AI jako nastroj, ne nahrada
+              AI jako nástroj, ne náhrada
             </h1>
             <p className="text-base md:text-xl text-white/80 max-w-2xl leading-relaxed">
-              Prakticky workshop - jak pouzivat AI spravne a jak resit problemy kdyz uz nastaly
+              Praktický workshop – jak používat AI správně a jak řešit problémy, když už nastaly
             </p>
           </div>
         </div>
@@ -46,284 +46,284 @@ export default function Seminar2Page() {
         {/* Intro */}
         <div className="card p-5 md:p-8 mb-6">
           <p className="text-[#4A5568] text-base md:text-lg leading-relaxed">
-            V prvnim seminari jsme mluvili o rizicich. Ted ukazeme, jak AI pouzivat <strong>SPRAVNE</strong> - jako nastroj, ktery vam <strong>POMAHA</strong> byt lepsimi rodici.
+            V prvním semináři jsme mluvili o rizicích. Teď ukážeme, jak AI používat <strong>SPRÁVNĚ</strong> – jako nástroj, který vám <strong>POMÁHÁ</strong> být lepšími rodiči.
           </p>
         </div>
 
         {/* BLOK 1: Superprompty */}
-        <Section title="Blok 1: Jak se spravne ptat AI" icon={MessageCircle} defaultOpen={true} accentColor="sage">
+        <Section title="Blok 1: Jak se správně ptát AI" icon={MessageCircle} defaultOpen={true} accentColor="sage">
 
           <div className="mb-6 p-5 rounded-xl bg-[#FAF8F5] border border-[#E8E4DE]">
-            <h4 className="font-display font-semibold text-[#2D3436] mb-4">Pravidlo #1: Jak se ptat</h4>
+            <h4 className="font-display font-semibold text-[#2D3436] mb-4">Pravidlo #1: Jak se ptát</h4>
 
             <div className="grid md:grid-cols-2 gap-4 mb-4">
               <div className="p-4 rounded-lg bg-[#F5E8E8] border border-[#B85C5C]/20">
                 <p className="text-[#8B4444] font-medium mb-2 flex items-center gap-2">
-                  <XCircle className="w-4 h-4" /> Spatny prompt
+                  <XCircle className="w-4 h-4" /> Špatný prompt
                 </p>
-                <p className="text-sm text-[#6B3A3A] italic">"Povez mi neco o zlomcich"</p>
+                <p className="text-sm text-[#6B3A3A] italic">„Pověz mi něco o zlomcích"</p>
               </div>
               <div className="p-4 rounded-lg bg-[#EDF5F0] border border-[#5B7B6A]/20">
                 <p className="text-[#3D5A4A] font-medium mb-2 flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4" /> Dobry prompt
+                  <CheckCircle className="w-4 h-4" /> Dobrý prompt
                 </p>
-                <p className="text-sm text-[#4A6B5A] italic">"Muj syn (9 let) nechape zlomky. Nevie si predstavit co je 3/4. Vysvetli mi to pomoci pizzy - neco co mu mozu fyzicky ukazat."</p>
+                <p className="text-sm text-[#4A6B5A] italic">„Můj syn (9 let) nechápe zlomky. Neumí si představit, co je 3/4. Vysvětli mi to pomocí pizzy – něco, co mu můžu fyzicky ukázat."</p>
               </div>
             </div>
 
             <p className="text-[#4A5568] text-sm">
-              <strong>Rozdil:</strong> Vek ditete, konkretni problem, kontext, co chces (pochopit vs hotova odpoved)
+              <strong>Rozdíl:</strong> Věk dítěte, konkrétní problém, kontext, co chceš (pochopit vs hotová odpověď)
             </p>
           </div>
 
           <div className="mb-6 p-5 rounded-xl bg-gradient-to-br from-[#5B7B6A] to-[#3D5A4A] text-white">
-            <h4 className="font-display font-bold text-lg mb-4">Anatomie dobreho promptu:</h4>
+            <h4 className="font-display font-bold text-lg mb-4">Anatomie dobrého promptu:</h4>
             <ol className="space-y-2 text-white/90">
-              <li><strong>1. KDO:</strong> Muj syn/dcera [vek]</li>
-              <li><strong>2. CO:</strong> ma problem s [konkretne]</li>
+              <li><strong>1. KDO:</strong> Můj syn/dcera [věk]</li>
+              <li><strong>2. CO:</strong> má problém s [konkrétně]</li>
               <li><strong>3. KONTEXT:</strong> situace je [detaily]</li>
-              <li><strong>4. CEHO SE BOJIM:</strong> [tvoje obavy]</li>
-              <li><strong>5. CO CHCI:</strong> pomoz mi [konkretni pozadavek]</li>
-              <li><strong>6. CO NECHCI:</strong> nedavej mi [co nechces]</li>
+              <li><strong>4. ČEHO SE BOJÍM:</strong> [tvoje obavy]</li>
+              <li><strong>5. CO CHCI:</strong> pomoz mi [konkrétní požadavek]</li>
+              <li><strong>6. CO NECHCI:</strong> nedávej mi [co nechceš]</li>
             </ol>
           </div>
 
           <PromptCard
-            title="Superprompt #1: Tezky rozhovor (rozvod)"
-            description="Kdyz musis diteti rict o rozvodu"
-            prompt={`Muj syn ma 8 let. S manzelkou se rozvedeme. Musim mu to rict tento vikend.
+            title="Superprompt #1: Těžký rozhovor (rozvod)"
+            description="Když musíš dítěti říct o rozvodu"
+            prompt={`Můj syn má 8 let. S manželkou se rozvedeme. Musím mu to říct tento víkend.
 
-On ma velmi blizky vztah s obema rodici. Bojim se ze bude mit pocit ze je to jeho chyba.
-Bojim se ze se uzavre.
+On má velmi blízký vztah s oběma rodiči. Bojím se že bude mít pocit že je to jeho chyba.
+Bojím se že se uzavře.
 
 Pomoz mi:
-1. Jak zacit ten rozhovor
-2. Presne vety ktere muzu pouzit
-3. Co NERIKT
-4. Jak reagovat kdyz se rozpláce
-5. Jak reagovat kdyz se nahneva
-6. Co delat nasledujici dny
+1. Jak začít ten rozhovor
+2. Přesné věty které můžu použít
+3. Co NEŘÍKAT
+4. Jak reagovat když se rozpláče
+5. Jak reagovat když se nahněvá
+6. Co dělat následující dny
 
-Chci byt uprimny ale nechci ho zahltit detaily ktere nepotrebuje vedet.`}
+Chci být upřímný ale nechci ho zahltit detaily které nepotřebuje vědět.`}
           />
 
           <PromptCard
-            title="Superprompt #2: Vysvetleni smrti"
-            description="Kdyz zemrela babicka a dite se pta"
-            prompt={`Dcera (6 let) se pta proc babicka zemrela.
-Babicka zemrela na rakovinu pred 3 dny.
-Dcera ji velmi milovala, navstevovali jsme ji kazdy tyden.
+            title="Superprompt #2: Vysvětlení smrti"
+            description="Když zemřela babička a dítě se ptá"
+            prompt={`Dcera (6 let) se ptá proč babička zemřela.
+Babička zemřela na rakovinu před 3 dny.
+Dcera ji velmi milovala, navštěvovali jsme ji každý týden.
 
-Jsme krestanska rodina. Verime v nebe.
-Ale dcera se boji - pta se jestli ja taky zemru.
+Jsme křesťanská rodina. Věříme v nebe.
+Ale dcera se bojí - ptá se jestli já taky zemřu.
 
-Potrebuji:
-1. Jednoduche vysvetleni smrti pro 6letou
-2. Jak propojit s nasi virou (bez klise)
-3. Co rict na "ty taky zemres?"
-4. Konkretni vety - copy-paste
-5. Co NERIKT (napr. "zaspala" - boji se pak spat)`}
+Potřebuji:
+1. Jednoduché vysvětlení smrti pro 6letou
+2. Jak propojit s naší vírou (bez klišé)
+3. Co říct na "ty taky zemřeš?"
+4. Konkrétní věty - copy-paste
+5. Co NEŘÍKAT (např. "zaspala" - bojí se pak spát)`}
           />
 
           <PromptCard
-            title="Superprompt #3: Digitalni hranice"
-            description="Kdyz dite chce TikTok a vsichni ho maji"
+            title="Superprompt #3: Digitální hranice"
+            description="Když dítě chce TikTok a všichni ho mají"
             prompt={`Syn (12 let) chce TikTok.
-Argumentuje ze vsichni spoluzaci ho maji a on je "outsider".
+Argumentuje že všichni spolužáci ho mají a on je "outsider".
 
-Nechci mu to jen zakazat bez vysvetleni.
-Ale taky nechci povolit neco co povazuji za skodlive.
+Nechci mu to jen zakázat bez vysvětlení.
+Ale taky nechci povolit něco co považuji za škodlivé.
 
-Potrebuji:
-1. Argumenty PROC NE - ktere 12lety pochopi
-2. Jak reagovat na "vsichni maji"
-3. Alternativy ktere muzu nabidnout
-4. Jak ho zapojit do rozhodnuti (aby necitil ze je to diktat)
-5. Konkretni dialog - co reknu, co mozna rekne on, co odpovim
+Potřebuji:
+1. Argumenty PROČ NE - které 12letý pochopí
+2. Jak reagovat na "všichni mají"
+3. Alternativy které můžu nabídnout
+4. Jak ho zapojit do rozhodnutí (aby necítil že je to diktát)
+5. Konkrétní dialog - co řeknu, co možná řekne on, co odpovím
 
-Chci zachovat vztah, ne vyhrat hadku.`}
+Chci zachovat vztah, ne vyhrát hádku.`}
           />
 
           <PromptCard
-            title="Superprompt #4: Kdyz dite klame"
-            description="Prichytil jsi dite pri klamstvi"
-            prompt={`Dcera (14) mi rekla ze jde k spoluzacce ucit se.
-Zjistil jsem ze byla s klukem o kterem nic nevim.
+            title="Superprompt #4: Když dítě klame"
+            description="Přichytil jsi dítě při klamství"
+            prompt={`Dcera (14) mi řekla že jde ke spolužačce učit se.
+Zjistil jsem že byla s klukem o kterém nic nevím.
 
-Jsem nahnevany. Ale nechci ji odehnat.
+Jsem nahněvaný. Ale nechci ji odehnat.
 
-Potrebuji vyresit:
-1. Klamstvi
+Potřebuji vyřešit:
+1. Klamství
 2. Zjistit kdo je ten kluk
-3. Neztratit jeji duveru
+3. Neztratit její důvěru
 
-Jak vest ten rozhovor aby:
-- Priznala pravdu
-- Pochopila proc je klamstvi problem
-- Vedela ze muze prijit priste s pravdou
-- Byly jasne dusledky ale ne devastace vztahu`}
+Jak vést ten rozhovor aby:
+- Přiznala pravdu
+- Pochopila proč je klamství problém
+- Věděla že může přijít příště s pravdou
+- Byly jasné důsledky ale ne devastace vztahu`}
           />
 
           <PromptCard
-            title="Superprompt #5: Modlitba s detmi"
-            description="Chces se modlit s detmi ale nevis jak zacit"
-            prompt={`Chci zacit se modlit s detmi pred spanim.
-Mam syna (7) a dceru (10).
-Doted jsme se nemodlili pravidelne - jen obcas, formalne.
+            title="Superprompt #5: Modlitba s dětmi"
+            description="Chceš se modlit s dětmi ale nevíš jak začít"
+            prompt={`Chci začít se modlit s dětmi před spaním.
+Mám syna (7) a dceru (10).
+Doposud jsme se nemodlili pravidelně - jen občas, formálně.
 
-Problem: Kdyz se modlim, deti se nudi nebo vyrusují.
-Chci aby modlitba byla autenticka, ne povinnost.
+Problém: Když se modlím, děti se nudí nebo vyrušují.
+Chci aby modlitba byla autentická, ne povinnost.
 
 Dej mi:
-1. Jednoduchou strukturu vecerni modlitby (max 5 minut)
-2. Jak zapojit deti aktivne
-3. Priklady modliteb ktere muzu pouzit
-4. Jak reagovat kdyz nechteji
-5. Jak to udelat zajimave bez toho aby to byla "show"`}
+1. Jednoduchou strukturu večerní modlitby (max 5 minut)
+2. Jak zapojit děti aktivně
+3. Příklady modliteb které můžu použít
+4. Jak reagovat když nechtějí
+5. Jak to udělat zajímavé bez toho aby to byla "show"`}
           />
 
           <PromptCard
-            title="Superprompt #6: Konflikty sourozencu"
-            description="Deti se neustale hadaji"
-            prompt={`Mam dva syny - 8 a 11 let.
-Neustale se hadaji. O hracky, o televizi, o pozornost.
-Starsi ubližuje mladsimu (slovne, obcas fyzicky).
-Mladsi provokuje a potom place.
+            title="Superprompt #6: Konflikty sourozenců"
+            description="Děti se neustále hádají"
+            prompt={`Mám dva syny - 8 a 11 let.
+Neustále se hádají. O hračky, o televizi, o pozornost.
+Starší ubližuje mladšímu (slovně, občas fyzicky).
+Mladší provokuje a potom pláče.
 
-Jsem vycerpany/a. Kricim na ne. Potom se citim spatne.
+Jsem vyčerpaný/á. Křičím na ně. Potom se cítím špatně.
 
-Potrebuji:
-1. Jak zastavit hadku v momente (konkretni kroky)
-2. Jak resit kdyz starsi ubližuje mladsimu
-3. Jak resit provokovani mladsim
-4. Dlouhodobe reseni - ne jen hasit pozary
-5. Jak nebyt soudce ale pomoct jim resit to sami`}
+Potřebuji:
+1. Jak zastavit hádku v momentě (konkrétní kroky)
+2. Jak řešit když starší ubližuje mladšímu
+3. Jak řešit provokování mladším
+4. Dlouhodobé řešení - ne jen hasit požáry
+5. Jak nebýt soudce ale pomoct jim řešit to sami`}
           />
 
           <div className="mt-6 p-5 rounded-xl bg-[#FDF6E3] border border-[#C9A044]/20">
-            <h4 className="font-display font-semibold text-[#8B6B22] mb-3">Pravidla pro praci s AI:</h4>
+            <h4 className="font-display font-semibold text-[#8B6B22] mb-3">Pravidla pro práci s AI:</h4>
             <ul className="space-y-2 text-sm text-[#6B5522]">
-              <li><strong>1. AI NENI TERAPEUT</strong> - Kdyz je problem vazny, AI pomuze pripravit se na rozhovor, ale POTREBUJES odbornika.</li>
-              <li><strong>2. AI NEZNA TVOJE DITE</strong> - Ty ho znas. AI dava vseobecne rady. Ty je filtrujes pres znalost sveho ditete.</li>
-              <li><strong>3. AI SE MUZE MYLIT</strong> - Kriticke mysleni. Pokud ti neco nesedi, never tomu jen proto ze to rekla AI.</li>
-              <li><strong>4. AI JE START, NE CIL</strong> - AI ti pomuze pripravit se. Ale rozhovor vedes TY. Objeti davas TY. Pritomny jsi TY.</li>
+              <li><strong>1. AI NENÍ TERAPEUT</strong> - Když je problém vážný, AI pomůže připravit se na rozhovor, ale POTŘEBUJEŠ odborníka.</li>
+              <li><strong>2. AI NEZNÁ TVOJE DÍTĚ</strong> - Ty ho znáš. AI dává všeobecné rady. Ty je filtruješ přes znalost svého dítěte.</li>
+              <li><strong>3. AI SE MŮŽE MÝLIT</strong> - Kritické myšlení. Pokud ti něco nesedí, nevěř tomu jen proto že to řekla AI.</li>
+              <li><strong>4. AI JE START, NE CÍL</strong> - AI ti pomůže připravit se. Ale rozhovor vedeš TY. Objetí dáváš TY. Přítomný jsi TY.</li>
             </ul>
           </div>
         </Section>
 
         {/* BLOK 2: Skolni situace */}
-        <Section title="Blok 2: Skola a uceni" icon={BookOpen} accentColor="gold">
+        <Section title="Blok 2: Škola a učení" icon={BookOpen} accentColor="gold">
 
           <WarningBox type="warning">
-            <p className="font-semibold mb-2">Realita podvadeni:</p>
-            <p className="text-sm">89% studentu priznava ze pouzili AI na ukoly. 53% ucitelu nevie rozpoznat AI-generovany text. "Detektory AI" maji 60% presnost (horsi nez mince).</p>
+            <p className="font-semibold mb-2">Realita podvádění:</p>
+            <p className="text-sm">89% studentů přiznává že použili AI na úkoly. 53% učitelů neví rozpoznat AI-generovaný text. "Detektory AI" mají 60% přesnost (horší než mince).</p>
           </WarningBox>
 
           <TableCard
-            title="Dva typy pouziti AI ve skole"
-            headers={['Podvadeni', 'Uceni']}
+            title="Dva typy použití AI ve škole"
+            headers={['Podvádění', 'Učení']}
             rows={[
-              ['"Napis mi esej o 2. svetove valce"', '"Vysvetli mi priciny 2. svetove valky jednoduse"'],
-              ['"Vyres tuto rovnici"', '"Ukaz mi postup reseni teto rovnice krok za krokem"'],
-              ['"Napis mi referat"', '"Jaka by mela byt struktura referatu o tomto tematu?"'],
-              ['AI dela praci ZA dite', 'AI pomaha diteti POCHOPIT'],
+              ['"Napiš mi esej o 2. světové válce"', '"Vysvětli mi příčiny 2. světové války jednoduše"'],
+              ['"Vyřeš tuto rovnici"', '"Ukaž mi postup řešení této rovnice krok za krokem"'],
+              ['"Napiš mi referát"', '"Jaká by měla být struktura referátu o tomto tématu?"'],
+              ['AI dělá práci ZA dítě', 'AI pomáhá dítěti POCHOPIT'],
             ]}
           />
 
           <div className="my-6 p-5 rounded-xl bg-gradient-to-br from-[#5B7B6A] to-[#3D5A4A] text-white">
-            <p className="font-display font-bold text-lg mb-2">Pravidlo pro deti:</p>
-            <p className="text-white/90">"AI je TUTOR, ne AUTOR. Muzes se ho ptat. Nemuze za tebe psat."</p>
+            <p className="font-display font-bold text-lg mb-2">Pravidlo pro děti:</p>
+            <p className="text-white/90">"AI je TUTOR, ne AUTOR. Můžeš se ho ptát. Nemůže za tebe psát."</p>
           </div>
 
           <PromptCard
-            title="Prompt pro domaci ukoly (naucte deti)"
-            description="Jak se spravne ptat na pomoc s ucenim"
-            prompt={`Jsem zak [rocnik]. Mam ukol: [zadani].
+            title="Prompt pro domácí úkoly (naučte děti)"
+            description="Jak se správně ptát na pomoc s učením"
+            prompt={`Jsem žák [ročník]. Mám úkol: [zadání].
 
-NECHCI aby jsi to napsal za mne.
-CHCI aby jsi mi pomohl pochopit.
+NECHCI abys to napsal za mě.
+CHCI abys mi pomohl pochopit.
 
-1. Vysvetli mi zakladni princip
-2. Dej mi priklad
-3. Potom se me zeptej otazku jestli jsem pochopil
-4. Kdyz odpovim, rekni mi jestli je to spravne a proc`}
+1. Vysvětli mi základní princip
+2. Dej mi příklad
+3. Potom se mě zeptej otázku jestli jsem pochopil
+4. Když odpovím, řekni mi jestli je to správné a proč`}
           />
 
           <TableCard
-            title="Jak rozpoznat ze dite podvadi"
-            headers={['Signal', 'Co to muze znamenat']}
+            title="Jak rozpoznat že dítě podvádí"
+            headers={['Signál', 'Co to může znamenat']}
             rows={[
-              ['Nahle zlepseni pisemneho projevu', 'AI psalo'],
-              ['Nevie vysvetlit co napsalo', 'Nerozumi vlastni uloze'],
-              ['Pouziva slova ktera bezne nepouziva', 'Skopirovane'],
-              ['Uloha je "prilis dokonala"', 'Chybi osobni styl'],
-              ['Nervozita kdyz se ptas na detaily', 'Vi ze podvedl'],
+              ['Náhlé zlepšení písemného projevu', 'AI psalo'],
+              ['Neví vysvětlit co napsalo', 'Nerozumí vlastní úloze'],
+              ['Používá slova která běžně nepoužívá', 'Zkopírované'],
+              ['Úloha je "příliš dokonalá"', 'Chybí osobní styl'],
+              ['Nervozita když se ptáš na detaily', 'Ví že podvedl'],
             ]}
           />
 
           <div className="grid md:grid-cols-2 gap-4 my-6">
             <div className="p-4 rounded-xl bg-[#F5E8E8] border border-[#B85C5C]/20">
-              <h4 className="font-display font-semibold text-[#8B4444] mb-3">Co NEDELAT kdyz prichytis:</h4>
+              <h4 className="font-display font-semibold text-[#8B4444] mb-3">Co NEDĚLAT když přichytíš:</h4>
               <ul className="space-y-1.5 text-sm text-[#6B3A3A]">
-                <li>• Okamzity krik</li>
-                <li>• "Jsi podvodnik"</li>
+                <li>• Okamžitý křik</li>
+                <li>• "Jsi podvodník"</li>
                 <li>• Trest bez rozhovoru</li>
               </ul>
             </div>
             <div className="p-4 rounded-xl bg-[#EDF5F0] border border-[#5B7B6A]/20">
-              <h4 className="font-display font-semibold text-[#3D5A4A] mb-3">Co DELAT:</h4>
+              <h4 className="font-display font-semibold text-[#3D5A4A] mb-3">Co DĚLAT:</h4>
               <ul className="space-y-1.5 text-sm text-[#4A6B5A]">
-                <li>• Zeptej se otevrene: "Tato uloha vypada jinak. Povezes mi jak jsi to delal?"</li>
-                <li>• Vysvetli PROC je to problem</li>
-                <li>• Ukaz spravny zpusob</li>
+                <li>• Zeptej se otevřeně: "Tato úloha vypadá jinak. Pověz mi jak jsi to dělal?"</li>
+                <li>• Vysvětli PROČ je to problém</li>
+                <li>• Ukaž správný způsob</li>
               </ul>
             </div>
           </div>
 
           <PromptCard
-            title="Prompt pro rodice - pomoc s ulohou"
-            description="Kdyz sam nevis jak neco vysvetlit"
-            prompt={`Muj syn (10 let) ma domaci ulohu z matematiky: [zadani].
-Ja sam nevim jak to vysvetlit jednoduse.
+            title="Prompt pro rodiče - pomoc s úlohou"
+            description="Když sám nevíš jak něco vysvětlit"
+            prompt={`Můj syn (10 let) má domácí úlohu z matematiky: [zadání].
+Já sám nevím jak to vysvětlit jednoduše.
 
-Potrebuji:
-1. Vysvetleni pro me (dospeleho) - co je princip
-2. Jak to vysvetlit 10letemu - jednoduchy jazyk
-3. Prakticky priklad ze zivota
-4. Jake chyby deti casto delaji
-5. Jak overit ze pochopil
+Potřebuji:
+1. Vysvětlení pro mě (dospělého) - co je princip
+2. Jak to vysvětlit 10letému - jednoduchý jazyk
+3. Praktický příklad ze života
+4. Jaké chyby děti často dělají
+5. Jak ověřit že pochopil
 
-NECHCI hotove reseni. Chci vedet jak ho naucit.`}
+NECHCI hotové řešení. Chci vědět jak ho naučit.`}
           />
         </Section>
 
         {/* BLOK 3: Emocni situace */}
-        <Section title="Blok 3: Emocni situace" icon={Heart} accentColor="terracotta">
+        <Section title="Blok 3: Emoční situace" icon={Heart} accentColor="terracotta">
 
           <InfoBox type="info">
-            <strong>Klicovy princip:</strong> AI ti pomuze PRIPRAVIT se na rozhovor. Ale rozhovor vedes TY. Objeti dava TY. Pritomny je TY.
+            <strong>Klíčový princip:</strong> AI ti pomůže PŘIPRAVIT se na rozhovor. Ale rozhovor vedeš TY. Objetí dává TY. Přítomný je TY.
           </InfoBox>
 
           <div className="space-y-6">
-            {/* Situace 1: Hnev */}
+            {/* Situace 1: Hněv */}
             <div className="p-5 rounded-xl bg-white border border-[#E8E4DE]">
               <h4 className="font-display font-semibold text-[#2D3436] mb-4 flex items-center gap-2">
                 <span className="w-8 h-8 rounded-lg bg-[#C4785A]/10 flex items-center justify-center text-[#C4785A]">1</span>
-                Dite je nahnevane
+                Dítě je nahněvané
               </h4>
 
               <TableCard
-                headers={['V MOMENTE', 'POTOM', 'DLOUHODOBE']}
+                headers={['V MOMENTĚ', 'POTOM', 'DLOUHODOBĚ']}
                 rows={[
-                  ['Zustan pokojny (ty)', '"Vidim ze jsi byl velmi nahnevany"', 'Identifikuj triggery'],
-                  ['Mene slov, ne prednasky', '"Co se stalo tesne predtim?"', 'Nauc pomenovat emoce'],
-                  ['"Vidim ze jsi nahnevany. Jsem tu."', '"Co muzeme udelat priste?"', 'Pravidelny rozhovor o emocich'],
+                  ['Zůstaň pokojný (ty)', '"Vidím že jsi byl velmi nahněvaný"', 'Identifikuj triggery'],
+                  ['Méně slov, ne přednášky', '"Co se stalo těsně předtím?"', 'Nauč pojmenovat emoce'],
+                  ['"Vidím že jsi nahněvaný. Jsem tu."', '"Co můžeme udělat příště?"', 'Pravidelný rozhovor o emocích'],
                 ]}
               />
 
               <div className="mt-4 p-3 rounded-lg bg-[#F5E8E8]">
-                <p className="text-[#8B4444] text-sm font-medium mb-2">Co NERIKT:</p>
-                <p className="text-[#6B3A3A] text-sm">"Prestan!" (nevie prestat) | "Co to ma byt?!" (hanba) | "Chovej se jako velky!" (negace emoce)</p>
+                <p className="text-[#8B4444] text-sm font-medium mb-2">Co NEŘÍKAT:</p>
+                <p className="text-[#6B3A3A] text-sm">"Přestaň!" (neví přestat) | "Co to má být?!" (hanba) | "Chovej se jako velký!" (negace emoce)</p>
               </div>
             </div>
 
@@ -331,25 +331,25 @@ NECHCI hotove reseni. Chci vedet jak ho naucit.`}
             <div className="p-5 rounded-xl bg-white border border-[#E8E4DE]">
               <h4 className="font-display font-semibold text-[#2D3436] mb-4 flex items-center gap-2">
                 <span className="w-8 h-8 rounded-lg bg-[#5B7B6A]/10 flex items-center justify-center text-[#5B7B6A]">2</span>
-                Dite je smutne
+                Dítě je smutné
               </h4>
 
               <div className="grid md:grid-cols-2 gap-4 mb-4">
                 <div className="p-3 rounded-lg bg-[#F5E8E8]">
                   <p className="text-[#8B4444] text-sm font-medium mb-2">Ne:</p>
-                  <p className="text-[#6B3A3A] text-sm">"Co se deje? Proc jsi smutny? Povez mi!"</p>
+                  <p className="text-[#6B3A3A] text-sm">"Co se děje? Proč jsi smutný? Pověz mi!"</p>
                 </div>
                 <div className="p-3 rounded-lg bg-[#EDF5F0]">
                   <p className="text-[#3D5A4A] text-sm font-medium mb-2">Ano:</p>
-                  <p className="text-[#4A6B5A] text-sm">"Vsiml jsem si ze jsi posledni dny tisi. Nemusis mi nic rikat. Ale jsem tu. Kdykoliv."</p>
+                  <p className="text-[#4A6B5A] text-sm">"Všiml jsem si že jsi poslední dny tišší. Nemusíš mi nic říkat. Ale jsem tu. Kdykoliv."</p>
                 </div>
               </div>
 
-              <p className="text-[#4A5568] text-sm mb-3"><strong>Otazky ktere otviraji:</strong></p>
+              <p className="text-[#4A5568] text-sm mb-3"><strong>Otázky které otevírají:</strong></p>
               <ul className="space-y-1 text-sm text-[#4A5568]">
-                <li>• "Jak se ti dnes ve skole darilo? Co bylo nejlepsi? Co nejhorsi?"</li>
-                <li>• "Je neco co ti jde hlavou v noci pred spanim?"</li>
-                <li>• "Kdyby jsi mel jedno prani - co by to bylo?"</li>
+                <li>• "Jak se ti dnes ve škole dařilo? Co bylo nejlepší? Co nejhorší?"</li>
+                <li>• "Je něco co ti jde hlavou v noci před spaním?"</li>
+                <li>• "Kdybys měl jedno přání - co by to bylo?"</li>
               </ul>
             </div>
 
@@ -357,20 +357,20 @@ NECHCI hotove reseni. Chci vedet jak ho naucit.`}
             <div className="p-5 rounded-xl bg-white border border-[#E8E4DE]">
               <h4 className="font-display font-semibold text-[#2D3436] mb-4 flex items-center gap-2">
                 <span className="w-8 h-8 rounded-lg bg-[#C9A962]/15 flex items-center justify-center text-[#9A7B3C]">3</span>
-                Dite je osamele
+                Dítě je osamělé
               </h4>
 
               <WarningBox type="danger">
-                <p className="text-sm">Pokud je diteti snadneji mluvit s AI nez s lidmi - mas problem. Ale ne dite. Problem je ze lide jsou tezsi nez AI. A dite nikdo nenaucil jak.</p>
+                <p className="text-sm">Pokud je dítěti snadněji mluvit s AI než s lidmi - máš problém. Ale ne dítě. Problém je že lidé jsou těžší než AI. A dítě nikdo nenaučil jak.</p>
               </WarningBox>
 
-              <p className="text-[#4A5568] text-sm mb-3"><strong>Reseni NENI:</strong> Zakazat telefon | "Jdi si hrat ven" | "Co je s tebou?"</p>
+              <p className="text-[#4A5568] text-sm mb-3"><strong>Řešení NENÍ:</strong> Zakázat telefon | "Jdi si hrát ven" | "Co je s tebou?"</p>
 
-              <p className="text-[#4A5568] text-sm mb-2"><strong>Reseni JE:</strong></p>
+              <p className="text-[#4A5568] text-sm mb-2"><strong>Řešení JE:</strong></p>
               <ul className="space-y-1 text-sm text-[#4A5568]">
-                <li>• <strong>Prostredi kde MUSI interagovat:</strong> Krouzky, sport, tabory - ne online, fyzicky</li>
-                <li>• <strong>Nauc zrucnosti:</strong> Jak zacit rozhovor, jak reagovat kdyz nevi co rict</li>
-                <li>• <strong>Tvoje pritomnost:</strong> Ty bud ten s kym je snadne byt</li>
+                <li>• <strong>Prostředí kde MUSÍ interagovat:</strong> Kroužky, sport, tábory - ne online, fyzicky</li>
+                <li>• <strong>Nauč zručnosti:</strong> Jak začít rozhovor, jak reagovat když neví co říct</li>
+                <li>• <strong>Tvoje přítomnost:</strong> Ty buď ten s kým je snadné být</li>
               </ul>
             </div>
 
@@ -378,25 +378,25 @@ NECHCI hotove reseni. Chci vedet jak ho naucit.`}
             <div className="p-5 rounded-xl bg-white border border-[#E8E4DE]">
               <h4 className="font-display font-semibold text-[#2D3436] mb-4 flex items-center gap-2">
                 <span className="w-8 h-8 rounded-lg bg-[#C4785A]/10 flex items-center justify-center text-[#C4785A]">4</span>
-                Dite se boji (spat samo, tmy...)
+                Dítě se bojí (spát samo, tmy...)
               </h4>
 
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="p-3 rounded-lg bg-[#F5E8E8]">
                   <p className="text-[#8B4444] text-sm font-medium mb-2">Co NEFUNGUJE:</p>
                   <ul className="text-[#6B3A3A] text-sm space-y-1">
-                    <li>• "Neboj se, prisery neexistuji"</li>
-                    <li>• "Jsi uz velky/a"</li>
-                    <li>• "Ostatni deti se neboji"</li>
+                    <li>• "Neboj se, příšery neexistují"</li>
+                    <li>• "Jsi už velký/á"</li>
+                    <li>• "Ostatní děti se nebojí"</li>
                   </ul>
                 </div>
                 <div className="p-3 rounded-lg bg-[#EDF5F0]">
                   <p className="text-[#3D5A4A] text-sm font-medium mb-2">Co FUNGUJE:</p>
                   <ul className="text-[#4A6B5A] text-sm space-y-1">
-                    <li>• Uznej strach: "Vidim ze se bojis. To je v poradku."</li>
+                    <li>• Uznej strach: "Vidím že se bojíš. To je v pořádku."</li>
                     <li>• Dej kontrolu: "Co by ti pomohlo?"</li>
-                    <li>• Ritual: Stejny kazdy vecer</li>
-                    <li>• Modlitba: "Boze, chran dceru kdyz spi."</li>
+                    <li>• Rituál: Stejný každý večer</li>
+                    <li>• Modlitba: "Bože, chraň dceru když spí."</li>
                   </ul>
                 </div>
               </div>
@@ -406,219 +406,219 @@ NECHCI hotove reseni. Chci vedet jak ho naucit.`}
             <div className="p-5 rounded-xl bg-white border border-[#E8E4DE]">
               <h4 className="font-display font-semibold text-[#2D3436] mb-4 flex items-center gap-2">
                 <span className="w-8 h-8 rounded-lg bg-[#B85C5C]/10 flex items-center justify-center text-[#B85C5C]">5</span>
-                Dite videlo neco online co ho traumatizovalo
+                Dítě vidělo něco online co ho traumatizovalo
               </h4>
 
-              <p className="text-[#4A5568] text-sm mb-3"><strong>Spravna reakce:</strong></p>
+              <p className="text-[#4A5568] text-sm mb-3"><strong>Správná reakce:</strong></p>
               <ul className="space-y-2 text-sm text-[#4A5568]">
-                <li>• "Dekuji ze jsi mi to povedel." (ne "Co jsi delal na internetu?!")</li>
-                <li>• "Neni to tvoje chyba." (casto najdou nahodou)</li>
-                <li>• "Chces mi povedzt co jsi videl?" (bez tlaku)</li>
-                <li>• "Nekteré veci na internetu nejsou pro deti. Ne proto ze jsi spatny, ale proto ze tvuj mozek neni pripraven."</li>
-                <li>• "Kdyz uvidis neco co ti je neprijemne, vzdy prid za mnou. Nebudu se hnevat. Nikdy."</li>
+                <li>• "Děkuji že jsi mi to pověděl." (ne "Co jsi dělal na internetu?!")</li>
+                <li>• "Není to tvoje chyba." (často najdou náhodou)</li>
+                <li>• "Chceš mi povědět co jsi viděl?" (bez tlaku)</li>
+                <li>• "Některé věci na internetu nejsou pro děti. Ne proto že jsi špatný, ale proto že tvůj mozek není připraven."</li>
+                <li>• "Když uvidíš něco co ti je nepříjemné, vždy přijď za mnou. Nebudu se hněvat. Nikdy."</li>
               </ul>
             </div>
           </div>
         </Section>
 
         {/* BLOK 4: Rodinna zmluva */}
-        <Section title="Blok 4: Rodinna digitalni dohoda" icon={FileText} accentColor="gold">
+        <Section title="Blok 4: Rodinná digitální dohoda" icon={FileText} accentColor="gold">
 
           <TableCard
             headers={['Pravidla', 'Dohoda']}
             rows={[
-              ['Rodic diktuje', 'Rodina se dohodne'],
-              ['Dite musi poslouchat', 'Dite se zavazuje'],
-              ['Jednostranna', 'Oboustranna'],
-              ['Muzu zmenit kdykoliv', 'Menime spolecne'],
-              ['Plati pro dite', 'Plati pro VSECHNY'],
+              ['Rodič diktuje', 'Rodina se dohodne'],
+              ['Dítě musí poslouchat', 'Dítě se zavazuje'],
+              ['Jednostranná', 'Oboustranná'],
+              ['Můžu změnit kdykoliv', 'Měníme společně'],
+              ['Platí pro dítě', 'Platí pro VŠECHNY'],
             ]}
           />
 
           <InfoBox type="warning">
-            Pokud telefon u jidla je zakazany pro dite ale ne pro tebe - neni to pravidlo, je to pokrytectvi.
+            Pokud telefon u jídla je zakázaný pro dítě ale ne pro tebe - není to pravidlo, je to pokrytectví.
           </InfoBox>
 
           <div className="my-6 p-5 rounded-xl bg-[#FAF8F5] border-2 border-dashed border-[#E8E4DE]">
-            <h4 className="font-display font-bold text-[#2D3436] text-lg mb-4 text-center">SABLONA RODINNE DIGITALNI DOHODY</h4>
+            <h4 className="font-display font-bold text-[#2D3436] text-lg mb-4 text-center">ŠABLONA RODINNÉ DIGITÁLNÍ DOHODY</h4>
 
             <div className="space-y-4 text-sm">
               <div className="p-4 rounded-lg bg-white border border-[#E8E4DE]">
-                <p className="font-semibold text-[#2D3436] mb-2">CAST 1: Pravidla pro VSECHNY (i rodice)</p>
+                <p className="font-semibold text-[#2D3436] mb-2">ČÁST 1: Pravidla pro VŠECHNY (i rodiče)</p>
                 <ul className="text-[#4A5568] space-y-1">
-                  <li>☐ Zadne telefony pri jidle</li>
-                  <li>☐ Telefony se nabiji v _________ od _____</li>
-                  <li>☐ Prvnich ____ minut po prichodu domu - bez obrazovek</li>
-                  <li>☐ Kdyz nekdo mluvi, divame se na nej - ne na telefon</li>
+                  <li>☐ Žádné telefony při jídle</li>
+                  <li>☐ Telefony se nabíjí v _________ od _____</li>
+                  <li>☐ Prvních ____ minut po příchodu domů - bez obrazovek</li>
+                  <li>☐ Když někdo mluví, díváme se na něj - ne na telefon</li>
                 </ul>
               </div>
 
               <div className="p-4 rounded-lg bg-white border border-[#E8E4DE]">
-                <p className="font-semibold text-[#2D3436] mb-2">CAST 2: Pravidla pro dite</p>
-                <p className="text-[#7A7A7A] text-xs mb-2">Jmeno: _____________ Vek: ____</p>
+                <p className="font-semibold text-[#2D3436] mb-2">ČÁST 2: Pravidla pro dítě</p>
+                <p className="text-[#7A7A7A] text-xs mb-2">Jméno: _____________ Věk: ____</p>
                 <ul className="text-[#4A5568] space-y-1">
-                  <li>☐ Max. cas denne (skolni den): _____ hodin</li>
-                  <li>☐ Max. cas denne (vikend): _____ hodin</li>
-                  <li>☐ Telefon se odklada o _____ (vecer)</li>
-                  <li>☐ Tyto appky jsou povolene: _________________</li>
-                  <li>☐ Tyto appky jsou zakazane: _________________</li>
-                  <li>☐ AI chatboty na "pratelstvi" jsou zakazane</li>
-                  <li>☐ AI smim pouzivat na UCENI, ne na psani za mne</li>
+                  <li>☐ Max. čas denně (školní den): _____ hodin</li>
+                  <li>☐ Max. čas denně (víkend): _____ hodin</li>
+                  <li>☐ Telefon se odkládá o _____ (večer)</li>
+                  <li>☐ Tyto appky jsou povolené: _________________</li>
+                  <li>☐ Tyto appky jsou zakázané: _________________</li>
+                  <li>☐ AI chatboty na "přátelství" jsou zakázané</li>
+                  <li>☐ AI smím používat na UČENÍ, ne na psaní za mě</li>
                 </ul>
               </div>
 
               <div className="p-4 rounded-lg bg-white border border-[#E8E4DE]">
-                <p className="font-semibold text-[#2D3436] mb-2">CAST 3: Dusledky</p>
+                <p className="font-semibold text-[#2D3436] mb-2">ČÁST 3: Důsledky</p>
                 <ul className="text-[#4A5568] space-y-1">
-                  <li>Kdyz porusim pravidlo poprve: → _____________</li>
-                  <li>Kdyz porusim pravidlo podruhe: → _____________</li>
-                  <li>Kdyz porusim pravidlo opakovane: → _____________</li>
+                  <li>Když poruším pravidlo poprvé: → _____________</li>
+                  <li>Když poruším pravidlo podruhé: → _____________</li>
+                  <li>Když poruším pravidlo opakovaně: → _____________</li>
                 </ul>
               </div>
 
               <div className="p-4 rounded-lg bg-white border border-[#E8E4DE]">
-                <p className="font-semibold text-[#2D3436] mb-2">CAST 4: Prava ditete</p>
+                <p className="font-semibold text-[#2D3436] mb-2">ČÁST 4: Práva dítěte</p>
                 <ul className="text-[#4A5568] space-y-1">
-                  <li>☐ Mam pravo na soukromi primerene veku</li>
-                  <li>☐ Mam pravo vedet PROC existuje pravidlo</li>
-                  <li>☐ Mam pravo pozadat o zmenu pravidla (rozhovorem)</li>
-                  <li>☐ Mam pravo rict kdyz rodic porusi pravidlo</li>
+                  <li>☐ Mám právo na soukromí přiměřené věku</li>
+                  <li>☐ Mám právo vědět PROČ existuje pravidlo</li>
+                  <li>☐ Mám právo požádat o změnu pravidla (rozhovorem)</li>
+                  <li>☐ Mám právo říct když rodič poruší pravidlo</li>
                 </ul>
               </div>
 
               <div className="p-4 rounded-lg bg-white border border-[#E8E4DE]">
-                <p className="font-semibold text-[#2D3436] mb-2">CAST 5: Zavazky rodicu</p>
+                <p className="font-semibold text-[#2D3436] mb-2">ČÁST 5: Závazky rodičů</p>
                 <ul className="text-[#4A5568] space-y-1">
-                  <li>☐ Budeme dodrzovat pravidla ktera plati pro vsechny</li>
-                  <li>☐ Nebudeme kontrolovat tajne - zeptame se</li>
-                  <li>☐ Kdyz prijdes s problemem, nebudeme kricet</li>
-                  <li>☐ Vysvetlime PROC, ne jen "protoze jsem rekl"</li>
-                  <li>☐ Tuto dohodu prehodnotime kazde ____ mesice</li>
+                  <li>☐ Budeme dodržovat pravidla která platí pro všechny</li>
+                  <li>☐ Nebudeme kontrolovat tajně - zeptáme se</li>
+                  <li>☐ Když přijdeš s problémem, nebudeme křičet</li>
+                  <li>☐ Vysvětlíme PROČ, ne jen "protože jsem řekl"</li>
+                  <li>☐ Tuto dohodu přehodnotíme každé ____ měsíce</li>
                 </ul>
               </div>
 
               <div className="p-4 rounded-lg bg-[#FAF8F5] border border-[#E8E4DE] text-center">
                 <p className="text-[#4A5568] mb-2">PODPISY:</p>
-                <p className="text-[#7A7A7A] text-xs">_________ (rodic)  _________ (rodic)  _________ (dite)</p>
+                <p className="text-[#7A7A7A] text-xs">_________ (rodič)  _________ (rodič)  _________ (dítě)</p>
                 <p className="text-[#7A7A7A] text-xs mt-2">Datum: _________</p>
               </div>
             </div>
           </div>
 
           <TableCard
-            title="Kdyz dite protestuje"
-            headers={['Protest', 'Odpoved']}
+            title="Když dítě protestuje"
+            headers={['Protest', 'Odpověď']}
             rows={[
-              ['"Proc JA?"', '"Pravidla plati pro vsechny. I pro mne. Podivej - tu je napsane."'],
-              ['"Nikdo jiny to nema"', '"My nejsme jini. A mne zalezi na tobe, ne na jinych."'],
-              ['"Je to hlupe"', '"Co konkretne ti prekazi? Vysvetli mi to."'],
-              ['"Neveris mi"', '"Verim ti. Ale neverim algoritmu ktery je navrzeny aby te manipuloval."'],
+              ['"Proč JÁ?"', '"Pravidla platí pro všechny. I pro mě. Podívej - tu je napsané."'],
+              ['"Nikdo jiný to nemá"', '"My nejsme jiní. A mně záleží na tobě, ne na jiných."'],
+              ['"Je to hloupé"', '"Co konkrétně ti překáží? Vysvětli mi to."'],
+              ['"Nevěříš mi"', '"Věřím ti. Ale nevěřím algoritmu který je navržený aby tě manipuloval."'],
             ]}
           />
         </Section>
 
         {/* BLOK 5: Zachrana */}
-        <Section title="Zachrana: Kdyz uz je problem" icon={Shield} accentColor="terracotta">
+        <Section title="Záchrana: Když už je problém" icon={Shield} accentColor="terracotta">
 
           <div className="mb-6 p-5 rounded-xl bg-[#FAF8F5] border border-[#E8E4DE]">
             <p className="text-[#4A5568] mb-4">
-              Realita s kterou rodice prichazeji: Dite uz ma telefon roky. Uz jsou tam zlonávyky. Uz byly hadky.
-              Uz stratili prehled. Uz nemaji energii. Uz se citi jako spatni rodice.
+              Realita se kterou rodiče přicházejí: Dítě už má telefon roky. Už jsou tam zlozvyky. Už byly hádky.
+              Už ztratili přehled. Už nemají energii. Už se cítí jako špatní rodiče.
             </p>
-            <p className="font-semibold text-[#2D3436]">Nepotrebuji mrakodrap. Potrebuji zaplatat diru ve strese.</p>
+            <p className="font-semibold text-[#2D3436]">Nepotřebují mrakodrap. Potřebují zalepit díru ve stresu.</p>
           </div>
 
           <div className="mb-6 p-5 rounded-xl bg-gradient-to-br from-[#5B7B6A] to-[#3D5A4A] text-white">
-            <h4 className="font-display font-bold text-lg mb-3">Jedna vec kterou muzes zmenit DNES:</h4>
-            <p className="text-xl font-semibold text-[#C9A962] mb-3">"Telefony spi mimo spalnu."</p>
+            <h4 className="font-display font-bold text-lg mb-3">Jedna věc kterou můžeš změnit DNES:</h4>
+            <p className="text-xl font-semibold text-[#C9A962] mb-3">"Telefony spí mimo ložnici."</p>
             <ul className="space-y-2 text-white/90 text-sm">
-              <li>• Nejvetsi skody se deji v noci</li>
-              <li>• AI chatboty, doom scrolling, pornografie, sexting - vsechno po 22:00</li>
-              <li>• Dite samo nevie prestat - mozek to nedokaze</li>
-              <li>• Jak zavest: Kup nabijacku do obyvaku. Rekni "Od dnes telefony spi tady. Vsechny. I muj."</li>
+              <li>• Největší škody se dějí v noci</li>
+              <li>• AI chatboty, doom scrolling, pornografie, sexting - všechno po 22:00</li>
+              <li>• Dítě samo neví přestat - mozek to nedokáže</li>
+              <li>• Jak zavést: Kup nabíječku do obýváku. Řekni "Od dnes telefony spí tady. Všechny. I můj."</li>
             </ul>
           </div>
 
           <TableCard
-            title="Cervene vlajky ktere nesmi ignorovat"
-            headers={['Vidis', 'Muze znamenat', 'Co udelat']}
+            title="Červené vlajky které nesmíš ignorovat"
+            headers={['Vidíš', 'Může znamenat', 'Co udělat']}
             rows={[
-              ['Skryva telefon kdyz prijdes', 'Neco co nechce abys videl', 'Rozhovor, ne kontrola'],
-              ['Extremni reakce kdyz nema telefon', 'Zavislost', 'Postupne snizovani, mozna odbornik'],
-              ['Nespi, je stale unaveny', 'Nocni pouzivani', 'Telefon mimo spalnu'],
-              ['Nahle novy "kamarad" o kterem nevis', 'Online vztah', 'Zjisti vic bez paniky'],
-              ['Zmena nalady, stazeni se', 'Deprese, problem', 'Rozhovor, mozna odbornik'],
-              ['Mluvi o beznadëji, smrti', 'Sebevrazedne myslenky', 'OKAMZITE - odborna pomoc'],
+              ['Skrývá telefon když přijdeš', 'Něco co nechce abys viděl', 'Rozhovor, ne kontrola'],
+              ['Extrémní reakce když nemá telefon', 'Závislost', 'Postupné snižování, možná odborník'],
+              ['Nespí, je stále unavený', 'Noční používání', 'Telefon mimo ložnici'],
+              ['Náhle nový "kamarád" o kterém nevíš', 'Online vztah', 'Zjisti víc bez paniky'],
+              ['Změna nálady, stažení se', 'Deprese, problém', 'Rozhovor, možná odborník'],
+              ['Mluví o beznaději, smrti', 'Sebevražedné myšlenky', 'OKAMŽITĚ - odborná pomoc'],
             ]}
           />
 
           <div className="my-6 p-5 rounded-xl bg-[#FAF8F5] border border-[#E8E4DE]">
-            <h4 className="font-display font-semibold text-[#2D3436] mb-3">Co udelat tento tyden:</h4>
+            <h4 className="font-display font-semibold text-[#2D3436] mb-3">Co udělat tento týden:</h4>
             <ul className="space-y-2 text-[#4A5568]">
-              <li><strong>Pondeli:</strong> Jeden spolecny obed/vecere bez telefonu. Jen jednou. Jen zkusit.</li>
-              <li><strong>Utery:</strong> Zeptej se: "Co ted sledujes? Co te bavi?" Jen zajem, ne kontrola.</li>
-              <li><strong>Streda:</strong> Telefony mimo spalnu v noci. Zacni od sebe.</li>
-              <li><strong>Ctvrtek:</strong> 15 minut spolecne aktivity. Bez obrazovky. Cokoliv.</li>
-              <li><strong>Patek:</strong> Rekni: "Vim ze nejsem dokonal rodic. Ale zalezi mi na tobe. Kdybys neco potreboval, prijdes?"</li>
+              <li><strong>Pondělí:</strong> Jeden společný oběd/večeře bez telefonu. Jen jednou. Jen zkusit.</li>
+              <li><strong>Úterý:</strong> Zeptej se: "Co teď sleduješ? Co tě baví?" Jen zájem, ne kontrola.</li>
+              <li><strong>Středa:</strong> Telefony mimo ložnici v noci. Začni od sebe.</li>
+              <li><strong>Čtvrtek:</strong> 15 minut společné aktivity. Bez obrazovky. Cokoliv.</li>
+              <li><strong>Pátek:</strong> Řekni: "Vím že nejsem dokonalý rodič. Ale záleží mi na tobě. Kdybys něco potřeboval, přijdeš?"</li>
             </ul>
           </div>
 
           <TableCard
-            title="Vety ktere funguji"
-            headers={['Namisto', 'Rekni']}
+            title="Věty které fungují"
+            headers={['Namísto', 'Řekni']}
             rows={[
-              ['"Dej prec ten telefon!"', '"Potrebuji tvou pozornost na 5 minut. Potom muzes pokracovat."'],
-              ['"Co tam porad delas?!"', '"Co zajimaveho sledujes? Ukazes mi?"'],
-              ['"To je skodlive!"', '"Proc ti to libi? Co ti to dava?"'],
-              ['"Dokud ti nebude 18, budu kontrolovat!"', '"Chci ti doverovat. Pomoz mi vedet ze muzu."'],
+              ['"Dej pryč ten telefon!"', '"Potřebuji tvou pozornost na 5 minut. Potom můžeš pokračovat."'],
+              ['"Co tam pořád děláš?!"', '"Co zajímavého sleduješ? Ukážeš mi?"'],
+              ['"To je škodlivé!"', '"Proč ti to líbí? Co ti to dává?"'],
+              ['"Dokud ti nebude 18, budu kontrolovat!"', '"Chci ti důvěřovat. Pomoz mi vědět že můžu."'],
             ]}
           />
 
           <div className="grid gap-3 md:gap-4 sm:grid-cols-2 my-6">
             <EmergencyCard
-              title="Linka bezpeci"
+              title="Linka bezpečí"
               phone="116 111"
-              description="Pro deti, mlade lidi i rodice. Nonstop, zdarma."
+              description="Pro děti, mladé lidi i rodiče. Nonstop, zdarma."
               isPrimary={true}
             />
             <EmergencyCard
-              title="Rodicovska linka"
+              title="Rodičovská linka"
               phone="606 021 021"
-              description="Podpora pro rodice v tezkych situacich"
+              description="Podpora pro rodiče v těžkých situacích"
             />
           </div>
 
           <div className="p-5 rounded-xl bg-gradient-to-br from-[#C9A962] to-[#9A7B3C] text-white">
-            <h4 className="font-display font-bold text-lg mb-3">Pro rodice kteri se citi bezmocne:</h4>
+            <h4 className="font-display font-bold text-lg mb-3">Pro rodiče kteří se cítí bezmocně:</h4>
             <p className="text-white/90 mb-4">
-              <strong>Nejste spatni rodice.</strong> Nikdo vas na tohle nepripravil. Technologie jde rychleji nez kdokoliv stiha.
-              Vasi rodice neresili nic z toho. Snazite se - to je vic nez nic.
+              <strong>Nejste špatní rodiče.</strong> Nikdo vás na tohle nepřipravil. Technologie jde rychleji než kdokoliv stíhá.
+              Vaši rodiče neřešili nic z toho. Snažíte se - to je víc než nic.
             </p>
-            <p className="font-semibold">Nepotrebujete byt dokonali. Potrebujete byt pritomni.</p>
+            <p className="font-semibold">Nepotřebujete být dokonalí. Potřebujete být přítomní.</p>
           </div>
         </Section>
 
-        {/* Záver */}
-        <Section title="Zaver" icon={Home} accentColor="sage">
+        {/* Závěr */}
+        <Section title="Závěr" icon={Home} accentColor="sage">
           <div className="p-6 rounded-xl bg-gradient-to-br from-[#5B7B6A] to-[#3D5A4A] text-white mb-6">
             <p className="text-white/90 text-lg leading-relaxed mb-4">
-              AI je nastroj. Kladivo muze postavit dum i rozbit lebku. Zalezi kdo ho drzi.
+              AI je nástroj. Kladivo může postavit dům i rozbít lebku. Záleží kdo ho drží.
             </p>
             <p className="text-white/90 text-lg leading-relaxed mb-4">
-              Vy drzite vic nez kladivo. <strong>Drzite vztah.</strong> A vztah vzdy vyhrava.
+              Vy držíte víc než kladivo. <strong>Držíte vztah.</strong> A vztah vždy vyhrává.
             </p>
             <p className="text-[#C9A962] font-semibold text-lg">
-              Jdete domu. Odlozte telefony. Divejte se na sve deti. Poslouchejte je. Budte pritomni.
+              Jděte domů. Odložte telefony. Dívejte se na své děti. Poslouchejte je. Buďte přítomní.
             </p>
           </div>
 
           <div className="p-5 rounded-xl bg-[#FAF8F5] border border-[#E8E4DE] text-center">
             <p className="text-[#2D3436] font-display font-semibold text-lg mb-2">
-              To je jedina vec kterou AI nikdy nedokaze.
+              To je jediná věc kterou AI nikdy nedokáže.
             </p>
             <p className="text-[#4A5568]">
-              Jeden rozhovor. Jeden spolecny vecer. Jeden pohled do oci a idealne kratka spolecna modlitba.
-              <br />To neni malo. To je zacatek.
+              Jeden rozhovor. Jeden společný večer. Jeden pohled do očí a ideálně krátká společná modlitba.
+              <br />To není málo. To je začátek.
             </p>
           </div>
         </Section>
@@ -633,8 +633,8 @@ NECHCI hotove reseni. Chci vedet jak ho naucit.`}
             <Heart className="w-4 h-4 md:w-5 md:h-5 fill-current" />
             <div className="w-6 md:w-8 h-0.5 bg-gradient-to-l from-transparent to-[#C9A962]" />
           </div>
-          <p className="text-[#4A5568] mb-2 text-sm md:text-base">Seminar "AI jako nastroj, ne nahrada"</p>
-          <p className="text-[#7A9B8A] font-medium text-sm md:text-base">2026 • S laskou pro rodice</p>
+          <p className="text-[#4A5568] mb-2 text-sm md:text-base">Seminář „AI jako nástroj, ne náhrada"</p>
+          <p className="text-[#7A9B8A] font-medium text-sm md:text-base">2025 • S láskou pro rodiče</p>
         </div>
       </footer>
     </div>

@@ -9,7 +9,7 @@ export const BackButton = () => (
     className="inline-flex items-center gap-2 text-white/80 hover:text-white font-medium transition-colors mb-6"
   >
     <ArrowLeft className="w-4 h-4" />
-    <span>Zpet na hlavní stránku</span>
+    <span>Zpět na hlavní stránku</span>
   </Link>
 );
 
