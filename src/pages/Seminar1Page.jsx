@@ -185,7 +185,7 @@ export default function Seminar1Page() {
           />
 
           <TableCard
-            title="Realita roku 2025"
+            title="Realita roku 2026"
             headers={['Kdy', 'Bible říká', 'Realita']}
             rows={[
               ['Sedíš doma', 'Ty rozmlouváš', 'Dítě má sluchátka, kouká na TikTok'],
@@ -464,7 +464,7 @@ export default function Seminar1Page() {
             <div className="w-6 md:w-8 h-0.5 bg-gradient-to-l from-transparent to-[#C9A962]" />
           </div>
           <p className="text-[#4A5568] mb-2 text-sm md:text-base">Seminář „AI už mluví s našimi dětmi"</p>
-          <p className="text-[#7A9B8A] font-medium text-sm md:text-base">2025 • S láskou pro rodiče</p>
+          <p className="text-[#7A9B8A] font-medium text-sm md:text-base">2026 • S láskou pro rodiče</p>
         </div>
       </footer>
     </div>
