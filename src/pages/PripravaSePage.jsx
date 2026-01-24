@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Zap, Users, Brain, Heart, Eye, TrendingUp, BookOpen, AlertTriangle, Shield, ArrowRight, Clock, Activity } from 'lucide-react';
-import { Section, WarningBox } from '../components/ui';
-import { BackButton, BiblicalQuote, InfoBox } from '../components/ui/SeminarComponents';
+import { Section, WarningBox, BackButton, BiblicalQuote, InfoBox } from '../components/ui';
 
 export default function PripravaSePage() {
   const [isLoaded, setIsLoaded] = useState(false);

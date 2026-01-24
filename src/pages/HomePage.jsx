@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Copy, Check, MessageCircle, Shield, BookOpen, Heart, Smartphone, Brain, ExternalLink, AlertTriangle, Sparkles, Phone } from 'lucide-react';
+import { Copy, Check, MessageCircle, Shield, BookOpen, Heart, Smartphone, Brain, ExternalLink, AlertTriangle, Sparkles, Phone, Zap } from 'lucide-react';
 import { Section, PromptCard, WarningBox, FeatureCard, StepIndicator, SafetyCard, ResourceLink, EmergencyCard } from '../components/ui';
 
 export default function HomePage() {
@@ -15,6 +15,7 @@ export default function HomePage() {
     { id: 'uvod', label: 'Úvod', icon: BookOpen },
     { id: 'seminar1', label: 'Seminář 1', icon: MessageCircle, link: '/seminar/1' },
     { id: 'seminar2', label: 'Seminář 2', icon: Brain, link: '/seminar/2' },
+    { id: 'priprava', label: 'Budoucnost', icon: Zap, link: '/seminar/priprava' },
     { id: 'pruvodce', label: 'AI Průvodce', icon: MessageCircle },
     { id: 'prompty', label: 'Superprompty', icon: Brain },
     { id: 'bezpeci', label: 'Bezpečnost', icon: Shield },
