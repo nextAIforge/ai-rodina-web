@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { MessageCircle, BookOpen, Heart, Shield, AlertTriangle, FileText, CheckCircle, XCircle, Home } from 'lucide-react';
+import { MessageCircle, BookOpen, Heart, Shield, AlertTriangle, FileText, CheckCircle, XCircle, Home, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { Section, PromptCard, WarningBox, EmergencyCard } from '../components/ui';
 import { BackButton, TableCard, InfoBox } from '../components/ui/SeminarComponents';
 
@@ -621,6 +622,19 @@ NECHCI hotové řešení. Chci vědět jak ho naučit.`}
               <br />To není málo. To je začátek.
             </p>
           </div>
+
+          {/* Link to future */}
+          <Link
+            to="/seminar/priprava"
+            className="mt-6 flex items-center justify-between p-5 rounded-xl bg-gradient-to-br from-[#C4785A] to-[#8B4444] text-white hover:opacity-95 transition-opacity group"
+          >
+            <div>
+              <p className="text-white/70 text-sm mb-1">Pokračovat dál</p>
+              <p className="font-display font-bold text-lg">Na co se připravit</p>
+              <p className="text-white/80 text-sm">Pohled do budoucnosti – za 5 let</p>
+            </div>
+            <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
+          </Link>
         </Section>
 
       </main>

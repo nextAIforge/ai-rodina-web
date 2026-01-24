@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import Seminar1Page from './pages/Seminar1Page';
 import Seminar2Page from './pages/Seminar2Page';
+import PripravaSePage from './pages/PripravaSePage';
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
       <Route path="/" element={<HomePage />} />
       <Route path="/seminar/1" element={<Seminar1Page />} />
       <Route path="/seminar/2" element={<Seminar2Page />} />
+      <Route path="/seminar/priprava" element={<PripravaSePage />} />
     </Routes>
   );
 }
