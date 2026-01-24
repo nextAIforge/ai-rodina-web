@@ -4,7 +4,11 @@
       "Bash(npx vercel:*)",
       "Bash(curl:*)",
       "Bash(python3:*)",
-      "Skill(frontend-design:frontend-design)"
+      "Skill(frontend-design:frontend-design)",
+      "Bash(cd /Volumes/Samsung\\\\ USB/Documents/Github/ai-rodina-web && npm install:*)",
+      "Bash(cd:*)",
+      "Bash(unzip:*)",
+      "Bash(npm run build:*)"
     ]
   }
 }
