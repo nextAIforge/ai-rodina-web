@@ -605,6 +605,107 @@ export default function BezpecnostPage() {
           </div>
         </ExpandableSection>
 
+        {/* Fake Christian AI Warning */}
+        <div className="card p-5 md:p-8 mb-8 border-2 border-[#C9A962]">
+          <div className="flex items-start gap-4 mb-6">
+            <div className="w-12 h-12 rounded-xl bg-[#C9A962]/20 flex items-center justify-center flex-shrink-0">
+              <AlertTriangle className="w-6 h-6 text-[#9A7B3C]" />
+            </div>
+            <div>
+              <h2 className="font-display font-bold text-xl md:text-2xl text-[#2D3436] mb-2">
+                Pozor na „křesťanské" AI stránky
+              </h2>
+              <p className="text-[#4A5568]">
+                Ne vše, co zní křesťansky, je od křesťanů.
+              </p>
+            </div>
+          </div>
+
+          <div className="p-4 rounded-xl bg-[#FDF6E3] border border-[#C9A962]/30 mb-6">
+            <p className="text-[#6B5522] mb-3">
+              Na internetu existuje řada stránek, které vypadají jako křesťanské služby – mají jména jako
+              „Jesus AI", „AI Bible", „Chat with Jesus" apod. <strong>Většina z nich ale NENÍ provozována křesťany</strong>
+              a jejich skutečným cílem je:
+            </p>
+            <ul className="space-y-2 text-sm text-[#6B5522]">
+              <li className="flex items-start gap-2">
+                <span className="text-[#9A7B3C] font-bold">$</span>
+                <span><strong>Komerční zisk</strong> – předplatné, reklamy, prodej dat</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-[#9A7B3C] font-bold">📊</span>
+                <span><strong>Sběr osobních dat</strong> – vaše modlitby, starosti, osobní informace</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-[#9A7B3C] font-bold">🎯</span>
+                <span><strong>Cílená manipulace</strong> – využití duchovní zranitelnosti k marketingu</span>
+              </li>
+            </ul>
+          </div>
+
+          <h3 className="font-display font-semibold text-[#8B4444] mb-3">Příklady problematických stránek:</h3>
+
+          <div className="space-y-3 mb-6">
+            <div className="p-4 rounded-xl bg-[#F5E8E8]/50 border border-[#B85C5C]/20">
+              <div className="flex items-start justify-between mb-2">
+                <p className="font-semibold text-[#8B4444]">thejesusai.com</p>
+                <span className="px-2 py-0.5 rounded text-xs font-medium bg-[#B85C5C]/20 text-[#8B4444]">Riziko</span>
+              </div>
+              <p className="text-sm text-[#6B3A3A]">
+                Slibuje „konverzaci s Ježíšem". Ve skutečnosti jde o komerční projekt bez teologického dohledu.
+                Sbírá data o duchovních potřebách uživatelů.
+              </p>
+            </div>
+
+            <div className="p-4 rounded-xl bg-[#F5E8E8]/50 border border-[#B85C5C]/20">
+              <div className="flex items-start justify-between mb-2">
+                <p className="font-semibold text-[#8B4444]">aijesus.live</p>
+                <span className="px-2 py-0.5 rounded text-xs font-medium bg-[#B85C5C]/20 text-[#8B4444]">Riziko</span>
+              </div>
+              <p className="text-sm text-[#6B3A3A]">
+                Další „AI Ježíš" bez jakékoliv církevní afiliace. Neznámí provozovatelé, nejasné nakládání s daty.
+                Může poskytovat teologicky zavádějící odpovědi.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-4 mb-6">
+            <div className="p-4 rounded-xl bg-[#F5E8E8] border border-[#B85C5C]/20">
+              <h4 className="font-display font-semibold text-[#8B4444] mb-3">Proč je to problém:</h4>
+              <ul className="space-y-2 text-sm text-[#6B3A3A]">
+                <li>• AI NENÍ Ježíš – je to rouhání vydávat se za Boha</li>
+                <li>• Žádný teologický dohled nad odpověďmi</li>
+                <li>• Může podávat heretické nebo zavádějící informace</li>
+                <li>• Intimní duchovní data končí u neznámých firem</li>
+                <li>• Vytváří falešný pocit duchovního vedení</li>
+              </ul>
+            </div>
+            <div className="p-4 rounded-xl bg-[#EDF5F0] border border-[#5B7B6A]/20">
+              <h4 className="font-display font-semibold text-[#3D5A4A] mb-3">Jak to poznat:</h4>
+              <ul className="space-y-2 text-sm text-[#4A6B5A]">
+                <li>• Chybí informace o provozovateli</li>
+                <li>• Žádná církevní afiliace nebo doporučení</li>
+                <li>• Agresivní monetizace (předplatné, reklamy)</li>
+                <li>• Sliby typu „mluvte s Ježíšem"</li>
+                <li>• Nejasné podmínky použití dat</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="p-4 rounded-xl bg-gradient-to-r from-[#5B7B6A] to-[#3D5A4A] text-white">
+            <p className="font-semibold mb-2 flex items-center gap-2">
+              <BookOpen className="w-5 h-5" />
+              Co doporučujeme:
+            </p>
+            <ul className="space-y-1 text-sm text-white/90">
+              <li>• <strong>Bible</strong> – originál nepotřebuje AI prostředníka</li>
+              <li>• <strong>Modlitba</strong> – přímý rozhovor s Bohem, ne s algoritmem</li>
+              <li>• <strong>Kněz/pastor</strong> – skutečný člověk s teologickým vzděláním</li>
+              <li>• <strong>Farní společenství</strong> – živá církev, ne virtuální náhražka</li>
+            </ul>
+          </div>
+        </div>
+
         {/* Warning Signs */}
         <div className="card p-5 md:p-8 mb-8">
           <h2 className="font-display font-bold text-xl md:text-2xl text-[#2D3436] mb-6 flex items-center gap-3">
