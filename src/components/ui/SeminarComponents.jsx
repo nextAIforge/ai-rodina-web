@@ -19,7 +19,7 @@ export const TableCard = ({ headers, rows, title }) => (
     {title && (
       <h4 className="font-display font-semibold text-[#2D3436] text-base md:text-lg mb-3">{title}</h4>
     )}
-    <div className="overflow-x-auto rounded-xl border border-[#E8E4DE]">
+    <div className="overflow-x-auto rounded-xl border border-[#E8E4DE]" style={{ WebkitOverflowScrolling: 'touch' }}>
       <table className="w-full text-sm md:text-base">
         <thead>
           <tr className="bg-[#F5F1EB]">
