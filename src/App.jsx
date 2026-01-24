@@ -6,6 +6,7 @@ import Seminar2Page from './pages/Seminar2Page';
 import PripravaSePage from './pages/PripravaSePage';
 import SlovnikPage from './pages/SlovnikPage';
 import KontaktPage from './pages/KontaktPage';
+import BezpecnostPage from './pages/BezpecnostPage';
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <Route path="/seminar/priprava" element={<PripravaSePage />} />
       <Route path="/slovnik" element={<SlovnikPage />} />
       <Route path="/kontakt" element={<KontaktPage />} />
+      <Route path="/bezpecnost" element={<BezpecnostPage />} />
     </Routes>
   );
 }

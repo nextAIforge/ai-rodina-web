@@ -112,13 +112,6 @@ export default function HomePage() {
     setOpenDropdown(openDropdown === name ? null : name);
   };
 
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <div className="min-h-screen bg-[#FAF8F5]">
       {/* Hero Header */}
@@ -173,13 +166,13 @@ export default function HomePage() {
               onToggle={() => handleDropdownToggle('nastroje')}
               onClose={() => setOpenDropdown(null)}
             />
-            <button
-              onClick={() => scrollToSection('bezpecnost')}
+            <Link
+              to="/bezpecnost"
               className="flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-2 md:py-2.5 rounded-lg md:rounded-xl whitespace-nowrap transition-all duration-300 font-medium text-sm md:text-base text-[#4A5568] hover:bg-[#5B7B6A]/10"
             >
               <Shield className="w-4 h-4" />
               <span>Bezpečnost</span>
-            </button>
+            </Link>
             <Link
               to="/kontakt"
               className="flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-2 md:py-2.5 rounded-lg md:rounded-xl whitespace-nowrap transition-all duration-300 font-medium text-sm md:text-base text-[#4A5568] hover:bg-[#5B7B6A]/10"
@@ -374,7 +367,7 @@ export default function HomePage() {
         </section>
 
         {/* Bezpečnost Section */}
-        <section id="bezpecnost" className="mb-12 scroll-mt-20">
+        <section className="mb-12">
           <div className="card p-5 md:p-8">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 rounded-xl bg-[#C4785A]/10 flex items-center justify-center">
@@ -413,10 +406,10 @@ export default function HomePage() {
             </div>
 
             <Link
-              to="/seminar/1"
+              to="/bezpecnost"
               className="inline-flex items-center gap-2 text-[#5B7B6A] font-medium hover:gap-3 transition-all"
             >
-              Více o bezpečnosti v Semináři 1 <ArrowRight className="w-4 h-4" />
+              Kompletní průvodce bezpečností <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </section>
