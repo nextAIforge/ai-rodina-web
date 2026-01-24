@@ -700,8 +700,7 @@ export default function BezpecnostPage() {
             <ul className="space-y-1 text-sm text-white/90">
               <li>• <strong>Bible</strong> – originál nepotřebuje AI prostředníka</li>
               <li>• <strong>Modlitba</strong> – přímý rozhovor s Bohem, ne s algoritmem</li>
-              <li>• <strong>Kněz/pastor</strong> – skutečný člověk s teologickým vzděláním</li>
-              <li>• <strong>Farní společenství</strong> – živá církev, ne virtuální náhražka</li>
+              <li>• <strong>Známá duchovní autorita</strong> – skutečný člověk s teologickým vzděláním</li>
             </ul>
           </div>
         </div>
@@ -812,28 +811,28 @@ export default function BezpecnostPage() {
         </div>
 
         {/* Link to Seminar */}
-        <div className="p-5 rounded-xl bg-gradient-to-br from-[#5B7B6A] to-[#3D5A4A] text-white">
+        <div className="p-5 rounded-xl bg-gradient-to-br from-[#4A6B5A] to-[#2D4A3A] text-white">
           <div className="flex items-center justify-between flex-wrap gap-4">
             <div>
-              <p className="text-white/70 text-sm mb-1">Chcete vědět více?</p>
+              <p className="text-white/90 text-sm mb-1">Chcete vědět více?</p>
               <p className="font-display font-bold text-lg">Projděte si naše semináře</p>
             </div>
             <div className="flex gap-3">
               <Link
                 to="/seminar/1"
-                className="px-4 py-2 rounded-lg bg-white/20 hover:bg-white/30 transition-colors text-sm font-medium"
+                className="px-4 py-2 rounded-lg bg-white text-[#3D5A4A] hover:bg-white/90 transition-colors text-sm font-semibold"
               >
                 Seminář 1
               </Link>
               <Link
                 to="/seminar/2"
-                className="px-4 py-2 rounded-lg bg-white/20 hover:bg-white/30 transition-colors text-sm font-medium"
+                className="px-4 py-2 rounded-lg bg-white text-[#3D5A4A] hover:bg-white/90 transition-colors text-sm font-semibold"
               >
                 Seminář 2
               </Link>
               <Link
                 to="/slovnik"
-                className="px-4 py-2 rounded-lg bg-white/20 hover:bg-white/30 transition-colors text-sm font-medium"
+                className="px-4 py-2 rounded-lg bg-white text-[#3D5A4A] hover:bg-white/90 transition-colors text-sm font-semibold"
               >
                 Slovník
               </Link>

@@ -136,6 +136,20 @@ export default function KontaktPage() {
                 <strong>Soukromí:</strong> Vaše údaje použijeme pouze pro odpověď na váš dotaz. Nebudeme je sdílet s třetími stranami ani používat k marketingu.
               </p>
             </div>
+
+            {/* Parent organization */}
+            <div className="p-4 rounded-xl bg-[#EDF5F0] border border-[#5B7B6A]/20">
+              <p className="text-[#4A5568] text-xs mb-2">Projekt zastřešuje</p>
+              <a
+                href="https://radispolu.cz"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 text-[#5B7B6A] font-semibold hover:text-[#3D5A4A] transition-colors"
+              >
+                radispolu.cz
+                <ExternalLink className="w-4 h-4" />
+              </a>
+            </div>
           </div>
 
           {/* Contact Form */}
@@ -299,20 +313,7 @@ export default function KontaktPage() {
             <div className="w-6 md:w-8 h-0.5 bg-gradient-to-l from-transparent to-[#C9A962]" />
           </div>
           <p className="text-[#4A5568] mb-2 text-sm md:text-base">Těšíme se na vaši zprávu</p>
-          <p className="text-[#7A9B8A] font-medium text-sm md:text-base mb-4">info@aiprorodinu.cz</p>
-
-          <div className="pt-4 border-t border-[#E8E4DE]">
-            <p className="text-[#7A7A7A] text-xs mb-2">Projekt zastřešuje</p>
-            <a
-              href="https://radispolu.cz"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-2 text-[#5B7B6A] font-semibold hover:text-[#3D5A4A] transition-colors"
-            >
-              radispolu.cz
-              <ExternalLink className="w-4 h-4" />
-            </a>
-          </div>
+          <p className="text-[#7A9B8A] font-medium text-sm md:text-base">info@aiprorodinu.cz</p>
         </div>
       </footer>
     </div>
