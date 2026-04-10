@@ -8,10 +8,12 @@ export default function KontaktPage() {
     name: '',
     email: '',
     type: 'comment',
-    message: ''
+    message: '',
+    company: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState('');
 
   useEffect(() => {
     setIsLoaded(true);
@@ -28,18 +30,30 @@ export default function KontaktPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitError('');
 
-    // Create mailto link as fallback
-    const subject = encodeURIComponent(`[AI pro rodinu] ${formData.type === 'link' ? 'Doporučení odkazu' : formData.type === 'help' ? 'Žádost o pomoc' : 'Komentář'}`);
-    const body = encodeURIComponent(`Jméno: ${formData.name}\nEmail: ${formData.email}\nTyp: ${formData.type}\n\nZpráva:\n${formData.message}`);
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
-    // Open mailto
-    window.location.href = `mailto:info@aiprorodinu.cz?subject=${subject}&body=${body}`;
+      const data = await response.json();
 
-    setTimeout(() => {
-      setIsSubmitting(false);
+      if (!response.ok) {
+        throw new Error(data?.error || 'Zpravu se nepodarilo odeslat.');
+      }
+
       setIsSubmitted(true);
-    }, 1000);
+      setFormData({ name: '', email: '', type: 'comment', message: '', company: '' });
+    } catch (error) {
+      setSubmitError(error.message || 'Zpravu se nepodarilo odeslat.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const messageTypes = [
@@ -164,11 +178,10 @@ export default function KontaktPage() {
                     Děkujeme!
                   </h3>
                   <p className="text-[#4A5568] mb-4">
-                    Váš emailový klient by měl být otevřen s předvyplněnou zprávou.<br />
-                    Stačí kliknout na odeslat.
+                    Zpráva byla odeslána na <strong>info@aiprorodinu.cz</strong>.
                   </p>
                   <p className="text-[#7A7A7A] text-sm mb-6">
-                    Pokud se nic neotevřelo, napište nám přímo na{' '}
+                    Pokud byste nám chtěli dopsat něco dalšího, můžete napsat i přímo na{' '}
                     <a href="mailto:info@aiprorodinu.cz" className="text-[#5B7B6A] font-medium">
                       info@aiprorodinu.cz
                     </a>
@@ -226,6 +239,20 @@ export default function KontaktPage() {
                         className="w-full pl-10 pr-4 py-2.5 rounded-lg border border-[#E8E4DE] bg-white focus:outline-none focus:ring-2 focus:ring-[#5B7B6A]/30 focus:border-[#5B7B6A] transition-all"
                       />
                     </div>
+                  </div>
+
+                  {/* Honeypot */}
+                  <div className="hidden" aria-hidden="true">
+                    <label htmlFor="company">Společnost</label>
+                    <input
+                      type="text"
+                      id="company"
+                      name="company"
+                      value={formData.company}
+                      onChange={handleChange}
+                      tabIndex="-1"
+                      autoComplete="off"
+                    />
                   </div>
 
                   {/* Type */}
@@ -294,8 +321,14 @@ export default function KontaktPage() {
                     )}
                   </button>
 
+                  {submitError && (
+                    <div className="p-3 rounded-lg bg-[#F5E8E8] border border-[#B85C5C]/20 text-sm text-[#8B4444]">
+                      {submitError}
+                    </div>
+                  )}
+
                   <p className="text-[#7A7A7A] text-xs text-center">
-                    Po kliknutí se otevře váš emailový klient s předvyplněnou zprávou.
+                    Formulář odešle zprávu přímo na <strong>info@aiprorodinu.cz</strong>. Pokud by odeslání selhalo, můžete napsat i ručně na tuto adresu.
                   </p>
                 </form>
               )}
