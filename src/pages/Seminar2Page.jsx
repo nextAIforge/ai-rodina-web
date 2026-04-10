@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { MessageCircle, BookOpen, Heart, Shield, AlertTriangle, FileText, CheckCircle, XCircle, Home, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Section, PromptCard, WarningBox, EmergencyCard } from '../components/ui';
-import { BackButton, TableCard, InfoBox } from '../components/ui/SeminarComponents';
+import { BackButton, TableCard, InfoBox, InfographicCard } from '../components/ui/SeminarComponents';
 
 export default function Seminar2Page() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -233,6 +233,13 @@ Potřebuji:
             </p>
           </WarningBox>
 
+          <InfographicCard
+            title="AI ve škole: realita, ne výjimka"
+            description="Když rodina nemá pravidla, dítě si je vytvoří samo. A většinou podle pohodlí, ne podle poctivosti."
+            src="/infographics/seminar2-school-chart.svg"
+            alt="Infografika s daty o používání AI teenagery ve škole"
+          />
+
           <TableCard
             title="Dva typy použití AI ve škole"
             headers={['Podvádění', 'Učení']}
@@ -324,6 +331,13 @@ NECHCI hotové řešení. Chci vědět jak ho naučit.`}
               <li>• „Teď mi to vysvětli tak, jako bys to měl učit mladšího sourozence."</li>
             </ul>
           </div>
+
+          <InfographicCard
+            title="AI je tutor, ne autor"
+            description="Dva rozdílné procesy. Jeden buduje porozumění, druhý jen vyrábí hotový text."
+            src="/infographics/seminar2-tutor-not-author.svg"
+            alt="Rozhodovací infografika tutor versus autor při použití AI"
+          />
         </Section>
 
         {/* BLOK 3: Emocni situace */}
@@ -553,6 +567,13 @@ NECHCI hotové řešení. Chci vědět jak ho naučit.`}
               ['"Je to hloupé"', '"Co konkrétně ti překáží? Vysvětli mi to."'],
               ['"Nevěříš mi"', '"Věřím ti. Ale nevěřím algoritmu, který je navržený, aby tě manipuloval a držel déle uvnitř."'],
             ]}
+          />
+
+          <InfographicCard
+            title="Rodinná digitální dohoda"
+            description="Dohoda funguje, když je jasná, krátká a platí i pro rodiče."
+            src="/infographics/seminar2-family-agreement.svg"
+            alt="Myšlenková mapa rodinné digitální dohody"
           />
         </Section>
 

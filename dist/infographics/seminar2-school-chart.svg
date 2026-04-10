@@ -1,0 +1,60 @@
+<svg width="1200" height="820" viewBox="0 0 1200 820" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="0" y="0" width="1200" height="820" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#2D3436" flood-opacity="0.08"/>
+    </filter>
+    <style>
+      .title { font: 700 42px Georgia, serif; fill: #2D3436; }
+      .subtitle { font: 400 20px Arial, Helvetica, sans-serif; fill: #4A5568; }
+      .section { font: 700 24px Georgia, serif; fill: #2D3436; }
+      .label { font: 600 17px Arial, Helvetica, sans-serif; fill: #4A5568; }
+      .value { font: 700 32px Georgia, serif; fill: #2D3436; }
+      .copy { font: 400 17px Arial, Helvetica, sans-serif; fill: #4A5568; }
+      .source { font: 400 15px Arial, Helvetica, sans-serif; fill: #7A7A7A; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="820" rx="36" fill="#FAF8F5"/>
+  <text x="72" y="84" class="title">AI ve škole: realita, ne výjimka</text>
+  <text x="72" y="120" class="subtitle">Děti už AI používají. Otázka není jestli, ale s jakými pravidly.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="72" y="164" width="516" height="520" rx="28" fill="white"/>
+    <rect x="612" y="164" width="516" height="520" rx="28" fill="white"/>
+  </g>
+
+  <text x="108" y="212" class="section">Teenageři</text>
+  <text x="648" y="212" class="section">Rodiče</text>
+
+  <rect x="108" y="260" width="120" height="300" rx="24" fill="#E8E4DE"/>
+  <rect x="256" y="342" width="120" height="218" rx="24" fill="#E8E4DE"/>
+  <rect x="404" y="362" width="120" height="198" rx="24" fill="#E8E4DE"/>
+  <rect x="108" y="260" width="120" height="300" rx="24" fill="#5B7B6A"/>
+  <rect x="256" y="342" width="120" height="218" rx="24" fill="#C9A962"/>
+  <rect x="404" y="362" width="120" height="198" rx="24" fill="#C4785A"/>
+
+  <text x="116" y="612" class="label">Použilo gen AI</text>
+  <text x="146" y="646" class="value">70 %</text>
+  <text x="268" y="612" class="label">Použilo pro školu</text>
+  <text x="299" y="646" class="value">40 %</text>
+  <text x="416" y="612" class="label">Bez svolení učitele</text>
+  <text x="446" y="646" class="value">46 %</text>
+
+  <rect x="648" y="274" width="444" height="104" rx="24" fill="#F5E8E8"/>
+  <rect x="648" y="412" width="444" height="104" rx="24" fill="#FDF6E3"/>
+  <rect x="648" y="550" width="444" height="104" rx="24" fill="#EDF5F0"/>
+
+  <text x="680" y="316" class="section">37 %</text>
+  <text x="790" y="316" class="copy">rodičů správně vědělo, že jejich dítě</text>
+  <text x="790" y="342" class="copy">AI skutečně používá</text>
+
+  <text x="680" y="454" class="section">49 %</text>
+  <text x="790" y="454" class="copy">rodičů se o AI se svým dítětem</text>
+  <text x="790" y="480" class="copy">vůbec nebavilo</text>
+
+  <text x="680" y="592" class="section">Problém</text>
+  <text x="790" y="592" class="copy">není jen technologie, ale zpožděný</text>
+  <text x="790" y="618" class="copy">rodinný rozhovor a chybějící pravidla</text>
+
+  <text x="72" y="780" class="source">Zdroj: Common Sense Media, report o teenagerech, rodičích a generativní AI, 18. 9. 2024</text>
+</svg>

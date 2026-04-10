@@ -1,0 +1,65 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="hero" x1="120" y1="80" x2="1080" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5B7B6A"/>
+      <stop offset="1" stop-color="#3D5A4A"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="1200" height="760" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#2D3436" flood-opacity="0.08"/>
+    </filter>
+    <style>
+      .title { font: 700 42px Georgia, serif; fill: #2D3436; }
+      .subtitle { font: 500 20px Arial, Helvetica, sans-serif; fill: #4A5568; }
+      .hero-title { font: 700 40px Georgia, serif; fill: white; }
+      .hero-sub { font: 400 21px Arial, Helvetica, sans-serif; fill: rgba(255,255,255,0.84); }
+      .card-title { font: 700 18px Arial, Helvetica, sans-serif; fill: #4A5568; }
+      .card-value { font: 700 62px Georgia, serif; fill: #2D3436; }
+      .card-copy { font: 400 18px Arial, Helvetica, sans-serif; fill: #4A5568; }
+      .small-value { font: 700 44px Georgia, serif; fill: #8B4444; }
+      .small-copy { font: 400 17px Arial, Helvetica, sans-serif; fill: #6B3A3A; }
+      .source { font: 400 15px Arial, Helvetica, sans-serif; fill: #7A7A7A; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="760" rx="36" fill="#FAF8F5"/>
+  <rect x="42" y="42" width="1116" height="170" rx="28" fill="url(#hero)"/>
+  <circle cx="1040" cy="90" r="120" fill="#C9A962" fill-opacity="0.18"/>
+
+  <text x="84" y="108" class="hero-title">AI compani a teenageři</text>
+  <text x="84" y="148" class="hero-sub">Nejde o malou skupinu dětí. Jde o nový vztahový návyk, který už je masový.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="72" y="250" width="318" height="198" rx="26" fill="white"/>
+    <rect x="441" y="250" width="318" height="198" rx="26" fill="white"/>
+    <rect x="810" y="250" width="318" height="198" rx="26" fill="white"/>
+    <rect x="72" y="486" width="503" height="172" rx="26" fill="#F5E8E8"/>
+    <rect x="624" y="486" width="504" height="172" rx="26" fill="#EDF5F0"/>
+  </g>
+
+  <text x="104" y="292" class="card-title">Vyzkoušelo AI companiona</text>
+  <text x="104" y="372" class="card-value">72 %</text>
+  <text x="104" y="413" class="card-copy">teenagerů podle Common Sense Media</text>
+
+  <text x="473" y="292" class="card-title">Používá pravidelně</text>
+  <text x="473" y="372" class="card-value">50 %</text>
+  <text x="473" y="413" class="card-copy">už nezkouší, ale vrací se opakovaně</text>
+
+  <text x="842" y="292" class="card-title">Řešilo vážnou věc raději s AI</text>
+  <text x="842" y="372" class="card-value">33 %</text>
+  <text x="842" y="413" class="card-copy">než s člověkem</text>
+
+  <text x="104" y="528" class="card-title">Další varovná čísla</text>
+  <text x="104" y="587" class="small-value">24 %</text>
+  <text x="204" y="580" class="small-copy">svěřilo AI osobní nebo</text>
+  <text x="204" y="604" class="small-copy">soukromé informace</text>
+  <text x="104" y="637" class="small-value">34 %</text>
+  <text x="204" y="630" class="small-copy">zažilo v konverzaci něco,</text>
+  <text x="204" y="654" class="small-copy">co jim bylo nepříjemné</text>
+
+  <text x="656" y="538" class="card-title">Co si má rodič odnést</text>
+  <text x="656" y="585" class="card-copy">AI companion není jen chatbot.</text>
+  <text x="656" y="615" class="card-copy">Je to digitální vztahový konkurent:</text>
+  <text x="656" y="645" class="card-copy">kamaráda, rádce, vrby i rodiče.</text>
+
+  <text x="72" y="714" class="source">Zdroj: Common Sense Media, Talk, Trust, and Trade-Offs: How and Why Teens Use AI Companions, 16. 7. 2025</text>
+</svg>

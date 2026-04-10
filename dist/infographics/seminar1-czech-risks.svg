@@ -1,0 +1,68 @@
+<svg width="1200" height="820" viewBox="0 0 1200 820" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="0" y="0" width="1200" height="820" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#2D3436" flood-opacity="0.08"/>
+    </filter>
+    <style>
+      .title { font: 700 42px Georgia, serif; fill: #2D3436; }
+      .subtitle { font: 400 20px Arial, Helvetica, sans-serif; fill: #4A5568; }
+      .card-title { font: 700 20px Georgia, serif; fill: #2D3436; }
+      .card-copy { font: 400 17px Arial, Helvetica, sans-serif; fill: #4A5568; }
+      .big { font: 700 58px Georgia, serif; fill: #8B4444; }
+      .bar-label { font: 700 15px Arial, Helvetica, sans-serif; fill: #4A5568; }
+      .bar-value { font: 700 22px Georgia, serif; fill: #2D3436; }
+      .source { font: 400 15px Arial, Helvetica, sans-serif; fill: #7A7A7A; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="820" rx="36" fill="#FAF8F5"/>
+  <text x="72" y="84" class="title">Česká realita 2025–2026</text>
+  <text x="72" y="120" class="subtitle">Deepfake ponížení, sexting a online schůzky nejsou zahraniční problém. Týkají se i českých dětí.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="72" y="164" width="480" height="228" rx="28" fill="white"/>
+    <rect x="588" y="164" width="540" height="228" rx="28" fill="white"/>
+    <rect x="72" y="430" width="1056" height="308" rx="28" fill="white"/>
+  </g>
+
+  <text x="108" y="214" class="card-title">AI „svlečené“ fotografie</text>
+  <text x="108" y="292" class="big">7 %</text>
+  <text x="108" y="334" class="card-copy">českých žáků uvedlo, že někdo zneužil AI</text>
+  <text x="108" y="358" class="card-copy">k vytvoření jejich vlastní „svlečené“ fotky</text>
+
+  <text x="624" y="214" class="card-title">Když taková fotografie vznikne</text>
+  <text x="624" y="292" class="big">68 %</text>
+  <text x="624" y="334" class="card-copy">těchto dětí uvedlo, že se staly</text>
+  <text x="624" y="358" class="card-copy">terčem vydírání</text>
+
+  <text x="108" y="476" class="card-title">Další česká čísla</text>
+  <text x="108" y="512" class="card-copy">Zpráva se sexuálním podtextem</text>
+
+  <rect x="108" y="540" width="220" height="24" rx="12" fill="#E8E4DE"/>
+  <rect x="108" y="540" width="64" height="24" rx="12" fill="#C4785A"/>
+  <rect x="108" y="576" width="220" height="24" rx="12" fill="#E8E4DE"/>
+  <rect x="108" y="576" width="66" height="24" rx="12" fill="#5B7B6A"/>
+  <text x="344" y="558" class="bar-label">Dívky 29 %</text>
+  <text x="344" y="594" class="bar-label">Chlapci 30 %</text>
+
+  <text x="456" y="512" class="card-copy">Částečně obnažená nebo nahá fotka</text>
+  <rect x="456" y="540" width="220" height="24" rx="12" fill="#E8E4DE"/>
+  <rect x="456" y="540" width="40" height="24" rx="12" fill="#C4785A"/>
+  <rect x="456" y="576" width="220" height="24" rx="12" fill="#E8E4DE"/>
+  <rect x="456" y="576" width="42" height="24" rx="12" fill="#5B7B6A"/>
+  <text x="692" y="558" class="bar-label">Dívky 18 %</text>
+  <text x="692" y="594" class="bar-label">Chlapci 19 %</text>
+
+  <text x="804" y="512" class="card-copy">Souhlas se schůzkou s neznámým z internetu</text>
+  <rect x="804" y="540" width="220" height="24" rx="12" fill="#E8E4DE"/>
+  <rect x="804" y="540" width="31" height="24" rx="12" fill="#C4785A"/>
+  <rect x="804" y="576" width="220" height="24" rx="12" fill="#E8E4DE"/>
+  <rect x="804" y="576" width="48" height="24" rx="12" fill="#5B7B6A"/>
+  <text x="1040" y="558" class="bar-label">Dívky 14 %</text>
+  <text x="1040" y="594" class="bar-label">Chlapci 22 %</text>
+
+  <text x="108" y="662" class="bar-value">Tohle nejsou internetové historky.</text>
+  <text x="108" y="692" class="card-copy">To je české prostředí, české školy a české děti.</text>
+
+  <text x="72" y="780" class="source">Zdroj: Čeští žáci v online světě 2025, výsledky zveřejněné 27. 11. 2025 a 10. 2. 2026</text>
+</svg>

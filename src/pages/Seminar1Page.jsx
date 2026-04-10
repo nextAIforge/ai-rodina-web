@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Smartphone, Eye, Brain, BookOpen, Shield, Clock, Users, AlertTriangle, Heart, ExternalLink, Play } from 'lucide-react';
 import { Section, WarningBox, EmergencyCard } from '../components/ui';
-import { BackButton, TableCard, BiblicalQuote, AgeGroupCard, InfoBox } from '../components/ui/SeminarComponents';
+import { BackButton, TableCard, BiblicalQuote, AgeGroupCard, InfoBox, InfographicCard } from '../components/ui/SeminarComponents';
 
 export default function Seminar1Page() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -63,6 +63,13 @@ export default function Seminar1Page() {
             <strong> 24 %</strong> jí svěřilo osobní nebo soukromé informace a <strong>34 %</strong> zažilo něco,
             co jim v konverzaci bylo nepříjemné.
           </InfoBox>
+
+          <InfographicCard
+            title="AI compani a teenageři"
+            description="Jedna vizuální zkratka pro rodiče: nejde o okrajový jev, ale o masové chování."
+            src="/infographics/seminar1-ai-companions.svg"
+            alt="Infografika s daty o používání AI companionů teenageři"
+          />
         </Section>
 
         {/* Where is AI */}
@@ -186,6 +193,13 @@ export default function Seminar1Page() {
             </ul>
           </div>
 
+          <InfographicCard
+            title="Co všechno telefon ví o dítěti"
+            description="Telefon nesleduje jen obsah. Skládá příběh, rytmus dne, vztahy i zranitelnost."
+            src="/infographics/seminar1-phone-map.svg"
+            alt="Myšlenková mapa o tom, co telefon ví o dítěti"
+          />
+
           <div className="mt-6 p-5 rounded-xl bg-gradient-to-br from-[#F5E8E8] to-[#FDF5F5] border border-[#B85C5C]/20">
             <h4 className="font-display font-semibold text-[#8B4444] mb-3">Česká realita 2025–2026</h4>
             <p className="text-sm text-[#6B3A3A] mb-3">
@@ -197,6 +211,13 @@ export default function Seminar1Page() {
               To už není vzdálené riziko. To je nový typ školního ponižování a nátlaku přímo v českém prostředí.
             </p>
           </div>
+
+          <InfographicCard
+            title="Česká realita 2025–2026"
+            description="Deepfake ponížení, sexting a online schůzky nejsou zahraniční problém. Dějí se i českým dětem."
+            src="/infographics/seminar1-czech-risks.svg"
+            alt="Infografika s českými daty o online rizicích dětí"
+          />
         </Section>
 
         {/* Biblical Framework */}

@@ -149,6 +149,24 @@ export const InfoBox = ({ children, type = 'info' }) => {
   );
 };
 
+// Infographic card for SVG visuals
+export const InfographicCard = ({ title, description, src, alt }) => (
+  <div className="mb-6 overflow-hidden rounded-xl border border-[#E8E4DE] bg-white shadow-sm">
+    <div className="px-4 py-4 md:px-5 md:py-5 border-b border-[#E8E4DE] bg-[#FAF8F5]">
+      <h4 className="font-display font-semibold text-[#2D3436] text-base md:text-lg mb-1.5">{title}</h4>
+      {description && (
+        <p className="text-sm md:text-base text-[#4A5568]">{description}</p>
+      )}
+    </div>
+    <img
+      src={src}
+      alt={alt || title}
+      loading="lazy"
+      className="block w-full h-auto bg-white"
+    />
+  </div>
+);
+
 // Highlight text
 export const Highlight = ({ children, color = 'sage' }) => {
   const colors = {
