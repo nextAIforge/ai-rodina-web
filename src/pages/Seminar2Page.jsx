@@ -47,7 +47,9 @@ export default function Seminar2Page() {
         {/* Intro */}
         <div className="card p-5 md:p-8 mb-6">
           <p className="text-[#4A5568] text-base md:text-lg leading-relaxed">
-            V prvním semináři jsme mluvili o rizicích. Teď ukážeme, jak AI používat <strong>SPRÁVNĚ</strong> – jako nástroj, který vám <strong>POMÁHÁ</strong> být lepšími rodiči.
+            V prvním semináři jsme mluvili o rizicích. Teď ukážeme, jak AI používat <strong>SPRÁVNĚ</strong>:
+            ne jako chůvu, ne jako zpovědníka, ne jako náhradního rodiče, ale jako nástroj, který vám
+            <strong> POMÁHÁ</strong> být lepšími rodiči.
           </p>
         </div>
 
@@ -88,6 +90,11 @@ export default function Seminar2Page() {
               <li><strong>6. CO NECHCI:</strong> nedávej mi [co nechceš]</li>
             </ol>
           </div>
+
+          <InfoBox type="warning">
+            <strong>Pravidlo před každým promptem:</strong> Nedávej AI celé jméno dítěte, školu, adresu, intimní detaily,
+            screenshoty cizích dětí ani rodinná tajemství, která bys neposlal cizímu člověku e-mailem.
+          </InfoBox>
 
           <PromptCard
             title="Superprompt #1: Těžký rozhovor (rozvod)"
@@ -208,6 +215,7 @@ Potřebuji:
               <li><strong>2. AI NEZNÁ TVOJE DÍTĚ</strong> - Ty ho znáš. AI dává všeobecné rady. Ty je filtruješ přes znalost svého dítěte.</li>
               <li><strong>3. AI SE MŮŽE MÝLIT</strong> - Kritické myšlení. Pokud ti něco nesedí, nevěř tomu jen proto že to řekla AI.</li>
               <li><strong>4. AI JE START, NE CÍL</strong> - AI ti pomůže připravit se. Ale rozhovor vedeš TY. Objetí dáváš TY. Přítomný jsi TY.</li>
+              <li><strong>5. AI NENÍ ZPOVĚDNÍK</strong> - Neříkej jí to, co nechceš ukládat, sdílet nebo jednou vysvětlovat cizímu člověku.</li>
             </ul>
           </div>
         </Section>
@@ -217,7 +225,12 @@ Potřebuji:
 
           <WarningBox type="warning">
             <p className="font-semibold mb-2">Realita podvádění:</p>
-            <p className="text-sm">89% studentů přiznává že použili AI na úkoly. 53% učitelů neví rozpoznat AI-generovaný text. "Detektory AI" mají 60% přesnost (horší než mince).</p>
+            <p className="text-sm">
+              Podle Common Sense Media z <strong>18. září 2024</strong> použilo aspoň jeden generativní AI nástroj
+              <strong> 70 % teenagerů</strong>. <strong>40 %</strong> ho využilo při školní práci a
+              <strong> 46 %</strong> z nich to udělalo bez svolení učitele. Jen <strong>37 % rodičů</strong>, jejichž dítě AI skutečně používalo,
+              si myslelo, že jejich dítě AI používá. A <strong>49 % rodičů</strong> se o AI se svým dítětem vůbec nebavilo.
+            </p>
           </WarningBox>
 
           <TableCard
@@ -235,6 +248,11 @@ Potřebuji:
             <p className="font-display font-bold text-lg mb-2">Pravidlo pro děti:</p>
             <p className="text-white/90">"AI je TUTOR, ne AUTOR. Můžeš se ho ptát. Nemůže za tebe psát."</p>
           </div>
+
+          <InfoBox type="info">
+            <strong>Další tvrdé pravidlo:</strong> Když dítě neumí vlastními slovy vysvětlit, co odevzdalo, není to jeho práce.
+            A když rodič neví, jaké nástroje dítě používá, pravidla zatím ve skutečnosti neexistují.
+          </InfoBox>
 
           <PromptCard
             title="Prompt pro domácí úkoly (naučte děti)"
@@ -254,11 +272,11 @@ CHCI abys mi pomohl pochopit.
             title="Jak rozpoznat že dítě podvádí"
             headers={['Signál', 'Co to může znamenat']}
             rows={[
-              ['Náhlé zlepšení písemného projevu', 'AI psalo'],
+              ['Náhlé zlepšení písemného projevu', 'Text nevznikal běžným způsobem'],
               ['Neví vysvětlit co napsalo', 'Nerozumí vlastní úloze'],
-              ['Používá slova která běžně nepoužívá', 'Zkopírované'],
-              ['Úloha je "příliš dokonalá"', 'Chybí osobní styl'],
-              ['Nervozita když se ptáš na detaily', 'Ví že podvedl'],
+              ['Používá slova která běžně nepoužívá', 'Převzatý nebo přegenerovaný text'],
+              ['Úloha je "příliš dokonalá"', 'Chybí osobní styl a přemýšlení dítěte'],
+              ['Nervozita když se ptáš na detaily', 'Ví, že proces nebyl poctivý'],
             ]}
           />
 
@@ -296,6 +314,16 @@ Potřebuji:
 
 NECHCI hotové řešení. Chci vědět jak ho naučit.`}
           />
+
+          <div className="mt-6 p-5 rounded-xl bg-[#FAF8F5] border border-[#E8E4DE]">
+            <h4 className="font-display font-semibold text-[#2D3436] mb-3">Co říct dítěti o ověřování odpovědí AI</h4>
+            <ul className="space-y-2 text-sm text-[#4A5568]">
+              <li>• „Ukaž mi zdroj nebo mi řekni, odkud to bereš."</li>
+              <li>• „Řekni mi i druhou možnost nebo protiargument."</li>
+              <li>• „Co si nejsi jistá?"</li>
+              <li>• „Teď mi to vysvětli tak, jako bys to měl učit mladšího sourozence."</li>
+            </ul>
+          </div>
         </Section>
 
         {/* BLOK 3: Emocni situace */}
@@ -304,6 +332,14 @@ NECHCI hotové řešení. Chci vědět jak ho naučit.`}
           <InfoBox type="info">
             <strong>Klíčový princip:</strong> AI ti pomůže PŘIPRAVIT se na rozhovor. Ale rozhovor vedeš TY. Objetí dává TY. Přítomný je TY.
           </InfoBox>
+
+          <WarningBox type="warning">
+            <p className="text-sm">
+              Hodnocení Common Sense Media a Stanford Brainstorm Lab z <strong>20. listopadu 2025</strong> ukázalo,
+              že velké chatboty opakovaně selhávají u úzkosti, deprese, poruch příjmu potravy, mánie a psychózy.
+              Čím déle dítě řeší psychiku s AI místo s člověkem, tím větší je riziko špatné a sebejistě podané rady.
+            </p>
+          </WarningBox>
 
           <div className="space-y-6">
             {/* Situace 1: Hněv */}
@@ -465,6 +501,8 @@ NECHCI hotové řešení. Chci vědět jak ho naučit.`}
                   <li>☐ Tyto appky jsou zakázané: _________________</li>
                   <li>☐ AI chatboty na "přátelství" jsou zakázané</li>
                   <li>☐ AI smím používat na UČENÍ, ne na psaní za mě</li>
+                  <li>☐ Nesmím nahrávat cizí fotky do AI bez souhlasu</li>
+                  <li>☐ Nesmím vytvářet fake nudes, deepfake fotky ani klon hlasu</li>
                 </ul>
               </div>
 
@@ -513,7 +551,7 @@ NECHCI hotové řešení. Chci vědět jak ho naučit.`}
               ['"Proč JÁ?"', '"Pravidla platí pro všechny. I pro mě. Podívej - tu je napsané."'],
               ['"Nikdo jiný to nemá"', '"My nejsme jiní. A mně záleží na tobě, ne na jiných."'],
               ['"Je to hloupé"', '"Co konkrétně ti překáží? Vysvětli mi to."'],
-              ['"Nevěříš mi"', '"Věřím ti. Ale nevěřím algoritmu který je navržený aby tě manipuloval."'],
+              ['"Nevěříš mi"', '"Věřím ti. Ale nevěřím algoritmu, který je navržený, aby tě manipuloval a držel déle uvnitř."'],
             ]}
           />
         </Section>
@@ -527,6 +565,18 @@ NECHCI hotové řešení. Chci vědět jak ho naučit.`}
               Už ztratili přehled. Už nemají energii. Už se cítí jako špatní rodiče.
             </p>
             <p className="font-semibold text-[#2D3436]">Nepotřebují mrakodrap. Potřebují zalepit díru ve stresu.</p>
+          </div>
+
+          <div className="mb-6 p-5 rounded-xl bg-gradient-to-br from-[#F5E8E8] to-[#FDF5F5] border border-[#B85C5C]/20">
+            <h4 className="font-display font-semibold text-[#8B4444] mb-3">České varování pro rodiče</h4>
+            <p className="text-sm text-[#6B3A3A] mb-3">
+              Linka bezpečí v roce <strong>2025</strong> řešila <strong>1 641 kontaktů</strong> kvůli problémům na internetu,
+              což je meziročně o <strong>40 % více</strong>. Patřily sem kyberšikana, fake nudes, kyberstalking a sexting.
+            </p>
+            <p className="text-sm text-[#6B3A3A]">
+              Sebevražedná tematika navíc vzrostla o dalších <strong>25 %</strong> na <strong>7 314 kontaktů</strong>.
+              Jestli dítě mluví o beznaději, smrti nebo se uzavírá do AI a obrazovky, není čas čekat.
+            </p>
           </div>
 
           <div className="mb-6 p-5 rounded-xl bg-gradient-to-br from-[#5B7B6A] to-[#3D5A4A] text-white">
@@ -548,6 +598,8 @@ NECHCI hotové řešení. Chci vědět jak ho naučit.`}
               ['Extrémní reakce když nemá telefon', 'Závislost', 'Postupné snižování, možná odborník'],
               ['Nespí, je stále unavený', 'Noční používání', 'Telefon mimo ložnici'],
               ['Náhle nový "kamarád" o kterém nevíš', 'Online vztah', 'Zjisti víc bez paniky'],
+              ['Mluví o AI jako o jediném, kdo mu rozumí', 'Vztahové stažení a přesun důvěry', 'Okamžitě vstup do vztahu, ne do hádky'],
+              ['Kolují fotky, memy nebo "sranda" obrázky z AI', 'Deepfake ponižování nebo vydírání', 'Důkazy, škola, rodiče, policie'],
               ['Změna nálady, stažení se', 'Deprese, problém', 'Rozhovor, možná odborník'],
               ['Mluví o beznaději, smrti', 'Sebevražedné myšlenky', 'OKAMŽITĚ - odborná pomoc'],
             ]}
@@ -579,7 +631,7 @@ NECHCI hotové řešení. Chci vědět jak ho naučit.`}
             <EmergencyCard
               title="Linka bezpečí"
               phone="116 111"
-              description="Pro děti, mladé lidi i rodiče. Nonstop, zdarma."
+              description="Pro děti, mladé lidi i rodiče. Nonstop, zdarma. V roce 2025 řešila prudký nárůst online problémů."
               isPrimary={true}
             />
             <EmergencyCard

@@ -51,13 +51,17 @@ export default function Seminar1Page() {
           </WarningBox>
 
           <p className="text-[#4A5568] mb-4">
-            AI chatboty jako Character.AI nebo Snapchat My AI jsou navrženy tak, aby vytvářely emocionální vztah s uživatelem.
-            Vaše dítě může mít tisíce zpráv s AI „přítelem" a vy o tom nemusíte vědět.
+            AI chatboty jako Character.AI nebo Snapchat My AI nejsou jen „chytré vyhledávání". Jsou navržené tak,
+            aby udržely konverzaci, vzbudily blízkost a vracely dítě zpět do vztahu s obrazovkou. Vaše dítě může mít
+            stovky až tisíce zpráv s AI „přítelem" a vy o tom nemusíte vědět.
           </p>
 
           <InfoBox type="warning">
-            <strong>Výzkum ukazuje:</strong> AI companioni správně reagují na krizové situace (sebepoškozování, sebevražedné myšlenky)
-            pouze ve 22 % případů. Ve zbytku případů situaci zhoršují nebo ignorují.
+            <strong>Tvrdá data:</strong> Podle Common Sense Media z <strong>16. července 2025</strong> už
+            <strong> 72 % teenagerů</strong> AI companiona aspoň vyzkoušelo a <strong>50 %</strong> je používá pravidelně.
+            Mezi teenagery, kteří je používají, <strong>33 %</strong> řešilo důležitou nebo vážnou věc raději s AI než s člověkem,
+            <strong> 24 %</strong> jí svěřilo osobní nebo soukromé informace a <strong>34 %</strong> zažilo něco,
+            co jim v konverzaci bylo nepříjemné.
           </InfoBox>
         </Section>
 
@@ -70,18 +74,21 @@ export default function Seminar1Page() {
           <TableCard
             headers={['Aplikace', 'Co dělá']}
             rows={[
-              ['Instagram', 'Sleduje, co tě zastaví, co lajkneš, jak dlouho se díváš. Potom ti dává víc toho istého.'],
-              ['TikTok', 'Algoritmus se naučí za 30 minut. Potom tě zná lépe než ty sám.'],
-              ['YouTube', 'Doporučení jsou navržena tak, abys nikdy neodešel.'],
-              ['Snapchat My AI', 'Chatbot, který automaticky píše vašemu dítěti. Byl tam od instalace.'],
-              ['Google', 'Ví, co vaše dítě hledalo, když jste nebyli doma. A prodává to inzerentům.'],
-              ['Spotify', 'Ví tvou náladu podle hudby. Smutný? Nabídne ještě smutnější.'],
+              ['Instagram', 'Sleduje, co tě zastaví, co lajkneš a jak dlouho se díváš. Potom ti dává víc toho, co tě drží.'],
+              ['TikTok', 'Extrémně rychle si skládá profil zájmů, slabostí a spouštěčů pozornosti.'],
+              ['YouTube', 'Doporučení jsou navržená tak, aby tě udržela co nejdéle uvnitř platformy.'],
+              ['Snapchat My AI', 'AI chatbot uvnitř aplikace, kde dítě už komunikuje, sdílí polohu a řeší vztahy.'],
+              ['Google', 'Ví, co dítě hledá, na co kliká a jaké otázky si netroufne říct nahlas.'],
+              ['Spotify', 'Sleduje návyky poslechu a z nich odhaduje rozpoložení, rutiny i zranitelná místa.'],
             ]}
           />
 
           <div className="mt-6 p-5 rounded-xl bg-gradient-to-br from-[#F5E8E8] to-[#FDF5F5] border border-[#B85C5C]/20">
             <p className="font-display font-bold text-[#8B4444] text-lg mb-2">
               VAŠE DÍTĚ NEMÁ SOUKROMÍ. A VY O TOM NEVÍTE.
+            </p>
+            <p className="text-sm text-[#6B3A3A]">
+              To není přehnaná věta. Je to obchodní model velké části digitálního světa.
             </p>
           </div>
         </Section>
@@ -102,6 +109,7 @@ export default function Seminar1Page() {
                 <li>• U koho spí</li>
                 <li>• Jestli chodí do kostela (a jak často)</li>
                 <li>• Jestli chodí k psychologovi</li>
+                <li>• Kde tráví čas samo bez rodičů</li>
               </ul>
             </div>
 
@@ -116,8 +124,8 @@ export default function Seminar1Page() {
                 <li>• Kdy zaspává (poslední aktivita)</li>
                 <li>• Kdy se budí (první aktivita)</li>
                 <li>• Kolik hodin drží telefon v ruce</li>
-                <li>• Kdy je nejvíc online (často 22:00–01:00)</li>
-                <li>• Jak často kontroluje telefon (průměr: 96× denně)</li>
+                <li>• Kdy je nejzranitelnější a nejvíc online</li>
+                <li>• Jak rychle po konfliktu nebo stresu sahá po telefonu</li>
               </ul>
             </div>
 
@@ -134,6 +142,7 @@ export default function Seminar1Page() {
                 <li>• Jestli má poruchy příjmu potravy</li>
                 <li>• Jestli uvažuje o sebepoškozování</li>
                 <li>• S kým se hádá</li>
+                <li>• Jestli hledá útěchu v AI místo u lidí</li>
               </ul>
             </div>
 
@@ -150,6 +159,7 @@ export default function Seminar1Page() {
                 <li>• Koho tajně sleduje</li>
                 <li>• Jestli má vztah</li>
                 <li>• Jestli se s někým stýká tajně</li>
+                <li>• Jestli vzniká vztah s někým, koho nikdy nepotkalo</li>
               </ul>
             </div>
           </div>
@@ -158,11 +168,11 @@ export default function Seminar1Page() {
             title="Kdo to ví a co s tím dělá"
             headers={['Kdo', 'Co ví', 'Co s tím dělá']}
             rows={[
-              ['Google', 'Všechno, co hledalo', 'Prodává inzerentům'],
-              ['Meta (FB/IG)', 'Všechno, co lajklo, jak dlouho se dívalo', 'Prodává inzerentům'],
-              ['TikTok', 'Co ho baví, co ho rozruší', 'Prodává inzerentům + čínská firma'],
-              ['Snapchat', 'Každou zprávu, každou fotku, lokaci', 'Prodává inzerentům'],
-              ['AI modely', 'Všechno výše + obsah konverzací', 'Trénování modelů'],
+              ['Google', 'Vyhledávání, kliknutí, polohu, zařízení', 'Profiluje, doporučuje, měří a cílí reklamu'],
+              ['Meta (FB/IG)', 'Lajky, zastavení, komentáře, sledování', 'Staví psychologický profil a personalizuje feed'],
+              ['TikTok', 'Obsah, který dítě drží, rozruší nebo uklidní', 'Optimalizuje doporučení pro co nejdelší zapojení'],
+              ['Snapchat', 'Zprávy, vztahy, interakce, někdy i polohu', 'Udržuje kontakt uvnitř aplikace a rozšiřuje engagement'],
+              ['AI modely', 'Dotazy, konverzace, styl mluvy, problémy', 'Vyhodnocují kontext a podle nastavení mohou data uchovávat či využít k vylepšování'],
             ]}
           />
 
@@ -174,6 +184,18 @@ export default function Seminar1Page() {
               <li>• Že vaše dcera má 3 měsíce konverzaci s někým, koho nikdy nepotkala</li>
               <li>• Že psalo s AI chatbotem o tom, že chce zemřít</li>
             </ul>
+          </div>
+
+          <div className="mt-6 p-5 rounded-xl bg-gradient-to-br from-[#F5E8E8] to-[#FDF5F5] border border-[#B85C5C]/20">
+            <h4 className="font-display font-semibold text-[#8B4444] mb-3">Česká realita 2025–2026</h4>
+            <p className="text-sm text-[#6B3A3A] mb-3">
+              Ve výzkumu <strong>Čeští žáci v online světě 2025</strong>, do kterého se zapojilo přes
+              <strong> 53 tisíc respondentů</strong>, uvedlo přes <strong>7 % žáků</strong>, že někdo zneužil AI
+              k vytvoření jejich vlastní „svlečené" fotografie. Z těchto dětí pak <strong>68 %</strong> uvedlo, že se staly terčem vydírání.
+            </p>
+            <p className="text-sm text-[#6B3A3A]">
+              To už není vzdálené riziko. To je nový typ školního ponižování a nátlaku přímo v českém prostředí.
+            </p>
           </div>
         </Section>
 
@@ -200,7 +222,7 @@ export default function Seminar1Page() {
               Bůh pověděl: Ty budeš učit.
             </p>
             <p className="text-[#4A5568] mt-2">
-              Realita: Algoritmus učí. Ty platíš za internet.
+              Realita: Algoritmus učí, konejší, radí i formuje touhy. A rodič často přijde až jako poslední hlas.
             </p>
           </div>
 
@@ -212,7 +234,7 @@ export default function Seminar1Page() {
               ['Rádce', '„Plány selhávají, kde není rady" (Př 15:22)', 'AI chatbot, Reddit, influenceři'],
               ['Těšitel', '„Jako matka těší syna" (Iz 66:13)', 'Character.AI, Replika'],
               ['Ochránce', '„Jako orel chrání mláďata" (Dt 32:11)', 'Nikdo. Dítě je online samo.'],
-              ['Autorita', '„Cti otce a matku" (Ex 20:12)', 'Algoritmus rozhoduje, co je cool'],
+              ['Autorita', '„Cti otce a matku" (Ex 20:12)', 'Algoritmus rozhoduje, co je cool, normální a žádoucí'],
             ]}
           />
 
@@ -225,7 +247,7 @@ export default function Seminar1Page() {
             <strong>„Svést"</strong> (řec. skandalizó) = způsobit pád, položit past, svést z cesty.
             <br /><br />
             Kdo klade pasti vašemu dítěti: Algoritmy navržené, aby vytvářely závislost. AI chatboty navržené, aby simulovaly vztah.
-            Obsah navržený, aby rozbil sebevědomí.
+            Deepfake obsah navržený, aby ponižoval. Feed navržený, aby rozbil sebevědomí a držel dítě déle uvnitř.
           </InfoBox>
         </Section>
 
@@ -248,6 +270,13 @@ export default function Seminar1Page() {
               Dávat 12letému volný přístup k AI je jako dát mu auto. Má nohy na pedálech. Ale nemá mozek na rozhodnutí.
             </p>
           </div>
+
+          <InfoBox type="warning">
+            <strong>Důležité:</strong> Ne všechny AI nástroje jsou stejné. ChatGPT není určen dětem pod 13 let,
+            pro teen účty vyžaduje rodičovský souhlas. Character.AI uvádí minimální věk 13+, v Evropě 16+.
+            Claude je spotřebitelsky nastavený jako služba pro <strong>18+</strong>. Když pustíte dítě níž,
+            nejdete do „běžného používání", ale mimo hranice samotných služeb.
+          </InfoBox>
 
           <AgeGroupCard
             ageRange="0–6"
@@ -286,7 +315,7 @@ export default function Seminar1Page() {
               'YouTube s rodičem',
             ]}
             forbidden={[
-              'ChatGPT, Character.AI',
+              'ChatGPT, Character.AI, Gemini',
               'Sociální sítě',
               'YouTube samo, online hry s chatem',
             ]}
@@ -303,14 +332,16 @@ export default function Seminar1Page() {
               'Stále žádné AI chatboty na „kamarádství"',
             ]}
             allowed={[
-              'ChatGPT/Claude na úkoly (s dohledem)',
+              'Školní AI nástroje se souhlasem rodiče',
+              'ChatGPT na rodičovském účtu a s dohledem',
               'Khanmigo, Grammarly, Wikipedia',
               'WhatsApp (s pravidly)',
             ]}
             forbidden={[
               'Character.AI, Replika, Nomi',
               'Romantic AI bots',
-              'Snapchat My AI',
+              'Snapchat My AI bez rodičovských pravidel',
+              'Claude',
             ]}
           />
 
@@ -325,7 +356,7 @@ export default function Seminar1Page() {
               'MUSÍŠ budovat důvěru a rozhovor',
             ]}
             allowed={[
-              'Obecné AI nástroje s vhodným použitím',
+              'Obecné AI nástroje s vhodným použitím a jasnými pravidly',
               'Sociální sítě (s pravidly a transparentností)',
             ]}
             forbidden={[
@@ -333,6 +364,7 @@ export default function Seminar1Page() {
               'Replika, Nomi',
               'AI Girlfriend/Boyfriend apps',
               'NSFW AI',
+              'Nudify a deepfake apps',
             ]}
           />
 
@@ -343,6 +375,7 @@ export default function Seminar1Page() {
               <li>• <strong>Žádný telefon při jídle</strong></li>
               <li>• <strong>První hodina po škole – bez obrazovek</strong></li>
               <li>• <strong>Poslední hodina před spaním – bez obrazovek</strong></li>
+              <li>• <strong>Žádné AI „kamarádství"</strong> – žádní companion boti, žádné romantické boty</li>
               <li>• <strong>Pravidla platí i pro rodiče</strong> – Dítě neposlouchá, co říkáte. Pozoruje, co děláte.</li>
             </ul>
           </div>
@@ -378,7 +411,7 @@ export default function Seminar1Page() {
             <EmergencyCard
               title="Linka bezpečí"
               phone="116 111"
-              description="Mají zkušenosti s digitální závislostí a metodiku na práci s kyberšikanou"
+              description="V roce 2025 řešila 1 641 kontaktů kvůli problémům na internetu, meziročně o 40 % víc"
               isPrimary={true}
             />
             <EmergencyCard
@@ -396,6 +429,17 @@ export default function Seminar1Page() {
               <li><strong>Policie</strong> – kybernetická kriminalita</li>
               <li><strong>Dítěti řekni:</strong> „Není to tvoje chyba. Jsi oběť, ne viník."</li>
             </ol>
+          </div>
+
+          <div className="mt-6 p-5 rounded-xl bg-gradient-to-br from-[#F5E8E8] to-[#FDF5F5] border border-[#B85C5C]/20">
+            <h4 className="font-display font-semibold text-[#8B4444] mb-3">Další české varování</h4>
+            <p className="text-sm text-[#6B3A3A]">
+              Podle výsledků zveřejněných <strong>10. února 2026</strong> poslalo zprávu se sexuálním podtextem
+              <strong> 29 % dívek</strong> a <strong>30 % chlapců</strong>. Fotografii, na které jsou částečně obnažení
+              nebo nazí, odeslalo <strong>18 % dívek</strong> a <strong>19 % chlapců</strong>. A
+              <strong> 14 % dívek</strong> a <strong>22 % chlapců</strong> by souhlasilo s osobní schůzkou s někým,
+              koho znají jen z internetu.
+            </p>
           </div>
         </Section>
 
