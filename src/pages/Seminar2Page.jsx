@@ -53,41 +53,41 @@ export default function Seminar2Page() {
           </p>
         </div>
 
-        {/* BLOK 1: Superprompty */}
-        <Section title="Blok 1: Jak se správně ptát AI" icon={MessageCircle} defaultOpen={true} accentColor="sage">
+        {/* BLOK 1: Jak použít AI jako pomocníka, ne náhradu */}
+        <Section title="Blok 1: Jak použít AI jako pomocníka, ne náhradu" icon={MessageCircle} defaultOpen={true} accentColor="sage">
 
           <div className="mb-6 p-5 rounded-xl bg-[#FAF8F5] border border-[#E8E4DE]">
-            <h4 className="font-display font-semibold text-[#2D3436] mb-4">Pravidlo #1: Jak se ptát</h4>
+            <h4 className="font-display font-semibold text-[#2D3436] mb-4">Pravidlo #1: AI ti nemá nahradit rodičovství</h4>
 
             <div className="grid md:grid-cols-2 gap-4 mb-4">
               <div className="p-4 rounded-lg bg-[#F5E8E8] border border-[#B85C5C]/20">
                 <p className="text-[#8B4444] font-medium mb-2 flex items-center gap-2">
-                  <XCircle className="w-4 h-4" /> Špatný prompt
+                  <XCircle className="w-4 h-4" /> Povrchní použití
                 </p>
-                <p className="text-sm text-[#6B3A3A] italic">„Pověz mi něco o zlomcích"</p>
+                <p className="text-sm text-[#6B3A3A] italic">„Napiš mi, co mám říct dítěti."</p>
               </div>
               <div className="p-4 rounded-lg bg-[#EDF5F0] border border-[#5B7B6A]/20">
                 <p className="text-[#3D5A4A] font-medium mb-2 flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4" /> Dobrý prompt
+                  <CheckCircle className="w-4 h-4" /> Zralé použití
                 </p>
-                <p className="text-sm text-[#4A6B5A] italic">„Můj syn (9 let) nechápe zlomky. Neumí si představit, co je 3/4. Vysvětli mi to pomocí pizzy – něco, co mu můžu fyzicky ukázat."</p>
+                <p className="text-sm text-[#4A6B5A] italic">„Pomoz mi připravit se na rozhovor. Ptej se mě na dítě, na vztah a na situaci. Pak se mnou natrénuj dvě verze rozhovoru a ukaž mi, co by dítě mohlo zranit."</p>
               </div>
             </div>
 
             <p className="text-[#4A5568] text-sm">
-              <strong>Rozdíl:</strong> Věk dítěte, konkrétní problém, kontext, co chceš (pochopit vs hotová odpověď)
+              <strong>Rozdíl:</strong> AI nemá vyrábět hotové věty místo tebe. Má ti pomoci zpomalit, doptat se, natrénovat rozhovor a odhalit slepá místa.
             </p>
           </div>
 
           <div className="mb-6 p-5 rounded-xl bg-gradient-to-br from-[#5B7B6A] to-[#3D5A4A] text-white">
-            <h4 className="font-display font-bold text-lg mb-4">Anatomie dobrého promptu:</h4>
+            <h4 className="font-display font-bold text-lg mb-4">Jak má AI rodiči opravdu pomoci:</h4>
             <ol className="space-y-2 text-white/90">
-              <li><strong>1. KDO:</strong> Můj syn/dcera [věk]</li>
-              <li><strong>2. CO:</strong> má problém s [konkrétně]</li>
-              <li><strong>3. KONTEXT:</strong> situace je [detaily]</li>
-              <li><strong>4. ČEHO SE BOJÍM:</strong> [tvoje obavy]</li>
-              <li><strong>5. CO CHCI:</strong> pomoz mi [konkrétní požadavek]</li>
-              <li><strong>6. CO NECHCI:</strong> nedávej mi [co nechceš]</li>
+              <li><strong>1. NEJPRVE SE PTEJ:</strong> ať AI nejdřív zjistí věk dítěte, vztah, citlivá místa a kontext</li>
+              <li><strong>2. PAK SIMULUJ:</strong> ať AI zahraje dítě nebo teenagera a vyzkouší tvoje věty v praxi</li>
+              <li><strong>3. UPOZORNI NA RIZIKA:</strong> ať pojmenuje, co je manipulativní, zraňující, moralistní nebo příliš tvrdé</li>
+              <li><strong>4. NABÍDNI VÍCE CEST:</strong> ne jeden univerzální návod, ale 2–3 možné přístupy</li>
+              <li><strong>5. RESPEKTUJ HRANICE:</strong> modlitbu, svědomí, autoritu a lásku rodiče AI nepřebírá</li>
+              <li><strong>6. ZŮSTAŇ KONKRÉTNÍ:</strong> výstup musí být praktický, ne povrchně „hezký“</li>
             </ol>
           </div>
 
@@ -97,115 +97,101 @@ export default function Seminar2Page() {
           </InfoBox>
 
           <PromptCard
-            title="Superprompt #1: Těžký rozhovor (rozvod)"
-            description="Když musíš dítěti říct o rozvodu"
-            prompt={`Můj syn má 8 let. S manželkou se rozvedeme. Musím mu to říct tento víkend.
+            title="Scénář #1: Nácvik těžkého rozhovoru"
+            description="AI jako simulace dítěte a zrcadlo rodiče"
+            prompt={`Jsem rodič a potřebuji se připravit na těžký rozhovor s dítětem.
 
-On má velmi blízký vztah s oběma rodiči. Bojím se že bude mít pocit že je to jeho chyba.
-Bojím se že se uzavře.
+Nechci, abys mi napsal hotový projev.
+Chci, abys mi pomohl se připravit zrale a citlivě.
 
-Pomoz mi:
-1. Jak začít ten rozhovor
-2. Přesné věty které můžu použít
-3. Co NEŘÍKAT
-4. Jak reagovat když se rozpláče
-5. Jak reagovat když se nahněvá
-6. Co dělat následující dny
+Nejdřív se mě zeptej maximálně na 8 stručných otázek:
+- věk dítěte
+- co se stalo
+- jaký máme vztah
+- čeho se dítě nejvíc bojí
+- čeho se bojím já
+- co už dítě ví
+- co rozhodně nechci pokazit
+- jestli jsme křesťanská rodina a jakou roli má víra
 
-Chci být upřímný ale nechci ho zahltit detaily které nepotřebuje vědět.`}
+Potom:
+1. shrň hlavní rizika mé komunikace
+2. napiš mi 3 možné začátky rozhovoru: jemný, přímý, vztahový
+3. zahraj dítě a reaguj realisticky
+4. po každé mé odpovědi mi řekni, co bylo dobré a co mohlo dítě zranit
+5. upozorni mě na věty, které zní manipulativně, studem nebo moralizováním
+
+Chci nácvik, ne náhradu rodičovského rozhovoru.`}
           />
 
           <PromptCard
-            title="Superprompt #2: Vysvětlení smrti"
-            description="Když zemřela babička a dítě se ptá"
-            prompt={`Dcera (6 let) se ptá proč babička zemřela.
-Babička zemřela na rakovinu před 3 dny.
-Dcera ji velmi milovala, navštěvovali jsme ji každý týden.
+            title="Scénář #2: AI, která rodiče vyzpovídá kvůli učení"
+            description="Ne jeden návod pro všechny, ale pomoc podle konkrétního dítěte"
+            prompt={`Chci pomoct svému dítěti s učením doma.
 
-Jsme křesťanská rodina. Věříme v nebe.
-Ale dcera se bojí - ptá se jestli já taky zemřu.
+Nechci univerzální návod.
+Chci, abys mě nejdřív vyzpovídal a pak navrhl vhodný postup přesně pro moje dítě.
 
-Potřebuji:
-1. Jednoduché vysvětlení smrti pro 6letou
-2. Jak propojit s naší vírou (bez klišé)
-3. Co říct na "ty taky zemřeš?"
-4. Konkrétní věty - copy-paste
-5. Co NEŘÍKAT (např. "zaspala" - bojí se pak spát)`}
+Nejdřív se mě ptej na:
+1. věk a ročník dítěte
+2. co mu jde a co mu nejde
+3. jestli se učí lépe čtením, psaním, mluvením, pohybem, hrou nebo vizuálně
+4. jak dlouho udrží pozornost
+5. jestli se spíš blokuje, vzdává, nebo spěchá
+6. jak reaguje na tlak a opravy
+7. jaká je konkrétní látka nebo úkol
+8. kolik máme času a pomůcek
+
+Potom:
+1. shrň, jaký učební styl je pro dítě pravděpodobně nejvhodnější
+2. navrhni 3 verze práce: krátká, hravá a důkladná
+3. napiš, jak mám látku vysvětlit já jako rodič
+4. navrhni, jak může AI pomoci bez toho, aby úkol udělala za dítě
+5. dej mi varování, co by dítě mohlo přetížit nebo znechutit
+
+Výstup musí být praktický, jednoduchý a přizpůsobený konkrétnímu dítěti.`}
           />
 
           <PromptCard
-            title="Superprompt #3: Digitální hranice"
-            description="Když dítě chce TikTok a všichni ho mají"
-            prompt={`Syn (12 let) chce TikTok.
-Argumentuje že všichni spolužáci ho mají a on je "outsider".
+            title="Scénář #3: Rozbor rodičovských vět"
+            description="AI ukáže, které formulace dítě zraňují nebo zavírají"
+            prompt={`Budu ti psát věty, které bych mohl říct svému dítěti v napjaté situaci.
 
-Nechci mu to jen zakázat bez vysvětlení.
-Ale taky nechci povolit něco co považuji za škodlivé.
+Ty u každé věty udělej toto:
+1. napiš, jak může ta věta znít v uších dítěte
+2. řekni, jestli v ní je stud, manipulace, hrozba, moralizování nebo chaos
+3. vysvětli, proč může zavřít vztah
+4. navrhni lepší verzi, která zachová pravdu i autoritu rodiče
+5. napiš, jak by asi reagovalo mladší dítě a jak teenager
 
-Potřebuji:
-1. Argumenty PROČ NE - které 12letý pochopí
-2. Jak reagovat na "všichni mají"
-3. Alternativy které můžu nabídnout
-4. Jak ho zapojit do rozhodnutí (aby necítil že je to diktát)
-5. Konkrétní dialog - co řeknu, co možná řekne on, co odpovím
-
-Chci zachovat vztah, ne vyhrát hádku.`}
+Chci, aby ses choval jako trenér komunikace rodiče, ne jako generátor líbivých frází.`}
           />
 
           <PromptCard
-            title="Superprompt #4: Když dítě klame"
-            description="Přichytil jsi dítě při klamství"
-            prompt={`Dcera (14) mi řekla že jde ke spolužačce učit se.
-Zjistil jsem že byla s klukem o kterém nic nevím.
+            title="Scénář #4: Příprava rodiče na konflikt, který se vrací"
+            description="AI pomůže najít vzorec, ne jen hasit poslední hádku"
+            prompt={`Chci s tebou rozebrat opakující se konflikt doma.
 
-Jsem nahněvaný. Ale nechci ji odehnat.
+Nechci, abys mi dal rychlou radu bez pochopení.
+Nejdřív se mě ptej, abys odhalil vzorec.
 
-Potřebuji vyřešit:
-1. Klamství
-2. Zjistit kdo je ten kluk
-3. Neztratit její důvěru
+Ptej se na:
+- kdo je v konfliktu
+- co bývá spouštěč
+- co tomu obvykle předchází
+- jak reaguji já
+- co situaci zhoršuje
+- co dítě potřebuje, ale neumí říct
+- co je kázeňský problém a co je spíš bolest, únava nebo chaos
 
-Jak vést ten rozhovor aby:
-- Přiznala pravdu
-- Pochopila proč je klamství problém
-- Věděla že může přijít příště s pravdou
-- Byly jasné důsledky ale ne devastace vztahu`}
-          />
+Potom:
+1. rozliš, co je kořen problému a co jen povrchový projev
+2. napiš mi, co mám řešit hned a co dlouhodobě
+3. navrhni, jak s dítětem mluvit po konfliktu
+4. ukaž mi, kde jako rodič nechtěně přiléváme olej do ohně
+5. dej mi krátký plán na jeden týden
 
-          <PromptCard
-            title="Superprompt #5: Modlitba s dětmi"
-            description="Chceš se modlit s dětmi ale nevíš jak začít"
-            prompt={`Chci začít se modlit s dětmi před spaním.
-Mám syna (7) a dceru (10).
-Doposud jsme se nemodlili pravidelně - jen občas, formálně.
-
-Problém: Když se modlím, děti se nudí nebo vyrušují.
-Chci aby modlitba byla autentická, ne povinnost.
-
-Dej mi:
-1. Jednoduchou strukturu večerní modlitby (max 5 minut)
-2. Jak zapojit děti aktivně
-3. Příklady modliteb které můžu použít
-4. Jak reagovat když nechtějí
-5. Jak to udělat zajímavé bez toho aby to byla "show"`}
-          />
-
-          <PromptCard
-            title="Superprompt #6: Konflikty sourozenců"
-            description="Děti se neustále hádají"
-            prompt={`Mám dva syny - 8 a 11 let.
-Neustále se hádají. O hračky, o televizi, o pozornost.
-Starší ubližuje mladšímu (slovně, občas fyzicky).
-Mladší provokuje a potom pláče.
-
-Jsem vyčerpaný/á. Křičím na ně. Potom se cítím špatně.
-
-Potřebuji:
-1. Jak zastavit hádku v momentě (konkrétní kroky)
-2. Jak řešit když starší ubližuje mladšímu
-3. Jak řešit provokování mladším
-4. Dlouhodobé řešení - ne jen hasit požáry
-5. Jak nebýt soudce ale pomoct jim řešit to sami`}
+Nechci instantní psychologii. Chci poctivý rozbor situace.`}
           />
 
           <div className="mt-6 p-5 rounded-xl bg-[#FDF6E3] border border-[#C9A044]/20">
@@ -216,6 +202,7 @@ Potřebuji:
               <li><strong>3. AI SE MŮŽE MÝLIT</strong> - Kritické myšlení. Pokud ti něco nesedí, nevěř tomu jen proto že to řekla AI.</li>
               <li><strong>4. AI JE START, NE CÍL</strong> - AI ti pomůže připravit se. Ale rozhovor vedeš TY. Objetí dáváš TY. Přítomný jsi TY.</li>
               <li><strong>5. AI NENÍ ZPOVĚDNÍK</strong> - Neříkej jí to, co nechceš ukládat, sdílet nebo jednou vysvětlovat cizímu člověku.</li>
+              <li><strong>6. MODLITBA NENÍ PRODUKT AI</strong> - Modlitba je vztah s Bohem a výraz srdce. AI může maximálně pomoci rodiči ujasnit si myšlenky, ale modlit se za tebe nemá.</li>
             </ul>
           </div>
         </Section>
@@ -262,17 +249,25 @@ Potřebuji:
           </InfoBox>
 
           <PromptCard
-            title="Prompt pro domácí úkoly (naučte děti)"
-            description="Jak se správně ptát na pomoc s učením"
-            prompt={`Jsem žák [ročník]. Mám úkol: [zadání].
+            title="Adaptivní prompt pro domácí úkoly"
+            description="Nejprve poznat dítě, potom navrhnout způsob učení"
+            prompt={`Pomoz mi nastavit pomoc s domácím úkolem pro konkrétní dítě.
 
-NECHCI abys to napsal za mě.
-CHCI abys mi pomohl pochopit.
+Nejdřív zjisti:
+1. kolik je dítěti let a co je za předmět
+2. co přesně mu nejde
+3. jestli se učí lépe čtením, přepisováním, mluvením, obrázky, pohybem nebo hrou
+4. jestli potřebuje krátké kroky, soutěž, klid, nebo vedení otázkami
+5. co už zkoušelo a co nefungovalo
 
-1. Vysvětli mi základní princip
-2. Dej mi příklad
-3. Potom se mě zeptej otázku jestli jsem pochopil
-4. Když odpovím, řekni mi jestli je to správné a proč`}
+Pak:
+1. navrhni nejvhodnější způsob vysvětlení pro tohle dítě
+2. dej mi 2–3 varianty práce: rychlou, hravou a důkladnou
+3. napiš, co mám dělat já jako rodič a co může dělat AI
+4. dávej jen malé kroky a po každém kroku zkontroluj porozumění
+5. nikdy neřeš úkol za dítě, ale pomáhej mu dojít k odpovědi
+
+Mluv jednoduše a prakticky. Žádné obecné fráze.`}
           />
 
           <TableCard
@@ -329,6 +324,17 @@ NECHCI hotové řešení. Chci vědět jak ho naučit.`}
               <li>• „Řekni mi i druhou možnost nebo protiargument."</li>
               <li>• „Co si nejsi jistá?"</li>
               <li>• „Teď mi to vysvětli tak, jako bys to měl učit mladšího sourozence."</li>
+            </ul>
+          </div>
+
+          <div className="mt-6 p-5 rounded-xl bg-[#EDF5F0] border border-[#5B7B6A]/20">
+            <h4 className="font-display font-semibold text-[#2D3436] mb-3">Triky pro rodiče, které už dnes dávají smysl</h4>
+            <ul className="space-y-2 text-sm text-[#4A5568]">
+              <li>• Nech AI rodiče nejdřív vyzpovídat, než začne radit.</li>
+              <li>• Nech AI simulovat dítě různého věku a temperamentu.</li>
+              <li>• Požádej AI, aby označila věty, které zní tvrdě, chaoticky nebo studem.</li>
+              <li>• U učení nech AI nabídnout více cest podle stylu dítěte, ne jednu „správnou“ metodu.</li>
+              <li>• Vždy chtěj krátké kroky, kontrolu porozumění a alternativní přístup, když první selže.</li>
             </ul>
           </div>
 

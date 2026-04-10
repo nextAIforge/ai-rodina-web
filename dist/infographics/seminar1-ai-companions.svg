@@ -49,12 +49,12 @@
   <text x="842" y="413" class="card-copy">než s člověkem</text>
 
   <text x="104" y="528" class="card-title">Další varovná čísla</text>
-  <text x="104" y="587" class="small-value">24 %</text>
-  <text x="204" y="580" class="small-copy">svěřilo AI osobní nebo</text>
-  <text x="204" y="604" class="small-copy">soukromé informace</text>
-  <text x="104" y="637" class="small-value">34 %</text>
-  <text x="204" y="630" class="small-copy">zažilo v konverzaci něco,</text>
-  <text x="204" y="654" class="small-copy">co jim bylo nepříjemné</text>
+  <text x="104" y="584" class="small-value">24 %</text>
+  <text x="224" y="568" class="small-copy">svěřilo AI osobní nebo</text>
+  <text x="224" y="592" class="small-copy">soukromé informace</text>
+  <text x="104" y="648" class="small-value">34 %</text>
+  <text x="224" y="632" class="small-copy">zažilo v konverzaci něco,</text>
+  <text x="224" y="656" class="small-copy">co jim bylo nepříjemné</text>
 
   <text x="656" y="538" class="card-title">Co si má rodič odnést</text>
   <text x="656" y="585" class="card-copy">AI companion není jen chatbot.</text>

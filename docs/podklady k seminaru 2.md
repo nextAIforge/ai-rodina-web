@@ -3,37 +3,39 @@
 ### Cíl semináře
 Ukázat rodičům, jak AI používat prakticky, bezpečně a bez iluze, že vyřeší vztahové nebo výchovné problémy za ně.
 
-### 1. Jak se správně ptát AI
+### 1. Jak použít AI jako pomocníka, ne náhradu
 
-Špatný prompt:
+Základní princip:
 
-`Pověz mi něco o zlomcích.`
+`AI nemá rodiči psát hotové věty místo něj. Má mu pomoci lépe vidět dítě, připravit se a natrénovat rozhovor.`
 
-Dobrý prompt:
+Povrchní použití:
 
-`Můj syn (9 let) nechápe zlomky. Neumí si představit, co je 3/4. Vysvětli mi to pomocí pizzy nebo něčeho, co mu můžu fyzicky ukázat. Nechci hotovou odpověď, chci aby to pochopil.`
+`Napiš mi, co mám říct dítěti.`
 
-Anatomie dobrého promptu:
+Zralé použití:
 
-1. Kdo
-2. Co
-3. Kontext
-4. Čeho se bojím
-5. Co chci
-6. Co nechci
+`Nejdřív se mě ptej na dítě, na vztah a na situaci. Pak se mnou natrénuj rozhovor a ukaž mi, které věty mohou dítě zranit nebo zavřít.`
+
+Jak má AI rodiči opravdu pomoci:
+
+1. Nejdřív se ptát
+2. Pak simulovat dítě nebo teenagera
+3. Pojmenovat rizikové rodičovské formulace
+4. Nabídnout více možných přístupů
+5. Respektovat hranice modlitby, svědomí, autority a vztahu
+6. Zůstat konkrétní a praktická
 
 Bezpečnostní pravidlo:
 
 `Do AI nevkládej celé jméno dítěte, školu, adresu, intimní detaily, screenshoty cizích dětí ani rodinná tajemství.`
 
-Ponechat současné superprompty:
+Místo „superpromptů“ používat tyto scénáře:
 
-- Těžký rozhovor
-- Vysvětlení smrti
-- Digitální hranice
-- Když dítě klame
-- Modlitba s dětmi
-- Konflikty sourozenců
+- Nácvik těžkého rozhovoru, kde AI nejdřív rodiče vyzpovídá a pak simuluje dítě
+- Rozbor rodičovských vět: co zní v uších dítěte tvrdě, studem nebo manipulativně
+- Rozbor opakujícího se konfliktu: AI hledá vzorec, ne jen poslední hádku
+- Adaptivní pomoc s učením: AI nejdřív zjišťuje styl dítěte a teprve pak navrhuje postup
 
 Pravidla pro práci s AI:
 
@@ -42,6 +44,7 @@ Pravidla pro práci s AI:
 - AI se může mýlit
 - AI je start, ne cíl
 - AI není zpovědník
+- Modlitba není produkt AI
 
 ### 2. Škola a učení
 
@@ -70,6 +73,14 @@ Pravidlo:
 
 `AI je tutor, ne autor.`
 
+Adresnější princip pro domácí úkoly:
+
+- Nejdřív zjistit, jak se dítě učí
+- Teprve potom navrhnout způsob práce
+- Nabídnout více cest: čtení, přepis, mluvení, obrázek, hra, krátké kroky
+- Po každém kroku ověřit porozumění
+- Nikdy neudělat úkol za dítě
+
 Co říct dítěti při ověřování:
 
 - Ukaž mi zdroj.
@@ -81,6 +92,13 @@ Poznámka k detektorům:
 
 - Nespoléhat na ně jako na důkaz.
 - Hledat průhlednost procesu a porozumění dítěte.
+
+Triky pro rodiče:
+
+- Nechat AI rodiče nejdřív vyzpovídat
+- Nechat AI simulovat dítě různého věku
+- Nechat AI označit věty, které zraňují nebo zavírají vztah
+- Nechat AI navrhnout několik učebních cest podle dítěte, ne jednu univerzální radu
 
 ### 3. Emoční situace
 
